@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Redgate Handbook" %></title>
+    <title>Redgate Handbook</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Redgate Handbook">
-    <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= yield :head %>
-
-    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
-    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
-
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
-
-    <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "tailwind", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
+</head>
+  <body class="bg-gray-50 min-h-screen">
 
-  <body>
-    <%= yield %>
+    <!-- Navbar -->
+    <nav class="bg-[#1a1a2e] text-white px-6 py-4 flex items-center justify-between">
+      <%= link_to root_path, class: "text-white font-bold text-lg tracking-tight hover:text-red-400 transition" do %>
+        <span class="text-red-500">Redgate</span> Handbook
+      <% end %>
+
+      <div class="flex gap-4 text-sm">
+        <%= link_to "Flyway", product_path(product: "flyway"), class: "hover:text-red-400 transition" %>
+        <%= link_to "Monitor", product_path(product: "monitor"), class: "hover:text-red-400 transition" %>
+        <%= link_to "Test Data Manager", product_path(product: "test_data_manager"), class: "hover:text-red-400 transition" %>
+        <%= link_to "Toolbelt Essentials", product_path(product: "toolbelt_essentials"), class: "hover:text-red-400 transition" %>
+      </div>
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
+
   </body>
 </html>

@@ -1,0 +1,53 @@
+en:
+  products:
+    flyway:
+      name: "Redgate Flyway"
+      tagline: "Database migrations made easy"
+      description: "Flyway is an open-source database migration tool that lets teams version control their database schema changes alongside application code. It supports a wide range of databases and integrates with CI/CD pipelines."
+      features:
+        - "Version control for database schemas"
+        - "Works with SQL Server, PostgreSQL, MySQL, Oracle and more"
+        - "CLI, Maven, Gradle, and API integrations"
+        - "Undo and repeatable migrations"
+        - "Teams & Enterprise editions with advanced features"
+      audience: "DevOps engineers, DBAs, and development teams who need to manage database changes safely across environments."
+      why_redgate: "Flyway is trusted by over 8 million developers worldwide. Redgate's enterprise edition adds policy enforcement, audit trails, and team collaboration features."
+
+    monitor:
+      name: "Redgate Monitor"
+      tagline: "Full visibility into your SQL Server estate"
+      description: "Redgate Monitor provides real-time monitoring and alerting for SQL Server and Azure SQL, helping DBAs and ops teams catch performance issues before they impact users."
+      features:
+        - "Real-time performance monitoring and alerting"
+        - "Query analysis and wait statistics"
+        - "Blocking and deadlock detection"
+        - "Azure SQL and SQL Server on-prem support"
+        - "Historical data and trend analysis"
+      audience: "DBAs, infrastructure teams, and ops engineers responsible for SQL Server performance and availability."
+      why_redgate: "Redgate Monitor gives teams a single pane of glass for their entire SQL Server estate, reducing MTTR and helping prevent outages before they happen."
+
+    test_data_manager:
+      name: "Redgate Test Data Manager"
+      tagline: "Safe, realistic test data on demand"
+      description: "Test Data Manager helps teams provision masked, compliant, and production-like data for testing — without exposing real customer data. It integrates with CI/CD to automate data provisioning."
+      features:
+        - "Data masking and anonymisation"
+        - "Self-service test data provisioning"
+        - "GDPR and compliance-ready"
+        - "CI/CD pipeline integration"
+        - "Supports SQL Server and Oracle"
+      audience: "QA teams, developers, and compliance officers who need realistic test data without the risk of exposing PII."
+      why_redgate: "Test Data Manager removes the bottleneck of waiting for safe test data, letting teams ship faster while staying compliant with data privacy regulations."
+
+    toolbelt_essentials:
+      name: "SQL Toolbelt Essentials"
+      tagline: "The essential toolkit for SQL Server developers"
+      description: "SQL Toolbelt Essentials bundles Redgate's most popular SQL Server tools — SQL Compare, SQL Data Compare, SQL Prompt, and more — into one cost-effective package for development teams."
+      features:
+        - "SQL Compare — schema comparison and deployment"
+        - "SQL Data Compare — row-level data diffing"
+        - "SQL Prompt — intelligent SQL autocomplete and formatting"
+        - "SQL Search — find objects across databases"
+        - "Bundled pricing for cost efficiency"
+      audience: "SQL Server developers and DBAs who want Redgate's core productivity tools in a single bundle."
+      why_redgate: "Toolbelt Essentials gives teams the tools they use every day at a bundled price, reducing time spent on manual, error-prone database tasks."

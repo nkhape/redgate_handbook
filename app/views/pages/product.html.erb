@@ -1,0 +1,43 @@
+<div class="max-w-4xl mx-auto px-6 py-12">
+
+  <!-- Header -->
+  <div class="mb-10">
+    <p class="text-sm text-red-600 font-semibold uppercase tracking-wide mb-1">Product Overview</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-3"><%= @content[:name] %></h1>
+    <p class="text-xl text-gray-500"><%= @content[:tagline] %></p>
+  </div>
+
+  <!-- What it does -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">What it does</h2>
+    <p class="text-gray-600 leading-relaxed"><%= @content[:description] %></p>
+  </section>
+
+  <!-- Key features -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-3">Key Features</h2>
+    <ul class="space-y-2">
+      <% @content[:features].each do |feature| %>
+        <li class="flex items-start gap-2 text-gray-600">
+          <span class="text-red-500 mt-1">&#10003;</span>
+          <%= feature %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">Who it's for</h2>
+    <p class="text-gray-600"><%= @content[:audience] %></p>
+  </section>
+
+  <!-- Why Redgate -->
+  <section class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">Why Redgate</h2>
+    <p class="text-gray-600"><%= @content[:why_redgate] %></p>
+  </section>
+
+  <!-- Back link -->
+  <%= link_to "← Back to all products", root_path, class: "text-red-600 hover:underline text-sm font-medium" %>
+</div>
