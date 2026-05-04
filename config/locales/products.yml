@@ -15,17 +15,44 @@ en:
 
     monitor:
       name: "Redgate Monitor"
-      tagline: "Full visibility into your SQL Server estate"
-      description: "Redgate Monitor provides real-time monitoring and alerting for SQL Server and Azure SQL, helping DBAs and ops teams catch performance issues before they impact users."
+      tagline: "Full visibility into your entire database estate"
+      description: "Redgate Monitor provides real-time monitoring and alerting for SQL Server, PostgreSQL, Oracle, MongoDB and MySQL — whether on-premise or in the cloud. It gives DBAs and ops teams a single pane of glass to catch performance issues before they impact users."
       features:
-        - "Real-time performance monitoring and alerting"
-        - "Query analysis and wait statistics"
-        - "Blocking and deadlock detection"
-        - "Azure SQL and SQL Server on-prem support"
-        - "Historical data and trend analysis"
-      audience: "DBAs, infrastructure teams, and ops engineers responsible for SQL Server performance and availability."
-      why_redgate: "Redgate Monitor gives teams a single pane of glass for their entire SQL Server estate, reducing MTTR and helping prevent outages before they happen."
-
+        global_dashboard:
+          title: "Global Dashboard"
+          description: "See your entire database estate on one page — all servers, all platforms, on-prem and cloud, at a glance."
+        server_overview:
+          title: "Server Overview"
+          description: "A full timeline of everything that happened on a server. Drill into queries, wait stats, and use AI-assisted recommendations for root cause analysis."
+        alerts:
+          title: "Alerts"
+          description: "Centralised alert inbox across all servers. Configure thresholds manually or let machine learning tune them automatically to avoid alert fatigue."
+        enterprise:
+          title: "Enterprise Features"
+          description: "Data API for exporting to PowerBI, High Availability, full permissions audit, and configuration compliance benchmarking."
+      platforms:
+        - name: "SQL Server"
+          icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+        - name: "PostgreSQL"
+          icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+        - name: "Oracle"
+          icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+        - name: "MongoDB"
+          icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+        - name: "MySQL"
+          icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+      links:
+        - title: "Global Dashboard — Online Demo"
+          url: "https://monitor.red-gate.com"
+        - title: "How Redgate Monitor Works"
+          url: "https://documentation.red-gate.com/monitor14"
+        - title: "Hardware & Performance Guidelines"
+          url: "https://documentation.red-gate.com/monitor14/hardware-and-performance-guidelines"
+        - title: "Self-hosted vs SaaS — What's the Difference?"
+          url: "https://documentation.red-gate.com/monitor14/how-is-it-different-from-self-hosted-redgate-monitor-331352319.html"
+      audience: "DBAs, infrastructure teams, and ops engineers responsible for database performance and availability across any platform."
+      why_redgate: "Redgate Monitor supports more database platforms than any comparable tool, giving teams one place to monitor their entire estate — no matter the mix of SQL Server, Postgres, Oracle, MongoDB or MySQL."
+    
     test_data_manager:
       name: "Redgate Test Data Manager"
       tagline: "Safe, realistic test data on demand"
