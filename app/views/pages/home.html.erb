@@ -2,10 +2,10 @@
   <h1 class="text-4xl font-bold text-gray-900 mb-2">Redgate Product Handbook</h1>
   <p class="text-lg text-gray-500 mb-10">Quick reference for sales & solutions teams</p>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     <% ["flyway", "monitor", "test_data_manager", "toolbelt_essentials"].each do |product| %>
-      <%= link_to product_path(product: product), class: "block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-red-500 transition-all group" do %>
-        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-red-600 mb-2">
+      <%= link_to product_path(product: product), class: "block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-all group" do %>
+        <h2 class="text-xl font-semibold text-gray-900 mb-2 group-hover:underline" style="text-decoration-color:#e8392d;">
           <%= t("products.#{product}.name") %>
         </h2>
         <p class="text-gray-500 text-sm"><%= t("products.#{product}.tagline") %></p>

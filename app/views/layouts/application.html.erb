@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-</head>
-  <body class="bg-gray-50 min-h-screen">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
 
     <!-- Navbar -->
-    <nav class="bg-[#1a1a2e] text-white px-6 py-4 flex items-center justify-between">
-      <%= link_to root_path, class: "text-white font-bold text-lg tracking-tight hover:text-red-400 transition" do %>
-        <span class="text-red-500">Redgate</span> Handbook
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <%= link_to root_path, class: "text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition" do %>
+        <span class="text-[#e8392d]">Redgate</span> Handbook
       <% end %>
 
-      <div class="flex gap-4 text-sm">
-        <%= link_to "Flyway", product_path(product: "flyway"), class: "hover:text-red-400 transition" %>
-        <%= link_to "Monitor", product_path(product: "monitor"), class: "hover:text-red-400 transition" %>
-        <%= link_to "Test Data Manager", product_path(product: "test_data_manager"), class: "hover:text-red-400 transition" %>
-        <%= link_to "Toolbelt Essentials", product_path(product: "toolbelt_essentials"), class: "hover:text-red-400 transition" %>
+      <div class="flex gap-6 text-sm font-medium">
+        <%= link_to "Flyway", product_path(product: "flyway"), class: "text-gray-300 hover:text-white transition" %>
+        <%= link_to "Monitor", product_path(product: "monitor"), class: "text-gray-300 hover:text-white transition" %>
+        <%= link_to "Test Data Manager", product_path(product: "test_data_manager"), class: "text-gray-300 hover:text-white transition" %>
+        <%= link_to "Toolbelt Essentials", product_path(product: "toolbelt_essentials"), class: "text-gray-300 hover:text-white transition" %>
       </div>
     </nav>
 

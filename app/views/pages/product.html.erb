@@ -2,7 +2,7 @@
 
   <!-- Header -->
   <div class="mb-10">
-    <p class="text-sm text-red-600 font-semibold uppercase tracking-wide mb-1">Product Overview</p>
+    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;">Product Overview</p>
     <h1 class="text-4xl font-bold text-gray-900 mb-3"><%= @content[:name] %></h1>
     <p class="text-xl text-gray-500"><%= @content[:tagline] %></p>
   </div>
@@ -15,13 +15,13 @@
 
   <!-- Supported Platforms -->
   <% if @content[:platforms].present? %>
-    <section class="mb-8">
+    <section class="mb-10">
       <h2 class="text-lg font-semibold text-gray-800 mb-4">Supported Platforms</h2>
       <div class="flex flex-wrap gap-8 items-center">
         <% @content[:platforms].each do |platform| %>
           <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
             <img src="<%= platform[:icon_url] %>" alt="<%= platform[:name] %>" class="w-8 h-8 object-contain" />
-            <span class="text-gray-500 text-center" style="font-size:11px;"><%= platform[:name] %></span>
+            <span class="text-gray-400 text-center" style="font-size:11px;"><%= platform[:name] %></span>
           </div>
         <% end %>
       </div>
@@ -29,7 +29,7 @@
   <% end %>
 
   <!-- Key Features -->
-  <section class="mb-8">
+  <section class="mb-10">
     <h2 class="text-lg font-semibold text-gray-800 mb-4">Key Features</h2>
 
     <% if @content[:features].is_a?(Hash) %>
@@ -43,7 +43,7 @@
             <button
               onclick="showTab(<%= index %>)"
               id="tab-btn-<%= index %>"
-              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500">
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
               <%= feature[:title] %>
             </button>
           <% end %>
@@ -69,14 +69,14 @@
                     <p class="text-sm text-gray-500 leading-relaxed mb-3"><%= feature[:description] %></p>
                   <% end %>
                   <% if feature[:link_url].present? %>
-                    <a href="<%= feature[:link_url] %>" target="_blank" class="text-sm text-red-600 font-medium no-underline">→ <%= feature[:link_title] %></a>
+                    <a href="<%= feature[:link_url] %>" target="_blank" class="text-sm font-medium no-underline" style="color:#e8392d;">→ <%= feature[:link_title] %></a>
                   <% end %>
                   <% if feature[:points].present? %>
                     <div class="flex flex-col gap-3 mt-2">
                       <% feature[:points].each do |point| %>
                         <div>
                           <% if point[:url].present? %>
-                            <a href="<%= point[:url] %>" target="_blank" class="text-sm font-semibold text-red-600 no-underline"><%= point[:title] %> →</a>
+                            <a href="<%= point[:url] %>" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;"><%= point[:title] %> →</a>
                           <% else %>
                             <span class="text-sm font-semibold text-gray-700"><%= point[:title] %></span>
                           <% end %>
@@ -102,8 +102,8 @@
             const btn = document.getElementById('tab-btn-' + i);
             if (i === activeIndex) {
               panel.classList.remove('hidden');
-              btn.style.borderBottom = '2px solid #dc2626';
-              btn.style.color = '#dc2626';
+              btn.style.borderBottom = '2px solid #e8392d';
+              btn.style.color = '#e8392d';
               btn.style.fontWeight = '600';
             } else {
               panel.classList.add('hidden');
@@ -118,11 +118,10 @@
 
     <% else %>
 
-      <%# Simple bullet list for products not yet updated %>
       <ul class="flex flex-col gap-2">
         <% @content[:features].each do |feature| %>
           <li class="flex items-start gap-2 text-sm text-gray-600">
-            <span class="text-red-400 mt-0.5">&#10003;</span>
+            <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
             <%= feature %>
           </li>
         <% end %>
@@ -133,14 +132,14 @@
 
   <!-- Demo Servers -->
   <% if @content[:demo_servers].present? %>
-    <section class="mb-8">
+    <section class="mb-10">
       <h2 class="text-lg font-semibold text-gray-800 mb-1">Demo Servers</h2>
-      <p class="text-sm text-gray-500 mb-4">Use these on the <a href="https://monitor.red-gate.com" target="_blank" class="text-red-600 hover:underline">online demo</a> — you can't break anything!</p>
+      <p class="text-sm text-gray-500 mb-4">Use these on the <a href="https://monitor.red-gate.com" target="_blank" class="hover:underline" style="color:#e8392d;">online demo</a> — you can't break anything!</p>
       <div class="grid grid-cols-3 gap-x-5 gap-y-4">
         <% @content[:demo_servers].each do |server| %>
-          <a href="<%= server[:url] %>" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 hover:border-red-400 hover:shadow-sm transition-all group">
-            <p class="text-xs text-red-600 font-semibold uppercase tracking-wide mb-1.5"><%= server[:platform] %></p>
-            <p class="text-sm text-gray-700 font-medium group-hover:text-red-600"><%= server[:name] %></p>
+          <a href="<%= server[:url] %>" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 hover:shadow-sm transition-all group" style="hover:border-color:#e8392d;">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;"><%= server[:platform] %></p>
+            <p class="text-sm text-gray-700 font-medium"><%= server[:name] %></p>
           </a>
         <% end %>
       </div>
@@ -149,12 +148,12 @@
 
   <!-- Useful Links -->
   <% if @content[:links].present? %>
-    <section class="mb-8">
+    <section class="mb-10">
       <h2 class="text-lg font-semibold text-gray-800 mb-3">Useful Links</h2>
       <ul class="space-y-2">
         <% @content[:links].each do |link| %>
           <li>
-            <a href="<%= link[:url] %>" target="_blank" class="text-sm text-red-600 font-medium hover:underline">
+            <a href="<%= link[:url] %>" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
               → <%= link[:title] %>
             </a>
           </li>
@@ -164,6 +163,6 @@
   <% end %>
 
   <!-- Back link -->
-  <%= link_to "← Back to all products", root_path, class: "text-sm text-red-600 font-medium hover:underline" %>
+  <%= link_to "← Back to all products", root_path, class: "text-sm font-medium hover:underline", style: "color:#e8392d;" %>
 
 </div>

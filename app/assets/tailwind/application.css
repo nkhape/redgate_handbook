@@ -1,3 +1,9 @@
 @import "tailwindcss";
 @source "../../views/**/*.{erb,html}";
 @source "../../javascript/**/*.js";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-rg-red: #e8392d;
+  --color-rg-red-dark: #c8102e;
+}
