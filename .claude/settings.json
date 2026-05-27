@@ -1,0 +1,15 @@
+{
+  "env": {
+    "GH": "C:\\Program Files\\GitHub CLI\\gh.exe"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(gh pr *)",
+      "Bash(gh issue *)",
+      "Bash(gh api *)",
+      "Bash(gh repo *)",
+      "Bash(gh auth *)",
+      "Bash(gh *)"
+    ]
+  }
+}

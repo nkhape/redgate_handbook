@@ -1,4 +1,4 @@
-<div class="max-w-4xl mx-auto px-6 py-12">
+<div class="max-w-6xl mx-auto px-6 py-12">
 
   <!-- Header -->
   <div class="mb-10">
@@ -12,22 +12,6 @@
     <h2 class="text-lg font-semibold text-gray-800 mb-2">What it does</h2>
     <p class="text-gray-600 leading-relaxed"><%= @content[:description] %></p>
   </section>
-
-  <!-- Key Features -->
-  <section class="mb-8">
-  <h2 class="text-lg font-semibold text-gray-800 mb-4">Key Features</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <% @content[:features].each do |key, feature| %>
-      <div class="bg-white border border-gray-200 rounded-xl p-6">
-        <h3 class="font-semibold text-gray-900 mb-2"><%= feature[:title] %></h3>
-        <p class="text-sm text-gray-500 mb-4"><%= feature[:description] %></p>
-        <div style="width:100%; height:160px; background:#f3f4f6; border-radius:8px; display:flex; align-items:center; justify-content:center;">
-          <span style="font-size:12px; color:#9ca3af;">Screenshot coming soon</span>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</section>
 
   <!-- Supported Platforms -->
   <% if @content[:platforms].present? %>
@@ -44,11 +28,125 @@
     </section>
   <% end %>
 
-  <!-- Who it's for -->
+  <!-- Key Features -->
   <section class="mb-8">
-    <h2 class="text-lg font-semibold text-gray-800 mb-2">Who it's for</h2>
-    <p class="text-gray-600"><%= @content[:audience] %></p>
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">Key Features</h2>
+
+    <% if @content[:features].is_a?(Hash) %>
+
+      <%# Tabbed layout for structured features (e.g. Monitor) %>
+      <div id="feature-tabs">
+
+        <%# Tab buttons %>
+        <div style="display:flex; flex-wrap:wrap; border-bottom:1px solid #e5e7eb; margin-bottom:1.5rem;">
+          <% @content[:features].each_with_index do |(key, feature), index| %>
+            <button
+              onclick="showTab(<%= index %>)"
+              id="tab-btn-<%= index %>"
+              style="padding:0.75rem 1.25rem; font-size:0.875rem; border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; color:#6b7280;">
+              <%= feature[:title] %>
+            </button>
+          <% end %>
+        </div>
+
+        <%# Tab panels %>
+        <% @content[:features].each_with_index do |(key, feature), index| %>
+          <div id="tab-panel-<%= index %>" style="display:none;">
+            <div style="background:white; border:1px solid #e5e7eb; border-radius:0.75rem; overflow:hidden;">
+              <div style="display:flex; flex-wrap:wrap; align-items:stretch;">
+
+                <%# Image — left on wide screens, top on narrow %>
+                <% if feature[:image].present? %>
+                  <div style="flex:2 1 520px; background:#f9fafb; border-right:1px solid #f3f4f6; padding:1.5rem;">
+                    <img src="<%= feature[:image] %>" alt="<%= feature[:title] %>" style="width:100%; border-radius:6px; display:block;" />
+                  </div>
+                <% end %>
+
+                <%# Text — right on wide screens, below on narrow %>
+                <div style="flex:1 1 280px; padding:2rem;">
+                  <h3 style="font-size:1.1rem; font-weight:600; color:#111827; margin-bottom:0.75rem;"><%= feature[:title] %></h3>
+                  <% if feature[:description].present? %>
+                    <p style="font-size:0.875rem; color:#6b7280; line-height:1.6; margin-bottom:0.75rem;"><%= feature[:description] %></p>
+                  <% end %>
+                  <% if feature[:link_url].present? %>
+                    <a href="<%= feature[:link_url] %>" target="_blank" style="font-size:0.875rem; color:#dc2626; text-decoration:none; font-weight:500;">→ <%= feature[:link_title] %></a>
+                  <% end %>
+                  <% if feature[:points].present? %>
+                    <div style="display:flex; flex-direction:column; gap:0.875rem; margin-top:0.5rem;">
+                      <% feature[:points].each do |point| %>
+                        <div>
+                          <% if point[:url].present? %>
+                            <a href="<%= point[:url] %>" target="_blank" style="font-size:0.875rem; font-weight:600; color:#dc2626; text-decoration:none;"><%= point[:title] %> →</a>
+                          <% else %>
+                            <span style="font-size:0.875rem; font-weight:600; color:#374151;"><%= point[:title] %></span>
+                          <% end %>
+                          <p style="font-size:0.875rem; color:#6b7280; margin:0.2rem 0 0 0;"><%= point[:text] %></p>
+                        </div>
+                      <% end %>
+                    </div>
+                  <% end %>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+
+      <script>
+        function showTab(activeIndex) {
+          const totalTabs = <%= @content[:features].size %>;
+          for (let i = 0; i < totalTabs; i++) {
+            const panel = document.getElementById('tab-panel-' + i);
+            const btn = document.getElementById('tab-btn-' + i);
+            if (i === activeIndex) {
+              panel.style.display = 'block';
+              btn.style.borderBottom = '2px solid #dc2626';
+              btn.style.color = '#dc2626';
+              btn.style.fontWeight = '600';
+            } else {
+              panel.style.display = 'none';
+              btn.style.borderBottom = '2px solid transparent';
+              btn.style.color = '#6b7280';
+              btn.style.fontWeight = '500';
+            }
+          }
+        }
+        // Open first tab on load
+        document.addEventListener('DOMContentLoaded', function() { showTab(0); });
+      </script>
+
+    <% else %>
+
+      <%# Simple bullet list for flat features (e.g. Flyway, TDM) %>
+      <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+        <% @content[:features].each do |feature| %>
+          <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:#4b5563;">
+            <span style="color:#ef4444; margin-top:2px;">&#10003;</span>
+            <%= feature %>
+          </li>
+        <% end %>
+      </ul>
+
+    <% end %>
   </section>
+
+  <!-- Demo Servers -->
+  <% if @content[:demo_servers].present? %>
+    <section class="mb-8">
+      <h2 class="text-lg font-semibold text-gray-800 mb-1">Demo Servers</h2>
+      <p class="text-sm text-gray-500 mb-4">Use these on the <a href="https://monitor.red-gate.com" target="_blank" class="text-red-600 hover:underline">online demo</a> — you can't break anything!</p>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); column-gap:1.25rem; row-gap:1rem;">
+        <% @content[:demo_servers].each do |server| %>
+          <a href="<%= server[:url] %>" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 hover:border-red-400 hover:shadow-sm transition-all group">
+            <p class="text-xs text-red-600 font-semibold uppercase tracking-wide mb-1.5"><%= server[:platform] %></p>
+            <p class="text-sm text-gray-700 font-medium group-hover:text-red-600"><%= server[:name] %></p>
+          </a>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
 
   <!-- Useful Links -->
   <% if @content[:links].present? %>
@@ -65,12 +163,6 @@
       </ul>
     </section>
   <% end %>
-
-  <!-- Why Redgate -->
-  <section class="mb-10">
-    <h2 class="text-lg font-semibold text-gray-800 mb-2">Why Redgate</h2>
-    <p class="text-gray-600"><%= @content[:why_redgate] %></p>
-  </section>
 
   <!-- Back link -->
   <%= link_to "← Back to all products", root_path, class: "text-red-600 hover:underline text-sm font-medium" %>
