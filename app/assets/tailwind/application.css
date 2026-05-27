@@ -15,6 +15,6 @@
   .card-hover:hover {
     border-color: #e8392d;
     background-color: #fff8f7;
-    box-shadow: 0 4px 16px rgba(232, 57, 45, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   }
 }
