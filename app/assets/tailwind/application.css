@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@source "../../views/**/*.{erb,html}";
+@source "../../javascript/**/*.js";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-rg-red: #e8392d;
+  --color-rg-red-dark: #c8102e;
+}
+
+@layer components {
+  .card-hover {
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  }
+  .card-hover:hover {
+    border-color: #e8392d;
+    background-color: #fff8f7;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+}
