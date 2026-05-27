@@ -76,7 +76,7 @@
                       <% feature[:points].each do |point| %>
                         <div>
                           <% if point[:url].present? %>
-                            <a href="<%= point[:url] %>" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;"><%= point[:title] %> →</a>
+                            <a href="<%= point[:url] %>" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ <%= point[:title] %></a>
                           <% else %>
                             <span class="text-sm font-semibold text-gray-700"><%= point[:title] %></span>
                           <% end %>
