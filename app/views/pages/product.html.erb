@@ -52,7 +52,7 @@
         <%# Tab panels %>
         <% @content[:features].each_with_index do |(key, feature), index| %>
           <div id="tab-panel-<%= index %>" class="hidden">
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
               <div class="flex flex-wrap items-stretch">
 
                 <%# Image — left on wide screens, top on narrow %>
@@ -138,7 +138,7 @@
       <p class="text-sm text-gray-500 mb-4">Use these on the <a href="https://monitor.red-gate.com" target="_blank" class="hover:underline" style="color:#e8392d;">online demo</a> — you can't break anything!</p>
       <div class="grid grid-cols-3 gap-x-5 gap-y-4">
         <% @content[:demo_servers].each do |server| %>
-          <a href="<%= server[:url] %>" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 hover:shadow-sm transition-all group" style="hover:border-color:#e8392d;">
+          <a href="<%= server[:url] %>" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
             <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;"><%= server[:platform] %></p>
             <p class="text-sm text-gray-700 font-medium"><%= server[:name] %></p>
           </a>

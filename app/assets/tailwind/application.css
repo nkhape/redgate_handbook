@@ -7,3 +7,14 @@
   --color-rg-red: #e8392d;
   --color-rg-red-dark: #c8102e;
 }
+
+@layer components {
+  .card-hover {
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  }
+  .card-hover:hover {
+    border-color: #e8392d;
+    background-color: #fff8f7;
+    box-shadow: 0 4px 16px rgba(232, 57, 45, 0.1);
+  }
+}
