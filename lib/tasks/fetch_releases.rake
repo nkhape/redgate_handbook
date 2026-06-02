@@ -15,7 +15,7 @@ namespace :releases do
   end
 
   desc "Fetch release notes for one product, e.g. rake releases:fetch[monitor]"
-  task :fetch, [:product] => :environment do |_t, args|
+  task :fetch, [ :product ] => :environment do |_t, args|
     product = args[:product]
     abort "Usage: rake releases:fetch[product_key]" unless product
 
@@ -124,7 +124,7 @@ def process_with_claude(markdown, docs_url)
   request.body = {
     model: "claude-haiku-4-5",
     max_tokens: 8096,
-    messages: [{ role: "user", content: prompt }]
+    messages: [ { role: "user", content: prompt } ]
   }.to_json
 
   response = http.request(request)
