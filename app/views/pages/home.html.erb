@@ -3,7 +3,7 @@
   <p class="text-lg text-gray-500 mb-10">Quick reference for sales & solutions teams</p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <% ["flyway", "monitor", "test_data_manager", "toolbelt_essentials"].each do |product| %>
+    <% ["monitor"].each do |product| %>
       <%= link_to product_path(product: product), class: "block bg-white border border-gray-200 rounded-xl p-6 card-hover group" do %>
         <h2 class="text-xl font-semibold text-gray-900 mb-2 group-hover:underline" style="text-decoration-color:#e8392d;">
           <%= t("products.#{product}.name") %>
