@@ -169,7 +169,7 @@
       <h2 class="text-lg font-semibold text-gray-800 mb-3">What's New</h2>
 
       <% if @releases[:summary].present? %>
-        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:text-[#e8392d] [&_a]:font-medium [&_a]:hover:underline"><%= @releases[:summary].html_safe %></p>
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:text-[#e8392d] [&_a]:font-medium [&_a]:hover:underline"><%= sanitize(@releases[:summary], tags: %w[a], attributes: %w[href target]) %></p>
       <% end %>
 
       <div class="flex flex-col gap-4">
