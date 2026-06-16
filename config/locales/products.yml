@@ -65,17 +65,16 @@ en:
           icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
         - name: "MariaDB"
           icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg"
-        - name: "SQLite"
-          icon_url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+      platforms_note:
+        text: "plus 50+ more with foundational support"
+        url: "https://documentation.red-gate.com/fd/supported-databases-and-versions-143754067.html"
       audience: "DevOps engineers, DBAs, and development teams who need to manage database changes safely across environments."
       links:
         - title: "Flyway Documentation"
           url: "https://documentation.red-gate.com/flyway"
-        - title: "Flyway on GitHub (open source)"
-          url: "https://github.com/flyway/flyway"
-        - title: "Supported Databases"
-          url: "https://documentation.red-gate.com/flyway/flyway-cli-and-api/supported-databases"
-        - title: "Teams & Enterprise Editions"
+        - title: "First Steps: Flyway Autopilot Beginner's Guide"
+          url: "https://documentation.red-gate.com/fd/first-steps-flyway-autopilot-a-beginners-guide-254152325.html"
+        - title: "Community vs. Enterprise Edition"
           url: "https://www.red-gate.com/products/flyway/editions/"
 
     monitor:

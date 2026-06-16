@@ -25,6 +25,11 @@
           </div>
         <% end %>
       </div>
+      <% if @content[:platforms_note].present? %>
+        <p class="text-sm text-gray-400 mt-4">
+          <a href="<%= @content[:platforms_note][:url] %>" target="_blank" class="hover:underline" style="color:#e8392d;"><%= @content[:platforms_note][:text] %> →</a>
+        </p>
+      <% end %>
     </section>
   <% end %>
 
