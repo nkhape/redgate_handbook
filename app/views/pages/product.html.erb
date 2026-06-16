@@ -166,7 +166,14 @@
   <!-- What's New -->
   <% if @releases&.dig(:items).present? %>
     <section class="mb-10">
-      <h2 class="text-lg font-semibold text-gray-800 mb-3">What's New</h2>
+      <div class="flex items-baseline gap-3 mb-3">
+        <h2 class="text-lg font-semibold text-gray-800">What's New</h2>
+        <% if @releases[:items].present? %>
+          <% newest = @releases[:items].first[:date] %>
+          <% oldest = @releases[:items].last[:date] %>
+          <span class="text-xs text-gray-400"><%= oldest == newest ? newest : "#{oldest} – #{newest}" %></span>
+        <% end %>
+      </div>
 
       <% if @releases[:summary].present? %>
         <p class="text-gray-600 leading-relaxed mb-6 [&_a]:text-[#e8392d] [&_a]:font-medium [&_a]:hover:underline"><%= sanitize(@releases[:summary], tags: %w[a], attributes: %w[href target]) %></p>

@@ -2,8 +2,8 @@ name: Fetch Release Notes
 
 on:
   schedule:
-    - cron: "0 7 * * 1"  # Every Monday at 7am UTC
-  workflow_dispatch:       # Also allows manual trigger from GitHub UI
+    - cron: "0 */6 * * *"  # Every 6 hours (matches RSS feed update frequency)
+  workflow_dispatch:         # Also allows manual trigger from GitHub UI
 
 jobs:
   fetch-releases:
