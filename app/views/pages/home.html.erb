@@ -2,13 +2,21 @@
   <h1 class="text-4xl font-bold text-gray-900 mb-2">Redgate Product Handbook</h1>
   <p class="text-lg text-gray-500 mb-10">Quick reference for sales & solutions teams</p>
 
+  <% product_logos = { "monitor" => "Monitor_logo.svg", "flyway" => "Flyway_logo.svg", "test_data_manager" => "TDM_logo.png", "toolbelt_essentials" => "TBE_logo.png" } %>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    <% ["monitor"].each do |product| %>
+    <% ["monitor", "flyway"].each do |product| %>
       <%= link_to product_path(product: product), class: "block bg-white border border-gray-200 rounded-xl p-6 card-hover group" do %>
-        <h2 class="text-xl font-semibold text-gray-900 mb-2 group-hover:underline" style="text-decoration-color:#e8392d;">
-          <%= t("products.#{product}.name") %>
-        </h2>
-        <p class="text-gray-500 text-sm"><%= t("products.#{product}.tagline") %></p>
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-xl font-semibold text-gray-900 mb-2 group-hover:underline" style="text-decoration-color:#e8392d;">
+              <%= t("products.#{product}.name") %>
+            </h2>
+            <p class="text-gray-500 text-sm"><%= t("products.#{product}.tagline") %></p>
+          </div>
+          <% if product_logos[product] %>
+            <img src="/images/logos/<%= product_logos[product] %>" alt="<%= t("products.#{product}.name") %>" class="w-auto ml-6 flex-shrink-0" style="height:40px;" />
+          <% end %>
+        </div>
       <% end %>
     <% end %>
   </div>
