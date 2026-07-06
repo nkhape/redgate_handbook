@@ -20,7 +20,9 @@
       <% end %>
 
       <div class="flex gap-6 text-sm font-medium">
-        <%= link_to "Monitor", product_path(product: "monitor"), class: "text-gray-300 hover:text-white transition" %>
+        <% [["Monitor", "monitor"], ["Flyway", "flyway"], ["Test Data Manager", "test_data_manager"], ["Toolbelt Essentials", "toolbelt_essentials"]].each do |label, key| %>
+          <%= link_to label, product_path(product: key), class: "transition hover:underline #{@product == key ? 'text-white underline' : 'text-gray-300 hover:text-white'}", style: "text-decoration-color:#e8392d;" %>
+        <% end %>
       </div>
     </nav>
 

@@ -62,8 +62,8 @@
 
                 <%# Image — left on wide screens, top on narrow %>
                 <% if feature[:image].present? %>
-                  <div class="bg-gray-50 border-r border-gray-100 p-6" style="flex:2 1 520px;">
-                    <img src="<%= feature[:image] %>" alt="<%= feature[:title] %>" class="w-full rounded-md block" />
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="<%= feature[:image] %>" alt="<%= feature[:title] %>" class="w-full h-full object-contain rounded-md block" />
                   </div>
                 <% end %>
 
@@ -86,6 +86,20 @@
                             <span class="text-sm font-semibold text-gray-700"><%= point[:title] %></span>
                           <% end %>
                           <p class="text-sm text-gray-500 mt-0.5 mb-0"><%= point[:text] %></p>
+                          <% if point[:sub_points].present? %>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
+                              <% point[:sub_points].each do |sub| %>
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                  <% if sub[:url].present? %>
+                                    <a href="<%= sub[:url] %>" target="_blank" class="text-xs font-semibold uppercase tracking-wide mb-1 no-underline hover:underline block" style="color:#e8392d;"><%= sub[:title] %> →</a>
+                                  <% else %>
+                                    <p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;"><%= sub[:title] %></p>
+                                  <% end %>
+                                  <p class="text-sm text-gray-600 mb-0 leading-snug"><%= sub[:text] %></p>
+                                </div>
+                              <% end %>
+                            </div>
+                          <% end %>
                         </div>
                       <% end %>
                     </div>
