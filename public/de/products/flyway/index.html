@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/redgate_handbook/css/tailwind.css">
+    <style>
+      .lang-flag { filter: grayscale(1); opacity: .45; transition: filter .15s, opacity .15s; }
+      .lang-flag:hover { filter: grayscale(.5); opacity: .75; }
+      .lang-flag.active { filter: none; opacity: 1; }
+    </style>
   </head>
   <body class="bg-white min-h-screen font-sans antialiased">
 
@@ -28,7 +33,7 @@
         
 
         <div class="flex items-center gap-2 pl-4 border-l border-gray-700">
-          <a href="/redgate_handbook/products/flyway/" class="transition rounded-sm overflow-hidden opacity-50 hover:opacity-100" aria-label="English" title="English">
+          <a href="/redgate_handbook/products/flyway/" class="lang-flag rounded-sm overflow-hidden " aria-label="English" title="English">
             <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
               <rect width="30" height="20" fill="#012169"/>
               <path d="M0,0 L30,20 M30,0 L0,20" stroke="#FFFFFF" stroke-width="4"/>
@@ -37,7 +42,7 @@
               <path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.5"/>
             </svg>
           </a>
-          <a href="/redgate_handbook/de/products/flyway/" class="transition rounded-sm overflow-hidden opacity-100" aria-label="Deutsch" title="Deutsch">
+          <a href="/redgate_handbook/de/products/flyway/" class="lang-flag rounded-sm overflow-hidden active" aria-label="Deutsch" title="Deutsch">
             <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
               <rect width="30" height="6.67" y="0" fill="#000000"/>
               <rect width="30" height="6.67" y="6.67" fill="#DD0000"/>
