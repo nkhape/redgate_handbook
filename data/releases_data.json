@@ -1,390 +1,782 @@
 {
   "monitor": {
-    "fetched_at": "2026-06-16",
-    "summary": "Recent releases bring powerful monitoring enhancements across your entire database estate. <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">SQL Agent job monitoring now supports Contained Availability Groups</a>, while <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">native ServiceNow and Microsoft Teams notifications</a> streamline your alerting workflow. For cloud customers, <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">individual query execution monitoring is now available for Azure SQL Database and Azure SQL Managed Instance</a>, giving you deeper visibility into performance issues. The platform has also improved usability with faster load times on disk usage pages and better <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">blocking tree visualization</a>, plus PostgreSQL customers benefit from smarter index change detection in query plans.",
-    "items": [
-      {
-        "version": "14.20.0",
-        "date": "June 10, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "SQL Agent job monitoring now covers Contained Availability Groups, surfacing job definitions, history, activity, and schedules in the Estate Jobs view",
-          "Blocking tree viewer has been redesigned for better usability and control",
-          "Disk usage pages now cache data to reduce load times on subsequent refreshes",
-          "Access token UI now clearly shows which servers each token can access"
-        ]
-      },
-      {
-        "version": "14.19.0",
-        "date": "June 3, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Native ServiceNow and Microsoft Teams notifications are now fully available",
-          "Individual query execution monitoring is now available for Azure SQL Database and Azure SQL Managed Instance",
-          "Databases inaccessible to the monitoring account now show monitoring status clearly in the UI with specific error details",
-          "PostgreSQL query plan history now distinguishes plans using different indexes, making index changes visible"
-        ]
-      },
-      {
-        "version": "14.18.0",
-        "date": "May 28, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Linux host CPU utilization now excludes I/O wait time for more accurate reporting",
-          "Added spills column to Query Executions tab to track tempdb spillover per query",
-          "Virtual machines page now shows effective costs alongside billed costs",
-          "Server role membership change alerts available in Enterprise edition to track privilege escalations"
-        ]
-      },
-      {
-        "version": "14.16.0",
-        "date": "April 23, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "PostgreSQL Aurora reader instances can now be automatically monitored via the cluster",
-          "SQL Server monitoring no longer requires db_owner permissions on tempdb database"
-        ]
-      },
-      {
-        "version": "14.15.0",
-        "date": "April 16, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Alert configuration now allows databases to be excluded by name for multiple alert types",
-          "Virtual machines pages now display cost details for Azure resources",
-          "AI Alert analysis now available for Long-running query, Deadlock, and Blocking process alerts"
-        ]
-      },
-      {
-        "version": "14.14.0",
-        "date": "April 9, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Virtual machines pages now display Azure subscription details",
-          "Custom metric alert details are now included in script and webhook notifications",
-          "Custom metrics are now available for Oracle instances",
-          "Query compare functionality added for PostgreSQL Top queries"
-        ]
-      },
-      {
-        "version": "14.12.0",
-        "date": "March 19, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "New Analysis graph is now the default experience, featuring improved performance and modern design"
-        ]
-      },
-      {
-        "version": "14.11.0",
-        "date": "March 11, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Index sampling is now enabled by default for all PostgreSQL instances",
-          "Blocking processes table now shows system processes and alerts on system process blocking",
-          "Performance improvements when loading host-level metrics with TimescaleDB repository",
-          "Machine processor time metric for Linux hosts now shows CPU usage excluding hypervisor steal time",
-          "AI analysis support added for MongoDB Top queries"
-        ]
-      },
-      {
-        "version": "14.10.0",
-        "date": "March 4, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Top waits data now available for PostgreSQL on server overview and database details pages",
-          "PostgreSQL tracked queries now available from the database overview page",
-          "Custom metrics can now include a secondary SQL query that adds context to alerts"
-        ]
-      },
-      {
-        "version": "14.9.0",
-        "date": "February 18, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Availability Group page now shows backup priority for each replica",
-          "Extended Event sampling support restored for SQL Server 2008R2 SP2 CU12 and SQL Server 2012 SP1 CU6"
-        ]
-      },
-      {
-        "version": "14.8.0",
-        "date": "January 29, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Current activity pages with AI capability now available for Oracle and MySQL instances",
-          "PowerShell Module can now be downloaded by users in any role on the Configuration page"
-        ]
-      },
-      {
-        "version": "14.7.0",
-        "date": "January 22, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Virtual Machines page now displays cloud resource details for Azure VMs in the details sidebar",
-          "Microsoft Teams notifications now include a link to the alert in Redgate Monitor",
-          "All notification types can now be rate limited to prevent notification overload"
-        ]
-      },
-      {
-        "version": "14.6.0",
-        "date": "January 7, 2026",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "SQL Audit tab now available in Security > Permissions for tracking permission changes across instances",
-          "Availability Group overview page now displays whether secondary replicas allow read connections",
-          "Virtual machines running PostgreSQL now supported on Estate > Virtual Machines page",
-          "AI-powered query analysis now available on Current activity tab for SQL Server and PostgreSQL instances"
-        ]
-      },
-      {
-        "version": "14.5.0",
-        "date": "December 11, 2025",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "AI-powered query analysis now supports Oracle and MySQL instances",
-          "Tags can now be applied to SQL Server and PostgreSQL databases",
-          "Alert suppression windows can now be applied to individual databases via tags"
-        ]
-      },
-      {
-        "version": "14.4.0",
-        "date": "December 1, 2025",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Certificate authentication support for Linux PostgreSQL servers now in preview",
-          "Support for PostgreSQL 18 is now available",
-          "Custom text can now be added to alert email notifications",
-          "MySQL instances running on AWS Aurora now supported",
-          "Permissions monitoring now available for Azure Managed Instances"
-        ]
-      },
-      {
-        "version": "14.2.0",
-        "date": "October 29, 2025",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Custom metrics and alerts now available for PostgreSQL",
-          "Alert configuration save failures now displayed in the UI with clear error notifications",
-          "New alert types for Replication job failure and Replication maintenance job failure added",
-          "Estate > Virtual machines page added to monitor virtual machine usage",
-          "Analysis page updated with modern design"
-        ]
-      },
-      {
-        "version": "14.1.0",
-        "date": "October 16, 2025",
-        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
-        "highlights": [
-          "Native ServiceNow integration added to raise incidents when alerts occur",
-          "Native Microsoft Teams integration added for alert notifications",
-          "MySQL instances on Azure Flexible Server now supported",
-          "Oracle Data Guard monitoring now supported",
-          "Query Executions page now shows Memory Grants associated with each query",
-          "Update-RedgateMonitorMonitoredObjectCredential cmdlet enables credential updates for existing monitored servers"
-        ]
-      }
-    ]
+    "en": {
+      "fetched_at": "2026-06-16",
+      "summary": "Recent releases bring powerful monitoring enhancements across your entire database estate. <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">SQL Agent job monitoring now supports Contained Availability Groups</a>, while <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">native ServiceNow and Microsoft Teams notifications</a> streamline your alerting workflow. For cloud customers, <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">individual query execution monitoring is now available for Azure SQL Database and Azure SQL Managed Instance</a>, giving you deeper visibility into performance issues. The platform has also improved usability with faster load times on disk usage pages and better <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">blocking tree visualization</a>, plus PostgreSQL customers benefit from smarter index change detection in query plans.",
+      "items": [
+        {
+          "version": "14.20.0",
+          "date": "June 10, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "SQL Agent job monitoring now covers Contained Availability Groups, surfacing job definitions, history, activity, and schedules in the Estate Jobs view",
+            "Blocking tree viewer has been redesigned for better usability and control",
+            "Disk usage pages now cache data to reduce load times on subsequent refreshes",
+            "Access token UI now clearly shows which servers each token can access"
+          ]
+        },
+        {
+          "version": "14.19.0",
+          "date": "June 3, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Native ServiceNow and Microsoft Teams notifications are now fully available",
+            "Individual query execution monitoring is now available for Azure SQL Database and Azure SQL Managed Instance",
+            "Databases inaccessible to the monitoring account now show monitoring status clearly in the UI with specific error details",
+            "PostgreSQL query plan history now distinguishes plans using different indexes, making index changes visible"
+          ]
+        },
+        {
+          "version": "14.18.0",
+          "date": "May 28, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Linux host CPU utilization now excludes I/O wait time for more accurate reporting",
+            "Added spills column to Query Executions tab to track tempdb spillover per query",
+            "Virtual machines page now shows effective costs alongside billed costs",
+            "Server role membership change alerts available in Enterprise edition to track privilege escalations"
+          ]
+        },
+        {
+          "version": "14.16.0",
+          "date": "April 23, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "PostgreSQL Aurora reader instances can now be automatically monitored via the cluster",
+            "SQL Server monitoring no longer requires db_owner permissions on tempdb database"
+          ]
+        },
+        {
+          "version": "14.15.0",
+          "date": "April 16, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Alert configuration now allows databases to be excluded by name for multiple alert types",
+            "Virtual machines pages now display cost details for Azure resources",
+            "AI Alert analysis now available for Long-running query, Deadlock, and Blocking process alerts"
+          ]
+        },
+        {
+          "version": "14.14.0",
+          "date": "April 9, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Virtual machines pages now display Azure subscription details",
+            "Custom metric alert details are now included in script and webhook notifications",
+            "Custom metrics are now available for Oracle instances",
+            "Query compare functionality added for PostgreSQL Top queries"
+          ]
+        },
+        {
+          "version": "14.12.0",
+          "date": "March 19, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "New Analysis graph is now the default experience, featuring improved performance and modern design"
+          ]
+        },
+        {
+          "version": "14.11.0",
+          "date": "March 11, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Index sampling is now enabled by default for all PostgreSQL instances",
+            "Blocking processes table now shows system processes and alerts on system process blocking",
+            "Performance improvements when loading host-level metrics with TimescaleDB repository",
+            "Machine processor time metric for Linux hosts now shows CPU usage excluding hypervisor steal time",
+            "AI analysis support added for MongoDB Top queries"
+          ]
+        },
+        {
+          "version": "14.10.0",
+          "date": "March 4, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Top waits data now available for PostgreSQL on server overview and database details pages",
+            "PostgreSQL tracked queries now available from the database overview page",
+            "Custom metrics can now include a secondary SQL query that adds context to alerts"
+          ]
+        },
+        {
+          "version": "14.9.0",
+          "date": "February 18, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Availability Group page now shows backup priority for each replica",
+            "Extended Event sampling support restored for SQL Server 2008R2 SP2 CU12 and SQL Server 2012 SP1 CU6"
+          ]
+        },
+        {
+          "version": "14.8.0",
+          "date": "January 29, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Current activity pages with AI capability now available for Oracle and MySQL instances",
+            "PowerShell Module can now be downloaded by users in any role on the Configuration page"
+          ]
+        },
+        {
+          "version": "14.7.0",
+          "date": "January 22, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Virtual Machines page now displays cloud resource details for Azure VMs in the details sidebar",
+            "Microsoft Teams notifications now include a link to the alert in Redgate Monitor",
+            "All notification types can now be rate limited to prevent notification overload"
+          ]
+        },
+        {
+          "version": "14.6.0",
+          "date": "January 7, 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "SQL Audit tab now available in Security > Permissions for tracking permission changes across instances",
+            "Availability Group overview page now displays whether secondary replicas allow read connections",
+            "Virtual machines running PostgreSQL now supported on Estate > Virtual Machines page",
+            "AI-powered query analysis now available on Current activity tab for SQL Server and PostgreSQL instances"
+          ]
+        },
+        {
+          "version": "14.5.0",
+          "date": "December 11, 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "AI-powered query analysis now supports Oracle and MySQL instances",
+            "Tags can now be applied to SQL Server and PostgreSQL databases",
+            "Alert suppression windows can now be applied to individual databases via tags"
+          ]
+        },
+        {
+          "version": "14.4.0",
+          "date": "December 1, 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Certificate authentication support for Linux PostgreSQL servers now in preview",
+            "Support for PostgreSQL 18 is now available",
+            "Custom text can now be added to alert email notifications",
+            "MySQL instances running on AWS Aurora now supported",
+            "Permissions monitoring now available for Azure Managed Instances"
+          ]
+        },
+        {
+          "version": "14.2.0",
+          "date": "October 29, 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Custom metrics and alerts now available for PostgreSQL",
+            "Alert configuration save failures now displayed in the UI with clear error notifications",
+            "New alert types for Replication job failure and Replication maintenance job failure added",
+            "Estate > Virtual machines page added to monitor virtual machine usage",
+            "Analysis page updated with modern design"
+          ]
+        },
+        {
+          "version": "14.1.0",
+          "date": "October 16, 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Native ServiceNow integration added to raise incidents when alerts occur",
+            "Native Microsoft Teams integration added for alert notifications",
+            "MySQL instances on Azure Flexible Server now supported",
+            "Oracle Data Guard monitoring now supported",
+            "Query Executions page now shows Memory Grants associated with each query",
+            "Update-RedgateMonitorMonitoredObjectCredential cmdlet enables credential updates for existing monitored servers"
+          ]
+        }
+      ]
+    },
+    "de": {
+      "fetched_at": "2026-06-16",
+      "summary": "Aktuelle Releases bringen leistungsstarke Verbesserungen für die Überwachung Ihres gesamten Datenbankbestands. <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Die SQL-Agent-Jobüberwachung unterstützt jetzt Contained Availability Groups</a>, während <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">native ServiceNow- und Microsoft-Teams-Benachrichtigungen</a> Ihren Alarmierungs-Workflow optimieren. Für Cloud-Kunden ist <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">die Überwachung einzelner Abfrageausführungen jetzt für Azure SQL Database und Azure SQL Managed Instance verfügbar</a> und bietet tiefere Einblicke in Performance-Probleme. Die Plattform wurde zudem in der Bedienbarkeit verbessert, mit schnelleren Ladezeiten auf den Speicherplatzseiten und einer besseren <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Blocking-Tree-Visualisierung</a>; PostgreSQL-Kunden profitieren außerdem von einer intelligenteren Erkennung von Indexänderungen in Abfrageplänen.",
+      "items": [
+        {
+          "version": "14.20.0",
+          "date": "10. Juni 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Die SQL-Agent-Jobüberwachung deckt jetzt Contained Availability Groups ab und zeigt Jobdefinitionen, Verlauf, Aktivität und Zeitpläne in der Ansicht „Estate Jobs\" an",
+            "Die Blocking-Tree-Ansicht wurde für bessere Bedienbarkeit und Kontrolle neu gestaltet",
+            "Speicherplatzseiten zwischenspeichern jetzt Daten, um Ladezeiten bei erneutem Aufruf zu verkürzen",
+            "Die Zugriffstoken-Oberfläche zeigt jetzt klar an, auf welche Server jedes Token zugreifen kann"
+          ]
+        },
+        {
+          "version": "14.19.0",
+          "date": "3. Juni 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Native ServiceNow- und Microsoft-Teams-Benachrichtigungen sind jetzt vollständig verfügbar",
+            "Die Überwachung einzelner Abfrageausführungen ist jetzt für Azure SQL Database und Azure SQL Managed Instance verfügbar",
+            "Für das Überwachungskonto nicht zugängliche Datenbanken zeigen den Überwachungsstatus jetzt klar in der Oberfläche mit spezifischen Fehlerdetails an",
+            "Der PostgreSQL-Abfrageplanverlauf unterscheidet jetzt Pläne mit unterschiedlichen Indizes und macht Indexänderungen sichtbar"
+          ]
+        },
+        {
+          "version": "14.18.0",
+          "date": "28. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Die CPU-Auslastung von Linux-Hosts schließt jetzt I/O-Wartezeiten aus, für ein genaueres Reporting",
+            "Neue Spalte „Spills\" im Tab „Query Executions\", um tempdb-Spillover pro Abfrage nachzuverfolgen",
+            "Die Seite „Virtuelle Maschinen\" zeigt jetzt tatsächliche Kosten neben den abgerechneten Kosten an",
+            "Alarme bei Änderungen der Serverrollen-Mitgliedschaft in der Enterprise-Edition verfügbar, um Rechteausweitungen nachzuverfolgen"
+          ]
+        },
+        {
+          "version": "14.16.0",
+          "date": "23. April 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "PostgreSQL-Aurora-Reader-Instanzen können jetzt automatisch über den Cluster überwacht werden",
+            "Die SQL-Server-Überwachung benötigt keine db_owner-Berechtigungen mehr für die tempdb-Datenbank"
+          ]
+        },
+        {
+          "version": "14.15.0",
+          "date": "16. April 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Die Alarmkonfiguration erlaubt jetzt, Datenbanken für mehrere Alarmtypen namentlich auszuschließen",
+            "Die Seiten „Virtuelle Maschinen\" zeigen jetzt Kostendetails für Azure-Ressourcen an",
+            "KI-Alarmanalyse jetzt verfügbar für Alarme zu lang laufenden Abfragen, Deadlocks und blockierenden Prozessen"
+          ]
+        },
+        {
+          "version": "14.14.0",
+          "date": "9. April 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Die Seiten „Virtuelle Maschinen\" zeigen jetzt Details zum Azure-Abonnement an",
+            "Details zu benutzerdefinierten Metrik-Alarmen sind jetzt in Skript- und Webhook-Benachrichtigungen enthalten",
+            "Benutzerdefinierte Metriken sind jetzt für Oracle-Instanzen verfügbar",
+            "Funktion zum Abfragevergleich für PostgreSQL-Top-Abfragen hinzugefügt"
+          ]
+        },
+        {
+          "version": "14.12.0",
+          "date": "19. März 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Der neue Analyse-Graph ist jetzt die Standardansicht, mit verbesserter Performance und modernem Design"
+          ]
+        },
+        {
+          "version": "14.11.0",
+          "date": "11. März 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Index-Sampling ist jetzt standardmäßig für alle PostgreSQL-Instanzen aktiviert",
+            "Die Tabelle der blockierenden Prozesse zeigt jetzt Systemprozesse an und alarmiert bei Blockierungen durch Systemprozesse",
+            "Performance-Verbesserungen beim Laden von Metriken auf Host-Ebene mit TimescaleDB-Repository",
+            "Die Prozessorzeit-Metrik für Linux-Hosts zeigt jetzt die CPU-Auslastung ohne Hypervisor-Steal-Time an",
+            "KI-Analyse-Unterstützung für MongoDB-Top-Abfragen hinzugefügt"
+          ]
+        },
+        {
+          "version": "14.10.0",
+          "date": "4. März 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Top-Waits-Daten jetzt für PostgreSQL auf den Seiten „Serverübersicht\" und „Datenbankdetails\" verfügbar",
+            "Nachverfolgte PostgreSQL-Abfragen jetzt über die Datenbankübersichtsseite verfügbar",
+            "Benutzerdefinierte Metriken können jetzt eine zweite SQL-Abfrage enthalten, die Alarmen zusätzlichen Kontext liefert"
+          ]
+        },
+        {
+          "version": "14.9.0",
+          "date": "18. Februar 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Die Availability-Group-Seite zeigt jetzt die Backup-Priorität für jede Replik an",
+            "Unterstützung für Extended-Event-Sampling für SQL Server 2008R2 SP2 CU12 und SQL Server 2012 SP1 CU6 wiederhergestellt"
+          ]
+        },
+        {
+          "version": "14.8.0",
+          "date": "29. Januar 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Seiten für aktuelle Aktivitäten mit KI-Funktion jetzt für Oracle- und MySQL-Instanzen verfügbar",
+            "Das PowerShell-Modul kann jetzt von Nutzern jeder Rolle auf der Konfigurationsseite heruntergeladen werden"
+          ]
+        },
+        {
+          "version": "14.7.0",
+          "date": "22. Januar 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Die Seite „Virtuelle Maschinen\" zeigt jetzt Cloud-Ressourcendetails für Azure-VMs in der Detail-Seitenleiste an",
+            "Microsoft-Teams-Benachrichtigungen enthalten jetzt einen Link zum Alarm in Redgate Monitor",
+            "Alle Benachrichtigungstypen können jetzt ratenbegrenzt werden, um eine Benachrichtigungsflut zu vermeiden"
+          ]
+        },
+        {
+          "version": "14.6.0",
+          "date": "7. Januar 2026",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Der Tab „SQL Audit\" ist jetzt unter Security > Permissions verfügbar, um Berechtigungsänderungen instanzübergreifend nachzuverfolgen",
+            "Die Übersichtsseite der Availability Group zeigt jetzt an, ob sekundäre Repliken Lesezugriffe erlauben",
+            "Virtuelle Maschinen mit PostgreSQL werden jetzt auf der Seite Estate > Virtual Machines unterstützt",
+            "KI-gestützte Abfrageanalyse jetzt im Tab „Aktuelle Aktivität\" für SQL-Server- und PostgreSQL-Instanzen verfügbar"
+          ]
+        },
+        {
+          "version": "14.5.0",
+          "date": "11. Dezember 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "KI-gestützte Abfrageanalyse unterstützt jetzt Oracle- und MySQL-Instanzen",
+            "Tags können jetzt auf SQL-Server- und PostgreSQL-Datenbanken angewendet werden",
+            "Alarmunterdrückungsfenster können jetzt über Tags auf einzelne Datenbanken angewendet werden"
+          ]
+        },
+        {
+          "version": "14.4.0",
+          "date": "1. Dezember 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Unterstützung für Zertifikatsauthentifizierung für Linux-PostgreSQL-Server jetzt in der Vorschau",
+            "Unterstützung für PostgreSQL 18 ist jetzt verfügbar",
+            "Benutzerdefinierter Text kann jetzt zu E-Mail-Benachrichtigungen bei Alarmen hinzugefügt werden",
+            "MySQL-Instanzen auf AWS Aurora werden jetzt unterstützt",
+            "Berechtigungsüberwachung jetzt für Azure Managed Instances verfügbar"
+          ]
+        },
+        {
+          "version": "14.2.0",
+          "date": "29. Oktober 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Benutzerdefinierte Metriken und Alarme jetzt für PostgreSQL verfügbar",
+            "Fehler beim Speichern der Alarmkonfiguration werden jetzt mit klaren Fehlermeldungen in der Oberfläche angezeigt",
+            "Neue Alarmtypen für fehlgeschlagene Replikationsjobs und fehlgeschlagene Replikations-Wartungsjobs hinzugefügt",
+            "Seite Estate > Virtual Machines hinzugefügt, um die Nutzung virtueller Maschinen zu überwachen",
+            "Analyseseite mit modernem Design aktualisiert"
+          ]
+        },
+        {
+          "version": "14.1.0",
+          "date": "16. Oktober 2025",
+          "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+          "highlights": [
+            "Native ServiceNow-Integration hinzugefügt, um bei Alarmen automatisch Incidents zu erstellen",
+            "Native Microsoft-Teams-Integration für Alarmbenachrichtigungen hinzugefügt",
+            "MySQL-Instanzen auf Azure Flexible Server werden jetzt unterstützt",
+            "Überwachung von Oracle Data Guard wird jetzt unterstützt",
+            "Die Seite „Query Executions\" zeigt jetzt die mit jeder Abfrage verbundenen Memory Grants an",
+            "Das Cmdlet Update-RedgateMonitorMonitoredObjectCredential ermöglicht die Aktualisierung von Zugangsdaten für bestehende überwachte Server"
+          ]
+        }
+      ]
+    }
   },
   "flyway": {
-    "fetched_at": "2026-06-16",
-    "summary": "Recent releases bring powerful new capabilities for database management and deployment workflows. The <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">PostgreSQL filter UI now supports multiple rules per object type</a>, giving you fine-grained control over comparison and deployment. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Code review is now integrated directly into deployment and generation screens</a>, surfacing potential issues before scripts run. For Oracle deployments, <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">new options add existence checks to INSERT statements and permissions checks to GRANT/REVOKE statements</a>, reducing deployment risk. <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">GitHub Actions workflow generation is now available</a>, streamlining CI/CD integration. Teams also benefit from <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">expanded code analysis rules</a> and <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Native Connectors support for SQLite and enhanced PostgreSQL/MySQL progress reporting</a>.",
-    "items": [
-      {
-        "version": "9.5.5",
-        "date": "June 4, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "PostgreSQL filter UI now allows filtering across any object type, giving you more flexibility in managing database comparisons."
-        ]
-      },
-      {
-        "version": "12.8.0",
-        "date": "June 4, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "Offline permits now show a warning when they're expiring within the next 30 days, helping you avoid deployment disruptions.",
-          "Progress reporting for PostgreSQL, MySQL, and SQLite is now faster and more transparent."
-        ]
-      },
-      {
-        "version": "9.5.4",
-        "date": "June 3, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Postgres filter editor now allows multiple rules per object type, enabling complex filtering patterns like 'include when table name equals X' alongside exclude rules."
-        ]
-      },
-      {
-        "version": "12.7.0",
-        "date": "May 29, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "You can now load custom SQLFluff rules into the Check command, enabling organization-specific code quality standards."
-        ]
-      },
-      {
-        "version": "9.5.3",
-        "date": "May 27, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Oracle deployments now support adding existence checks to index creation statements, reducing script failures due to duplicate objects.",
-          "Sign-in link can now be copied to clipboard, making authentication easier in restricted browser environments."
-        ]
-      },
-      {
-        "version": "9.5.2",
-        "date": "May 26, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Filters UI for PostgreSQL projects is now available, letting you exclude specific objects during comparison.",
-          "Flyway Desktop now restores your previously open tabs when you restart the application."
-        ]
-      },
-      {
-        "version": "12.6.2",
-        "date": "May 21, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "Environment variable resolver syntax now works across all Flyway configuration parameters, not just connection properties, giving you more flexibility in automation."
-        ]
-      },
-      {
-        "version": "9.5.0",
-        "date": "May 18, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Automated deployment workflows now support manual approval steps for GitHub environments, enabling controlled, auditable deployments."
-        ]
-      },
-      {
-        "version": "12.6.0",
-        "date": "May 8, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "Deploy command now supports Native Connectors mode, improving performance and reducing JDBC connectivity overhead.",
-          "Auth command now defers to existing license providers instead of re-authenticating, streamlining your licensing workflow."
-        ]
-      },
-      {
-        "version": "9.4.3",
-        "date": "May 7, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "SQL Server deployments now support existence checks for INSERT statements, preventing errors from duplicate rows.",
-          "Oracle checksumIncludeReferencedScripts parameter is now supported in migration commands, giving you more control over how migrations are validated."
-        ]
-      },
-      {
-        "version": "9.4.2",
-        "date": "April 29, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Automated Deployment page now generates GitHub Actions workflow files automatically, eliminating manual CI/CD setup."
-        ]
-      },
-      {
-        "version": "12.5.0",
-        "date": "April 27, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "Azure Key Vault is now supported as a secrets resolver, enabling secure credential management in Azure environments.",
-          "Cassandra now supports Native Connectors mode for faster, more reliable deployments."
-        ]
-      },
-      {
-        "version": "9.3.4",
-        "date": "April 17, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Code review issues now underline the full line of problematic code in addition to adding an icon, making issues easier to spot and fix."
-        ]
-      },
-      {
-        "version": "9.3.3",
-        "date": "April 16, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Apply fix actions are now available in the code review panel for issues with suggested fixes, letting you resolve problems with one click."
-        ]
-      },
-      {
-        "version": "12.4.0",
-        "date": "April 14, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "New RG23 rule allows you to configure and enforce forbidden alias names in your SQL scripts.",
-          "Gradle plugin now supports Gradle's configuration cache, improving build performance for teams using Gradle.",
-          "Check command now generates SARIF 2.1.0 reports compatible with GitHub Code Scanning and Azure DevOps for integrated security scanning."
-        ]
-      },
-      {
-        "version": "9.2.3",
-        "date": "April 7, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "New Oracle option IncludePermissionsUserCheck lets you script conditional GRANT and REVOKE statements that skip execution if the current user is the grantee, preventing permission errors.",
-          "Projects with deprecated configuration fields can now be automatically upgraded when opened, eliminating manual migration steps."
-        ]
-      },
-      {
-        "version": "12.2.0",
-        "date": "March 26, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "Three new code review rules (RG19, RG20, RG21) enforce naming conventions for tables, object names, and custom prefixes, improving code consistency across teams.",
-          "Check code now generates SARIF reports for integration with GitHub Code Scanning and Azure DevOps, enabling centralized code quality tracking."
-        ]
-      },
-      {
-        "version": "9.2.0",
-        "date": "March 17, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Code review is now displayed on generate migrations and deployment script screens, surfacing potential issues before deployment."
-        ]
-      },
-      {
-        "version": "12.1.0",
-        "date": "March 9, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "The init command can now automatically update TOML configuration files for Desktop users, simplifying configuration management.",
-          "Foundational support for Babelfish has been added, expanding database compatibility."
-        ]
-      },
-      {
-        "version": "9.1.0",
-        "date": "February 18, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Oracle comparison now offers options to ignore invisible columns and invisible indexes, reducing unnecessary drift detection.",
-          "Multiple project tabs can now be opened simultaneously, improving your workflow when managing multiple databases."
-        ]
-      },
-      {
-        "version": "9.0.3",
-        "date": "February 12, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Version control diff viewer now includes previous/next change navigation buttons, making it easier to review multiple changes."
-        ]
-      },
-      {
-        "version": "12.0.2",
-        "date": "February 20, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
-        "highlights": [
-          "New -check.generateReport flag lets you control whether check writes results to a file, giving you more flexibility in automated workflows.",
-          "Auth command can now output results as JSON when outputType=json is set, enabling integration with JSON-based pipelines."
-        ]
-      },
-      {
-        "version": "9.0.1",
-        "date": "February 5, 2026",
-        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
-        "highlights": [
-          "Automated deployment page now includes scripts for deploying specific migrations and rolling back deployments, giving you granular deployment control."
-        ]
-      }
-    ]
+    "en": {
+      "fetched_at": "2026-06-16",
+      "summary": "Recent releases bring powerful new capabilities for database management and deployment workflows. The <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">PostgreSQL filter UI now supports multiple rules per object type</a>, giving you fine-grained control over comparison and deployment. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Code review is now integrated directly into deployment and generation screens</a>, surfacing potential issues before scripts run. For Oracle deployments, <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">new options add existence checks to INSERT statements and permissions checks to GRANT/REVOKE statements</a>, reducing deployment risk. <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">GitHub Actions workflow generation is now available</a>, streamlining CI/CD integration. Teams also benefit from <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">expanded code analysis rules</a> and <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Native Connectors support for SQLite and enhanced PostgreSQL/MySQL progress reporting</a>.",
+      "items": [
+        {
+          "version": "9.5.5",
+          "date": "June 4, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "PostgreSQL filter UI now allows filtering across any object type, giving you more flexibility in managing database comparisons."
+          ]
+        },
+        {
+          "version": "12.8.0",
+          "date": "June 4, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Offline permits now show a warning when they're expiring within the next 30 days, helping you avoid deployment disruptions.",
+            "Progress reporting for PostgreSQL, MySQL, and SQLite is now faster and more transparent."
+          ]
+        },
+        {
+          "version": "9.5.4",
+          "date": "June 3, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Postgres filter editor now allows multiple rules per object type, enabling complex filtering patterns like 'include when table name equals X' alongside exclude rules."
+          ]
+        },
+        {
+          "version": "12.7.0",
+          "date": "May 29, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "You can now load custom SQLFluff rules into the Check command, enabling organization-specific code quality standards."
+          ]
+        },
+        {
+          "version": "9.5.3",
+          "date": "May 27, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Oracle deployments now support adding existence checks to index creation statements, reducing script failures due to duplicate objects.",
+            "Sign-in link can now be copied to clipboard, making authentication easier in restricted browser environments."
+          ]
+        },
+        {
+          "version": "9.5.2",
+          "date": "May 26, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Filters UI for PostgreSQL projects is now available, letting you exclude specific objects during comparison.",
+            "Flyway Desktop now restores your previously open tabs when you restart the application."
+          ]
+        },
+        {
+          "version": "12.6.2",
+          "date": "May 21, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Environment variable resolver syntax now works across all Flyway configuration parameters, not just connection properties, giving you more flexibility in automation."
+          ]
+        },
+        {
+          "version": "9.5.0",
+          "date": "May 18, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Automated deployment workflows now support manual approval steps for GitHub environments, enabling controlled, auditable deployments."
+          ]
+        },
+        {
+          "version": "12.6.0",
+          "date": "May 8, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Deploy command now supports Native Connectors mode, improving performance and reducing JDBC connectivity overhead.",
+            "Auth command now defers to existing license providers instead of re-authenticating, streamlining your licensing workflow."
+          ]
+        },
+        {
+          "version": "9.4.3",
+          "date": "May 7, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "SQL Server deployments now support existence checks for INSERT statements, preventing errors from duplicate rows.",
+            "Oracle checksumIncludeReferencedScripts parameter is now supported in migration commands, giving you more control over how migrations are validated."
+          ]
+        },
+        {
+          "version": "9.4.2",
+          "date": "April 29, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Automated Deployment page now generates GitHub Actions workflow files automatically, eliminating manual CI/CD setup."
+          ]
+        },
+        {
+          "version": "12.5.0",
+          "date": "April 27, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Azure Key Vault is now supported as a secrets resolver, enabling secure credential management in Azure environments.",
+            "Cassandra now supports Native Connectors mode for faster, more reliable deployments."
+          ]
+        },
+        {
+          "version": "9.3.4",
+          "date": "April 17, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Code review issues now underline the full line of problematic code in addition to adding an icon, making issues easier to spot and fix."
+          ]
+        },
+        {
+          "version": "9.3.3",
+          "date": "April 16, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Apply fix actions are now available in the code review panel for issues with suggested fixes, letting you resolve problems with one click."
+          ]
+        },
+        {
+          "version": "12.4.0",
+          "date": "April 14, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "New RG23 rule allows you to configure and enforce forbidden alias names in your SQL scripts.",
+            "Gradle plugin now supports Gradle's configuration cache, improving build performance for teams using Gradle.",
+            "Check command now generates SARIF 2.1.0 reports compatible with GitHub Code Scanning and Azure DevOps for integrated security scanning."
+          ]
+        },
+        {
+          "version": "9.2.3",
+          "date": "April 7, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "New Oracle option IncludePermissionsUserCheck lets you script conditional GRANT and REVOKE statements that skip execution if the current user is the grantee, preventing permission errors.",
+            "Projects with deprecated configuration fields can now be automatically upgraded when opened, eliminating manual migration steps."
+          ]
+        },
+        {
+          "version": "12.2.0",
+          "date": "March 26, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Three new code review rules (RG19, RG20, RG21) enforce naming conventions for tables, object names, and custom prefixes, improving code consistency across teams.",
+            "Check code now generates SARIF reports for integration with GitHub Code Scanning and Azure DevOps, enabling centralized code quality tracking."
+          ]
+        },
+        {
+          "version": "9.2.0",
+          "date": "March 17, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Code review is now displayed on generate migrations and deployment script screens, surfacing potential issues before deployment."
+          ]
+        },
+        {
+          "version": "12.1.0",
+          "date": "March 9, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "The init command can now automatically update TOML configuration files for Desktop users, simplifying configuration management.",
+            "Foundational support for Babelfish has been added, expanding database compatibility."
+          ]
+        },
+        {
+          "version": "9.1.0",
+          "date": "February 18, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Oracle comparison now offers options to ignore invisible columns and invisible indexes, reducing unnecessary drift detection.",
+            "Multiple project tabs can now be opened simultaneously, improving your workflow when managing multiple databases."
+          ]
+        },
+        {
+          "version": "9.0.3",
+          "date": "February 12, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Version control diff viewer now includes previous/next change navigation buttons, making it easier to review multiple changes."
+          ]
+        },
+        {
+          "version": "12.0.2",
+          "date": "February 20, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "New -check.generateReport flag lets you control whether check writes results to a file, giving you more flexibility in automated workflows.",
+            "Auth command can now output results as JSON when outputType=json is set, enabling integration with JSON-based pipelines."
+          ]
+        },
+        {
+          "version": "9.0.1",
+          "date": "February 5, 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Automated deployment page now includes scripts for deploying specific migrations and rolling back deployments, giving you granular deployment control."
+          ]
+        }
+      ]
+    },
+    "de": {
+      "fetched_at": "2026-06-16",
+      "summary": "Aktuelle Releases bringen leistungsstarke neue Funktionen für Datenbankverwaltung und Deployment-Workflows. <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Die PostgreSQL-Filteroberfläche unterstützt jetzt mehrere Regeln pro Objekttyp</a> und gibt Ihnen so eine feingranulare Kontrolle über Vergleich und Deployment. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Code Review ist jetzt direkt in die Deployment- und Generierungsbildschirme integriert</a> und deckt potenzielle Probleme auf, bevor Skripte ausgeführt werden. Für Oracle-Deployments fügen <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">neue Optionen Existenzprüfungen für INSERT-Anweisungen und Berechtigungsprüfungen für GRANT-/REVOKE-Anweisungen hinzu</a>, was das Deployment-Risiko verringert. <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Die Generierung von GitHub-Actions-Workflows ist jetzt verfügbar</a> und vereinfacht die CI/CD-Integration. Teams profitieren außerdem von <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">erweiterten Code-Analyseregeln</a> und <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Native-Connectors-Unterstützung für SQLite sowie verbessertem Fortschritts-Reporting für PostgreSQL/MySQL</a>.",
+      "items": [
+        {
+          "version": "9.5.5",
+          "date": "4. Juni 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Die PostgreSQL-Filteroberfläche ermöglicht jetzt das Filtern über beliebige Objekttypen hinweg und bietet Ihnen mehr Flexibilität bei der Verwaltung von Datenbankvergleichen."
+          ]
+        },
+        {
+          "version": "12.8.0",
+          "date": "4. Juni 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Offline-Lizenzen zeigen jetzt eine Warnung an, wenn sie innerhalb der nächsten 30 Tage ablaufen, damit Sie Unterbrechungen beim Deployment vermeiden können.",
+            "Das Fortschritts-Reporting für PostgreSQL, MySQL und SQLite ist jetzt schneller und transparenter."
+          ]
+        },
+        {
+          "version": "9.5.4",
+          "date": "3. Juni 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Der Postgres-Filtereditor erlaubt jetzt mehrere Regeln pro Objekttyp und ermöglicht komplexe Filtermuster wie „einschließen, wenn Tabellenname gleich X\" neben Ausschlussregeln."
+          ]
+        },
+        {
+          "version": "12.7.0",
+          "date": "29. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Sie können jetzt benutzerdefinierte SQLFluff-Regeln in den Check-Befehl laden, um organisationsspezifische Code-Qualitätsstandards durchzusetzen."
+          ]
+        },
+        {
+          "version": "9.5.3",
+          "date": "27. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Oracle-Deployments unterstützen jetzt das Hinzufügen von Existenzprüfungen zu Index-Erstellungsanweisungen, wodurch Skriptfehler durch doppelte Objekte reduziert werden.",
+            "Der Anmeldelink kann jetzt in die Zwischenablage kopiert werden, was die Authentifizierung in eingeschränkten Browserumgebungen erleichtert."
+          ]
+        },
+        {
+          "version": "9.5.2",
+          "date": "26. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Die Filteroberfläche für PostgreSQL-Projekte ist jetzt verfügbar und ermöglicht es Ihnen, bestimmte Objekte beim Vergleich auszuschließen.",
+            "Flyway Desktop stellt beim Neustart der Anwendung jetzt Ihre zuvor geöffneten Tabs wieder her."
+          ]
+        },
+        {
+          "version": "12.6.2",
+          "date": "21. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Die Syntax zur Auflösung von Umgebungsvariablen funktioniert jetzt bei allen Flyway-Konfigurationsparametern, nicht nur bei Verbindungseigenschaften, was Ihnen mehr Flexibilität bei der Automatisierung gibt."
+          ]
+        },
+        {
+          "version": "9.5.0",
+          "date": "18. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Automatisierte Deployment-Workflows unterstützen jetzt manuelle Freigabeschritte für GitHub-Umgebungen und ermöglichen so kontrollierte, nachvollziehbare Deployments."
+          ]
+        },
+        {
+          "version": "12.6.0",
+          "date": "8. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Der Deploy-Befehl unterstützt jetzt den Native-Connectors-Modus, was die Performance verbessert und den JDBC-Verbindungs-Overhead reduziert.",
+            "Der Auth-Befehl greift jetzt auf bestehende Lizenzanbieter zurück, statt erneut zu authentifizieren, und vereinfacht so Ihren Lizenzierungs-Workflow."
+          ]
+        },
+        {
+          "version": "9.4.3",
+          "date": "7. Mai 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "SQL-Server-Deployments unterstützen jetzt Existenzprüfungen für INSERT-Anweisungen und verhindern so Fehler durch doppelte Zeilen.",
+            "Der Oracle-Parameter checksumIncludeReferencedScripts wird jetzt in Migrationsbefehlen unterstützt und gibt Ihnen mehr Kontrolle darüber, wie Migrationen validiert werden."
+          ]
+        },
+        {
+          "version": "9.4.2",
+          "date": "29. April 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Die Seite „Automated Deployment\" generiert jetzt automatisch GitHub-Actions-Workflow-Dateien und macht die manuelle CI/CD-Einrichtung überflüssig."
+          ]
+        },
+        {
+          "version": "12.5.0",
+          "date": "27. April 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Azure Key Vault wird jetzt als Secrets-Resolver unterstützt und ermöglicht eine sichere Verwaltung von Zugangsdaten in Azure-Umgebungen.",
+            "Cassandra unterstützt jetzt den Native-Connectors-Modus für schnellere und zuverlässigere Deployments."
+          ]
+        },
+        {
+          "version": "9.3.4",
+          "date": "17. April 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Code-Review-Probleme unterstreichen jetzt zusätzlich zum Symbol die gesamte problematische Codezeile, wodurch Probleme leichter zu erkennen und zu beheben sind."
+          ]
+        },
+        {
+          "version": "9.3.3",
+          "date": "16. April 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Im Code-Review-Panel stehen jetzt „Fix anwenden\"-Aktionen für Probleme mit Lösungsvorschlägen zur Verfügung, mit denen Sie Probleme mit einem Klick beheben können."
+          ]
+        },
+        {
+          "version": "12.4.0",
+          "date": "14. April 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Die neue Regel RG23 ermöglicht es Ihnen, verbotene Alias-Namen in Ihren SQL-Skripten zu konfigurieren und durchzusetzen.",
+            "Das Gradle-Plugin unterstützt jetzt den Konfigurations-Cache von Gradle und verbessert so die Build-Performance für Teams, die Gradle verwenden.",
+            "Der Check-Befehl generiert jetzt SARIF-2.1.0-Reports, die mit GitHub Code Scanning und Azure DevOps kompatibel sind, für integriertes Security-Scanning."
+          ]
+        },
+        {
+          "version": "9.2.3",
+          "date": "7. April 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Die neue Oracle-Option IncludePermissionsUserCheck ermöglicht das Skripten bedingter GRANT- und REVOKE-Anweisungen, die die Ausführung überspringen, wenn der aktuelle Nutzer der Empfänger ist, und verhindert so Berechtigungsfehler.",
+            "Projekte mit veralteten Konfigurationsfeldern können beim Öffnen jetzt automatisch aktualisiert werden, wodurch manuelle Migrationsschritte entfallen."
+          ]
+        },
+        {
+          "version": "12.2.0",
+          "date": "26. März 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Drei neue Code-Review-Regeln (RG19, RG20, RG21) setzen Namenskonventionen für Tabellen, Objektnamen und benutzerdefinierte Präfixe durch und verbessern so die Code-Konsistenz teamübergreifend.",
+            "Der Check-Befehl generiert jetzt SARIF-Reports zur Integration mit GitHub Code Scanning und Azure DevOps und ermöglicht so eine zentrale Nachverfolgung der Code-Qualität."
+          ]
+        },
+        {
+          "version": "9.2.0",
+          "date": "17. März 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Code Review wird jetzt auf den Bildschirmen für die Migrationsgenerierung und Deployment-Skripte angezeigt und deckt potenzielle Probleme vor dem Deployment auf."
+          ]
+        },
+        {
+          "version": "12.1.0",
+          "date": "9. März 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Der Init-Befehl kann jetzt TOML-Konfigurationsdateien für Desktop-Nutzer automatisch aktualisieren und vereinfacht so die Konfigurationsverwaltung.",
+            "Grundlegende Unterstützung für Babelfish wurde hinzugefügt und erweitert die Datenbankkompatibilität."
+          ]
+        },
+        {
+          "version": "9.1.0",
+          "date": "18. Februar 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Der Oracle-Vergleich bietet jetzt Optionen, um unsichtbare Spalten und unsichtbare Indizes zu ignorieren, wodurch unnötige Drift-Erkennung reduziert wird.",
+            "Mehrere Projekt-Tabs können jetzt gleichzeitig geöffnet werden, was Ihren Workflow bei der Verwaltung mehrerer Datenbanken verbessert."
+          ]
+        },
+        {
+          "version": "9.0.3",
+          "date": "12. Februar 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Die Diff-Ansicht der Versionskontrolle enthält jetzt Navigationsschaltflächen für vorherige/nächste Änderung, was die Überprüfung mehrerer Änderungen erleichtert."
+          ]
+        },
+        {
+          "version": "12.0.2",
+          "date": "20. Februar 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+          "highlights": [
+            "Das neue Flag -check.generateReport ermöglicht es Ihnen zu steuern, ob Check Ergebnisse in eine Datei schreibt, was Ihnen mehr Flexibilität in automatisierten Workflows gibt.",
+            "Der Auth-Befehl kann Ergebnisse jetzt als JSON ausgeben, wenn outputType=json gesetzt ist, was die Integration mit JSON-basierten Pipelines ermöglicht."
+          ]
+        },
+        {
+          "version": "9.0.1",
+          "date": "5. Februar 2026",
+          "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+          "highlights": [
+            "Die Seite „Automated Deployment\" enthält jetzt Skripte zum Bereitstellen bestimmter Migrationen und zum Zurückrollen von Deployments, was Ihnen granulare Kontrolle über das Deployment gibt."
+          ]
+        }
+      ]
+    }
   }
 }

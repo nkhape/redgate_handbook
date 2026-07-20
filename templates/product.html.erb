@@ -2,21 +2,21 @@
 
   <!-- Header -->
   <div class="mb-10">
-    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;">Product Overview</p>
+    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;"><%= t(:product_overview_label) %></p>
     <h1 class="text-4xl font-bold text-gray-900 mb-3"><%= h(product_content[:name]) %></h1>
     <p class="text-xl text-gray-500"><%= h(product_content[:tagline]) %></p>
   </div>
 
   <!-- What it does -->
   <section class="mb-8">
-    <h2 class="text-lg font-semibold text-gray-800 mb-2">What it does</h2>
+    <h2 class="text-lg font-semibold text-gray-800 mb-2"><%= t(:what_it_does) %></h2>
     <p class="text-gray-600 leading-relaxed"><%= h(product_content[:description]) %></p>
   </section>
 
   <!-- Supported Platforms -->
   <% if present?(product_content[:platforms]) %>
     <section class="mb-10">
-      <h2 class="text-lg font-semibold text-gray-800 mb-4">Supported Platforms</h2>
+      <h2 class="text-lg font-semibold text-gray-800 mb-4"><%= t(:supported_platforms) %></h2>
       <div class="flex flex-wrap gap-8 items-center">
         <% product_content[:platforms].each do |platform| %>
           <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
@@ -35,7 +35,7 @@
 
   <!-- Key Features -->
   <section class="mb-10">
-    <h2 class="text-lg font-semibold text-gray-800 mb-4">Key Features</h2>
+    <h2 class="text-lg font-semibold text-gray-800 mb-4"><%= t(:key_features) %></h2>
 
     <% if product_content[:features].is_a?(Hash) %>
 
@@ -63,7 +63,7 @@
                 <%# Image — left on wide screens, top on narrow %>
                 <% if present?(feature[:image]) %>
                   <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
-                    <img src="<%= feature[:image] %>" alt="<%= h(feature[:title]) %>" class="w-full h-full object-contain rounded-md block" />
+                    <img src="<%= asset(feature[:image]) %>" alt="<%= h(feature[:title]) %>" class="w-full h-full object-contain rounded-md block" />
                   </div>
                 <% end %>
 
@@ -152,8 +152,13 @@
   <!-- Demo Servers -->
   <% if present?(product_content[:demo_servers]) %>
     <section class="mb-10">
-      <h2 class="text-lg font-semibold text-gray-800 mb-1">Demo Servers</h2>
-      <p class="text-sm text-gray-500 mb-4">Use these on the <a href="https://monitor.red-gate.com" target="_blank" class="hover:underline" style="color:#e8392d;">online demo</a> — you can't break anything!</p>
+      <h2 class="text-lg font-semibold text-gray-800 mb-1"><%= t(:demo_servers) %></h2>
+      <p class="text-sm text-gray-500 mb-4">
+        <%
+          online_demo_link = %(<a href="https://monitor.red-gate.com" target="_blank" class="hover:underline" style="color:#e8392d;">#{h(t(:online_demo_link_text))}</a>)
+        %>
+        <%= t(:demo_servers_intro, link: online_demo_link) %>
+      </p>
       <div class="grid grid-cols-3 gap-x-5 gap-y-4">
         <% product_content[:demo_servers].each do |server| %>
           <a href="<%= server[:url] %>" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
@@ -168,7 +173,7 @@
   <!-- Useful Links -->
   <% if present?(product_content[:links]) %>
     <section class="mb-10">
-      <h2 class="text-lg font-semibold text-gray-800 mb-3">Useful Links</h2>
+      <h2 class="text-lg font-semibold text-gray-800 mb-3"><%= t(:useful_links) %></h2>
       <ul class="space-y-2">
         <% product_content[:links].each do |link| %>
           <li>
@@ -185,7 +190,7 @@
   <% if releases && present?(releases[:items]) %>
     <section class="mb-10">
       <div class="flex items-baseline gap-3 mb-3">
-        <h2 class="text-lg font-semibold text-gray-800">What's New</h2>
+        <h2 class="text-lg font-semibold text-gray-800"><%= t(:whats_new) %></h2>
         <% if present?(releases[:items]) %>
           <% newest = releases[:items].first[:date] %>
           <% oldest = releases[:items].last[:date] %>
@@ -206,7 +211,7 @@
                 <span class="text-sm text-gray-400"><%= h(release[:date]) %></span>
               </div>
               <a href="<%= release[:docs_url] %>" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Full release notes →
+                <%= t(:full_release_notes) %>
               </a>
             </div>
             <ul class="flex flex-col gap-1.5">
@@ -226,8 +231,10 @@
           id="show-more-releases"
           onclick="toggleReleases()"
           class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
-          style="color:#e8392d;">
-          Show <%= releases[:items].length - 5 %> older releases ↓
+          style="color:#e8392d;"
+          data-more-text="<%= h(t(:show_older_releases, count: releases[:items].length - 5)) %>"
+          data-fewer-text="<%= h(t(:show_fewer_releases)) %>">
+          <%= t(:show_older_releases, count: releases[:items].length - 5) %>
         </button>
         <script>
           function toggleReleases() {
@@ -235,19 +242,17 @@
             const btn = document.getElementById('show-more-releases');
             const hidden = extras[0].classList.contains('hidden');
             extras.forEach(el => el.classList.toggle('hidden', !hidden));
-            btn.textContent = hidden
-              ? 'Show fewer releases ↑'
-              : 'Show <%= releases[:items].length - 5 %> older releases ↓';
+            btn.textContent = hidden ? btn.dataset.fewerText : btn.dataset.moreText;
           }
         </script>
       <% end %>
 
       <% if present?(releases[:fetched_at]) %>
         <p class="text-xs text-gray-400 mt-3">
-          Last updated <%= h(releases[:fetched_at]) %>
+          <%= t(:last_updated, date: h(releases[:fetched_at])) %>
           <% oldest = releases[:items].last %>
           <% if oldest %>
-            · Showing changes back to <%= h(oldest[:date]) %>
+            · <%= t(:showing_changes_back_to, date: h(oldest[:date])) %>
           <% end %>
         </p>
       <% end %>
@@ -255,6 +260,6 @@
   <% end %>
 
   <!-- Back link -->
-  <a href="/" class="text-sm font-medium hover:underline" style="color:#e8392d;">← Back to all products</a>
+  <a href="<%= page_path(locale, :home) %>" class="text-sm font-medium hover:underline" style="color:#e8392d;"><%= t(:back_to_all_products) %></a>
 
 </div>

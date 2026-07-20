@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: redgate-handbook
-    runtime: static
-    buildCommand: ""
-    staticPublishPath: ./public

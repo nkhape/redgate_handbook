@@ -52,35 +52,50 @@ def process_with_claude(items)
   items_json = JSON.pretty_generate(items.first(50))
 
   prompt = <<~PROMPT
-    You are writing a "What's New" section for a sales-facing product handbook. Your audience is non-technical salespeople and solutions engineers — not developers.
+    You are writing a "What's New" section for a sales-facing product handbook, in both English and German. Your audience is non-technical salespeople and solutions engineers — not developers.
 
     Below is a JSON array of recent release items from an RSS feed. Each item has a title (containing product name, version, and date), a link to the full release notes, and a description containing HTML with categorised changes.
 
-    Do two things:
+    Do two things, once for English and once for German (natural business German, not a literal translation):
 
     1. Write a summary paragraph (6-8 sentences) aimed at a salesperson preparing for a customer conversation. Use ONLY releases from the last 3 months — ignore anything older. Cover the most impactful changes from that window — what problems do they solve, what value do they add? Group related themes together where it makes sense (e.g. performance improvements, new integrations, usability wins). Be specific and confident, not generic. Where you mention a specific feature, wrap it in an HTML anchor tag linking to the most relevant release's link URL. Return the summary as an HTML string (just the paragraph content, no wrapping <p> tag). No version numbers in the summary.
 
     2. Extract all versions from the last 3 months. For each version:
        - Include ONLY new features and improvements. Skip bug fixes, security patches, internal refactors, and minor changes.
-       - Rewrite each item in plain, jargon-free English focused on business value and customer benefit.
+       - Rewrite each item in plain, jargon-free language focused on business value and customer benefit.
        - Keep each highlight to one clear, punchy sentence.
        - Use the item's link URL as the docs_url for that version.
-       - Parse the version number and date from the title field.
-       - If a version has nothing worth highlighting for a sales audience, skip it entirely.
+       - Parse the version number from the title field. For "date", use the English-locale date format for the English version (e.g. "May 28, 2026") and the German-locale format for the German version (e.g. "28. Mai 2026") — same underlying date, same version list, same docs_url, in both languages.
+       - If a version has nothing worth highlighting for a sales audience, skip it entirely (skip it in both languages, consistently).
 
     Return ONLY valid JSON — no explanation, no markdown, no code fences. Use this exact structure:
     {
-      "summary": "A 2-3 sentence HTML string (no wrapping p tag) with inline anchor links on specific features, written for a salesperson.",
-      "items": [
-        {
-          "version": "14.18.0",
-          "date": "May 28, 2026",
-          "docs_url": "https://...",
-          "highlights": [
-            "A plain-English description of a feature or improvement"
-          ]
-        }
-      ]
+      "en": {
+        "summary": "A 2-3 sentence HTML string (no wrapping p tag) with inline anchor links on specific features, written for a salesperson.",
+        "items": [
+          {
+            "version": "14.18.0",
+            "date": "May 28, 2026",
+            "docs_url": "https://...",
+            "highlights": [
+              "A plain-English description of a feature or improvement"
+            ]
+          }
+        ]
+      },
+      "de": {
+        "summary": "Same as above, in German.",
+        "items": [
+          {
+            "version": "14.18.0",
+            "date": "28. Mai 2026",
+            "docs_url": "https://...",
+            "highlights": [
+              "Dieselbe Beschreibung auf Deutsch"
+            ]
+          }
+        ]
+      }
     }
 
     RSS items:
@@ -99,7 +114,7 @@ def process_with_claude(items)
   request["anthropic-version"] = "2023-06-01"
   request.body = {
     model: "claude-haiku-4-5",
-    max_tokens: 8096,
+    max_tokens: 16000,
     messages: [ { role: "user", content: prompt } ]
   }.to_json
 
@@ -135,22 +150,25 @@ def fetch_releases_for(product_key, all_items)
 
   puts "Sending to Claude API..."
   releases = process_with_claude(product_items)
-  if releases.nil? || releases["items"].nil? || releases["items"].empty?
+  if releases.nil? || releases.dig("en", "items").nil? || releases["en"]["items"].empty?
     puts "ERROR: Claude returned no releases. Skipping #{product_key}."
     return nil
   end
-  puts "Got #{releases["items"].length} release versions."
+  puts "Got #{releases["en"]["items"].length} release versions."
   releases
 end
 
 def save_releases(product_key, releases)
   data = File.exist?(DATA_PATH) ? JSON.parse(File.read(DATA_PATH)) : {}
 
-  data[product_key] = {
-    "fetched_at" => Date.today.to_s,
-    "summary"    => releases["summary"],
-    "items"      => releases["items"]
-  }
+  data[product_key] = %w[en de].to_h do |locale|
+    locale_data = releases.fetch(locale)
+    [locale, {
+      "fetched_at" => Date.today.to_s,
+      "summary"    => locale_data["summary"],
+      "items"      => locale_data["items"]
+    }]
+  end
 
   File.write(DATA_PATH, JSON.pretty_generate(data))
   puts "Saved to #{DATA_PATH}."

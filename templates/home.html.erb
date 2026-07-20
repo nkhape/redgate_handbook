@@ -1,11 +1,11 @@
 <div class="max-w-6xl mx-auto px-6 py-12">
-  <h1 class="text-4xl font-bold text-gray-900 mb-2">Redgate Product Handbook</h1>
-  <p class="text-lg text-gray-500 mb-10">Quick reference for sales & solutions teams</p>
+  <h1 class="text-4xl font-bold text-gray-900 mb-2"><%= t(:home_heading) %></h1>
+  <p class="text-lg text-gray-500 mb-10"><%= t(:home_tagline) %></p>
 
   <% product_logos = { "monitor" => "Monitor_logo.svg", "flyway" => "Flyway_logo.svg", "toolbelt_essentials" => "TBE_logo.png" } %>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     <% ["monitor", "flyway"].each do |product_key| %>
-      <a href="/products/<%= product_key %>/" class="block bg-white border border-gray-200 rounded-xl p-6 card-hover group">
+      <a href="<%= page_path(locale, product_key.to_sym) %>" class="block bg-white border border-gray-200 rounded-xl p-6 card-hover group">
         <div class="flex items-center justify-between">
           <div>
             <h2 class="text-xl font-semibold text-gray-900 mb-2 group-hover:underline" style="text-decoration-color:#e8392d;">
@@ -14,7 +14,7 @@
             <p class="text-gray-500 text-sm"><%= h(products[product_key.to_sym][:tagline]) %></p>
           </div>
           <% if product_logos[product_key] %>
-            <img src="/images/logos/<%= product_logos[product_key] %>" alt="<%= h(products[product_key.to_sym][:name]) %>" class="w-auto ml-6 flex-shrink-0" style="height:40px;" />
+            <img src="<%= asset("/images/logos/#{product_logos[product_key]}") %>" alt="<%= h(products[product_key.to_sym][:name]) %>" class="w-auto ml-6 flex-shrink-0" style="height:40px;" />
           <% end %>
         </div>
       </a>

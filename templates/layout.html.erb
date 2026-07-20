@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= locale %>">
   <head>
-    <title>Redgate Handbook</title>
+    <title><%= t(:site_title) %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="<%= asset("/icon.svg") %>" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="<%= asset("/css/tailwind.css") %>">
   </head>
   <body class="bg-white min-h-screen font-sans antialiased">
 
     <!-- Navbar -->
     <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
-      <a href="/" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
-        <span class="text-[#e8392d]">Redgate</span> Handbook
+      <a href="<%= home_url %>" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> <%= t(:brand_suffix) %>
       </a>
 
-      <div class="flex gap-6 text-sm font-medium">
-        <% [["Monitor", "monitor"], ["Flyway", "flyway"], ["Toolbelt Essentials", "toolbelt_essentials"]].each do |label, key| %>
-          <a href="/products/<%= key %>/" class="transition hover:underline <%= product == key ? 'text-white underline' : 'text-gray-300 hover:text-white' %>" style="text-decoration-color:#e8392d;"><%= label %></a>
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <% nav_links.each do |label, url, active| %>
+          <a href="<%= url %>" class="transition hover:underline <%= active ? 'text-white underline' : 'text-gray-300 hover:text-white' %>" style="text-decoration-color:#e8392d;"><%= label %></a>
         <% end %>
+
+        <div class="flex items-center gap-2 pl-4 border-l border-gray-700">
+          <a href="<%= lang_links["en"] %>" class="transition <%= locale == "en" ? "opacity-100" : "opacity-50 hover:opacity-100" %>" aria-label="English" title="English">🇬🇧</a>
+          <a href="<%= lang_links["de"] %>" class="transition <%= locale == "de" ? "opacity-100" : "opacity-50 hover:opacity-100" %>" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+        </div>
       </div>
     </nav>
 
