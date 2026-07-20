@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Redgate Handbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/redgate_handbook/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/redgate_handbook/css/tailwind.css">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <a href="/redgate_handbook/de/" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> Handbook
+      </a>
+
+      <div class="flex items-center gap-6 text-sm font-medium">
+        
+          <a href="/redgate_handbook/de/products/monitor/" class="transition hover:underline text-white underline" style="text-decoration-color:#e8392d;">Monitor</a>
+        
+          <a href="/redgate_handbook/de/products/flyway/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Flyway</a>
+        
+          <a href="/redgate_handbook/de/products/toolbelt_essentials/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Toolbelt Essentials</a>
+        
+
+        <div class="flex items-center gap-2 pl-4 border-l border-gray-700">
+          <a href="/redgate_handbook/products/monitor/" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 " aria-label="English" title="English">
+            <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
+              <rect width="30" height="20" fill="#012169"/>
+              <path d="M0,0 L30,20 M30,0 L0,20" stroke="#FFFFFF" stroke-width="4"/>
+              <path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.5"/>
+              <path d="M15,0 V20 M0,10 H30" stroke="#FFFFFF" stroke-width="6"/>
+              <path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.5"/>
+            </svg>
+          </a>
+          <a href="/redgate_handbook/de/products/monitor/" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 !grayscale-0 !opacity-100" aria-label="Deutsch" title="Deutsch">
+            <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
+              <rect width="30" height="6.67" y="0" fill="#000000"/>
+              <rect width="30" height="6.67" y="6.67" fill="#DD0000"/>
+              <rect width="30" height="6.67" y="13.33" fill="#FFCE00"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="max-w-6xl mx-auto px-6 py-12">
+
+  <!-- Header -->
+  <div class="mb-10">
+    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;">Produktübersicht</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-3">Redgate Monitor</h1>
+    <p class="text-xl text-gray-500">Volle Transparenz über Ihren gesamten Datenbankbestand</p>
+  </div>
+
+  <!-- What it does -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">Was es macht</h2>
+    <p class="text-gray-600 leading-relaxed">Redgate Monitor bietet Echtzeitüberwachung und Alarmierung für SQL Server, PostgreSQL, Oracle, MongoDB und MySQL — egal ob On-Premise oder in der Cloud. Es gibt DBAs und Ops-Teams eine zentrale Übersicht, um Performance-Probleme zu erkennen, bevor sie Nutzer beeinträchtigen.</p>
+  </section>
+
+  <!-- Supported Platforms -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-4">Unterstützte Plattformen</h2>
+      <div class="flex flex-wrap gap-8 items-center">
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">SQL Server</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">PostgreSQL</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">Oracle</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">MongoDB</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">MySQL</span>
+          </div>
+        
+      </div>
+      
+    </section>
+  
+
+  <!-- Key Features -->
+  <section class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">Hauptfunktionen</h2>
+
+    
+
+      
+      <div id="feature-tabs">
+
+        
+        <div class="flex flex-wrap border-b border-gray-200 mb-6">
+          
+            <button
+              onclick="showTab(0)"
+              id="tab-btn-0"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Globales Dashboard
+            </button>
+          
+            <button
+              onclick="showTab(1)"
+              id="tab-btn-1"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Server-Übersichtsseite
+            </button>
+          
+            <button
+              onclick="showTab(2)"
+              id="tab-btn-2"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Alarme
+            </button>
+          
+            <button
+              onclick="showTab(3)"
+              id="tab-btn-3"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Monitor Enterprise
+            </button>
+          
+        </div>
+
+        
+        
+          <div id="tab-panel-0" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/redgate_handbook/images/monitor/global-dashboard.png" alt="Globales Dashboard" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Globales Dashboard</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Sehen Sie Ihren gesamten Datenbankbestand auf einer einzigen Seite. Egal ob SQL Server, Postgres, MongoDB, MySQL — egal ob On-Premise oder in der Cloud.</p>
+                  
+                  
+                    <a href="https://monitor.red-gate.com/GlobalDashboard" target="_blank" class="text-sm font-medium no-underline" style="color:#e8392d;">→ Globales Dashboard öffnen</a>
+                  
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-1" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/redgate_handbook/images/monitor/server-overview.png" alt="Server-Übersichtsseite" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Server-Übersichtsseite</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Zeitverlauf aller Ereignisse auf einem Server, mit aktueller und vergangener Performance und Events — verschieben Sie den Zeitrahmen, und alle Informationen werden aktualisiert. Zeigt, welche Abfragen verbessert werden könnten und wie (mit oder ohne KI). Sehr nützlich für die Ursachenanalyse (Root Cause Analysis).</p>
+                  
+                  
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-2" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/redgate_handbook/images/monitor/alerts.png" alt="Alarme" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Alarme</h3>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <a href="https://monitor.red-gate.com/Alerts/Inbox" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Alarm-Posteingang</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Alle Alarme, die eingegangen sind, über alle Server hinweg.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://monitor.red-gate.com/Configuration/Alerts/EditAlertConfigurations?baseMonitorName=RGMON-EC2-BM2&channelInstanceRefs=i&types=1%3A0&pairs=0%2C0&returnUrl=%2FConfiguration%2FAlerts" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Alarmkonfiguration bearbeiten</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Alarmschwellen ändern, um Alarmmüdigkeit zu vermeiden (kann für einige Alarme auch automatisch per Machine Learning erfolgen).</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://sqlmonitormetrics.red-gate.com/" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Benutzerdefinierte Metriken</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Brauchen Sie etwas Spezifisches? Erfassen und alarmieren Sie auf Basis eigener Metriken.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-3" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/redgate_handbook/images/monitor/enterprise.png" alt="Monitor Enterprise" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Monitor Enterprise</h3>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Daten-API</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Senden Sie Daten aus Monitor überallhin, wo Sie sie brauchen (z. B. PowerBI zur Analyse).</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Hochverfügbarkeit</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Sichert eine unterbrechungsfreie Datenbanküberwachung.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://monitor.red-gate.com/Security/Permissions" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Berechtigungen</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Vollständiges Audit, wer welche Berechtigungen in Ihrem Bestand hat, inklusive Änderungshistorie.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://monitor.red-gate.com/Security/ConfigurationCompliance" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Konfigurations-Compliance</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Prüfen Sie leicht, welche Server/Datenbanken konform sind und welche nicht.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+
+      </div>
+
+      <script>
+        function showTab(activeIndex) {
+          const totalTabs = 4;
+          for (let i = 0; i < totalTabs; i++) {
+            const panel = document.getElementById('tab-panel-' + i);
+            const btn = document.getElementById('tab-btn-' + i);
+            if (i === activeIndex) {
+              panel.classList.remove('hidden');
+              btn.style.borderBottom = '2px solid #e8392d';
+              btn.style.color = '#e8392d';
+              btn.style.fontWeight = '600';
+            } else {
+              panel.classList.add('hidden');
+              btn.style.borderBottom = '2px solid transparent';
+              btn.style.color = '#6b7280';
+              btn.style.fontWeight = '500';
+            }
+          }
+        }
+        document.addEventListener('DOMContentLoaded', function() { showTab(0); });
+      </script>
+
+    
+  </section>
+
+  <!-- Demo Servers -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-1">Demo-Server</h2>
+      <p class="text-sm text-gray-500 mb-4">
+        
+        Nutzen Sie diese in der <a href="https://monitor.red-gate.com" target="_blank" class="hover:underline" style="color:#e8392d;">Online-Demo</a> — hier kann nichts kaputtgehen!
+      </p>
+      <div class="grid grid-cols-3 gap-x-5 gap-y-4">
+        
+          <a href="https://monitor.red-gate.com/overviews/RGMON-EC2-BM2/dbms/r1,4%3Abase,s36%3A2319186a-ddb3-405e-ad24-588f831f4b6c,7%3ACluster,1,4%3AName,s23%3Aworkload01.rmdemo.local,9%3ASqlServer,1,4%3AName,s4%3Ademo,?zoom=1775541119814%2C1775548319000&present=true&timeRange=24" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;">SQL Server</p>
+            <p class="text-sm text-gray-700 font-medium">Demo – Workload01</p>
+          </a>
+        
+          <a href="https://monitor.red-gate.com/overviews/SQLMON-EC2-BM2/dbms/r1,4%3Abase,s36%3A260ca7e9-c6fa-4cc5-8de2-e05e68114e71,16%3APostgresInstance,1,4%3AName,s70%3Apizza-paradise-aurora.cluster-ca3xlai52fw3.eu-west-1.rds.amazonaws.com,?zoom=1775541278540%2C1775548478540&present=true&timeRange=24" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;">PostgreSQL</p>
+            <p class="text-sm text-gray-700 font-medium">pizza-paradise</p>
+          </a>
+        
+          <a href="https://monitor.red-gate.com/overviews/RGMON-EC2-BM2/dbms/r1,4%3Abase,s36%3A2319186a-ddb3-405e-ad24-588f831f4b6c,14%3AOracleInstance,1,4%3AName,s55%3Aec2-54-216-172-228.eu-west-1.compute.amazonaws.com,free,?zoom=1775541363847%2C1775548563847&present=true&timeRange=24" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;">Oracle</p>
+            <p class="text-sm text-gray-700 font-medium">Oracle 23c Free</p>
+          </a>
+        
+          <a href="https://monitor.red-gate.com/overviews/RGMON-EC2-BM2/dbms/r1,4%3Abase,s36%3A2319186a-ddb3-405e-ad24-588f831f4b6c,15%3AMongoDbInstance,1,4%3AName,s48%3Aec2-3-250-81-132.eu-west-1.compute.amazonaws.com,?zoom=1775541405531%2C1775548605531&present=true&timeRange=24" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;">MongoDB</p>
+            <p class="text-sm text-gray-700 font-medium">MongoDB 6.0 Public Demo EC2</p>
+          </a>
+        
+          <a href="https://monitor.red-gate.com/overviews/RGMON-EC2-BM2/dbms/r1,4%3Abase,s36%3A2319186a-ddb3-405e-ad24-588f831f4b6c,13%3AMySqlInstance,1,4%3AName,s74%3Amysql-rds-public-demo-environment.ca3xlai52fw3.eu-west-1.rds.amazonaws.com,?zoom=1775541428193%2C1775548628193&present=true&timeRange=24" target="_blank" class="block bg-white border border-gray-200 rounded-xl px-6 py-5 card-hover group">
+            <p class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color:#e8392d;">MySQL</p>
+            <p class="text-sm text-gray-700 font-medium">MySQL 8.0 RDS Public Demo</p>
+          </a>
+        
+      </div>
+    </section>
+  
+
+  <!-- Useful Links -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-3">Nützliche Links</h2>
+      <ul class="space-y-2">
+        
+          <li>
+            <a href="https://monitor.red-gate.com" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Globales Dashboard — Online-Demo
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/monitor14" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → So funktioniert Redgate Monitor
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/monitor14/hardware-and-performance-guidelines" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Hardware- und Performance-Richtlinien
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/monitor14/how-is-it-different-from-self-hosted-redgate-monitor-331352319.html" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Self-Hosted vs. SaaS — Was ist der Unterschied?
+            </a>
+          </li>
+        
+      </ul>
+    </section>
+  
+
+  <!-- What's New -->
+  
+    <section class="mb-10">
+      <div class="flex items-baseline gap-3 mb-3">
+        <h2 class="text-lg font-semibold text-gray-800">Neuigkeiten</h2>
+        
+          
+          
+          <span class="text-xs text-gray-400">16. Oktober 2025 – 10. Juni 2026</span>
+        
+      </div>
+
+      
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Aktuelle Releases bringen leistungsstarke Verbesserungen für die Überwachung Ihres gesamten Datenbankbestands. <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Die SQL-Agent-Jobüberwachung unterstützt jetzt Contained Availability Groups</a>, während <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">native ServiceNow- und Microsoft-Teams-Benachrichtigungen</a> Ihren Alarmierungs-Workflow optimieren. Für Cloud-Kunden ist <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">die Überwachung einzelner Abfrageausführungen jetzt für Azure SQL Database und Azure SQL Managed Instance verfügbar</a> und bietet tiefere Einblicke in Performance-Probleme. Die Plattform wurde zudem in der Bedienbarkeit verbessert, mit schnelleren Ladezeiten auf den Speicherplatzseiten und einer besseren <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Blocking-Tree-Visualisierung</a>; PostgreSQL-Kunden profitieren außerdem von einer intelligenteren Erkennung von Indexänderungen in Abfrageplänen.</p>
+      
+
+      
+      <div class="flex flex-col gap-4">
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.20.0</span>
+                <span class="text-sm text-gray-400">10. Juni 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die SQL-Agent-Jobüberwachung deckt jetzt Contained Availability Groups ab und zeigt Jobdefinitionen, Verlauf, Aktivität und Zeitpläne in der Ansicht „Estate Jobs&quot; an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Blocking-Tree-Ansicht wurde für bessere Bedienbarkeit und Kontrolle neu gestaltet
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Speicherplatzseiten zwischenspeichern jetzt Daten, um Ladezeiten bei erneutem Aufruf zu verkürzen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Zugriffstoken-Oberfläche zeigt jetzt klar an, auf welche Server jedes Token zugreifen kann
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.19.0</span>
+                <span class="text-sm text-gray-400">3. Juni 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Native ServiceNow- und Microsoft-Teams-Benachrichtigungen sind jetzt vollständig verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Überwachung einzelner Abfrageausführungen ist jetzt für Azure SQL Database und Azure SQL Managed Instance verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Für das Überwachungskonto nicht zugängliche Datenbanken zeigen den Überwachungsstatus jetzt klar in der Oberfläche mit spezifischen Fehlerdetails an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Der PostgreSQL-Abfrageplanverlauf unterscheidet jetzt Pläne mit unterschiedlichen Indizes und macht Indexänderungen sichtbar
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.18.0</span>
+                <span class="text-sm text-gray-400">28. Mai 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die CPU-Auslastung von Linux-Hosts schließt jetzt I/O-Wartezeiten aus, für ein genaueres Reporting
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neue Spalte „Spills&quot; im Tab „Query Executions&quot;, um tempdb-Spillover pro Abfrage nachzuverfolgen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Seite „Virtuelle Maschinen&quot; zeigt jetzt tatsächliche Kosten neben den abgerechneten Kosten an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Alarme bei Änderungen der Serverrollen-Mitgliedschaft in der Enterprise-Edition verfügbar, um Rechteausweitungen nachzuverfolgen
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.16.0</span>
+                <span class="text-sm text-gray-400">23. April 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  PostgreSQL-Aurora-Reader-Instanzen können jetzt automatisch über den Cluster überwacht werden
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die SQL-Server-Überwachung benötigt keine db_owner-Berechtigungen mehr für die tempdb-Datenbank
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.15.0</span>
+                <span class="text-sm text-gray-400">16. April 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Alarmkonfiguration erlaubt jetzt, Datenbanken für mehrere Alarmtypen namentlich auszuschließen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Seiten „Virtuelle Maschinen&quot; zeigen jetzt Kostendetails für Azure-Ressourcen an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  KI-Alarmanalyse jetzt verfügbar für Alarme zu lang laufenden Abfragen, Deadlocks und blockierenden Prozessen
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.14.0</span>
+                <span class="text-sm text-gray-400">9. April 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Seiten „Virtuelle Maschinen&quot; zeigen jetzt Details zum Azure-Abonnement an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Details zu benutzerdefinierten Metrik-Alarmen sind jetzt in Skript- und Webhook-Benachrichtigungen enthalten
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Benutzerdefinierte Metriken sind jetzt für Oracle-Instanzen verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Funktion zum Abfragevergleich für PostgreSQL-Top-Abfragen hinzugefügt
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.12.0</span>
+                <span class="text-sm text-gray-400">19. März 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Der neue Analyse-Graph ist jetzt die Standardansicht, mit verbesserter Performance und modernem Design
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.11.0</span>
+                <span class="text-sm text-gray-400">11. März 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Index-Sampling ist jetzt standardmäßig für alle PostgreSQL-Instanzen aktiviert
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Tabelle der blockierenden Prozesse zeigt jetzt Systemprozesse an und alarmiert bei Blockierungen durch Systemprozesse
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Performance-Verbesserungen beim Laden von Metriken auf Host-Ebene mit TimescaleDB-Repository
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Prozessorzeit-Metrik für Linux-Hosts zeigt jetzt die CPU-Auslastung ohne Hypervisor-Steal-Time an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  KI-Analyse-Unterstützung für MongoDB-Top-Abfragen hinzugefügt
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.10.0</span>
+                <span class="text-sm text-gray-400">4. März 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Top-Waits-Daten jetzt für PostgreSQL auf den Seiten „Serverübersicht&quot; und „Datenbankdetails&quot; verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Nachverfolgte PostgreSQL-Abfragen jetzt über die Datenbankübersichtsseite verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Benutzerdefinierte Metriken können jetzt eine zweite SQL-Abfrage enthalten, die Alarmen zusätzlichen Kontext liefert
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.9.0</span>
+                <span class="text-sm text-gray-400">18. Februar 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Availability-Group-Seite zeigt jetzt die Backup-Priorität für jede Replik an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Unterstützung für Extended-Event-Sampling für SQL Server 2008R2 SP2 CU12 und SQL Server 2012 SP1 CU6 wiederhergestellt
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.8.0</span>
+                <span class="text-sm text-gray-400">29. Januar 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Seiten für aktuelle Aktivitäten mit KI-Funktion jetzt für Oracle- und MySQL-Instanzen verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Das PowerShell-Modul kann jetzt von Nutzern jeder Rolle auf der Konfigurationsseite heruntergeladen werden
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.7.0</span>
+                <span class="text-sm text-gray-400">22. Januar 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Seite „Virtuelle Maschinen&quot; zeigt jetzt Cloud-Ressourcendetails für Azure-VMs in der Detail-Seitenleiste an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Microsoft-Teams-Benachrichtigungen enthalten jetzt einen Link zum Alarm in Redgate Monitor
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Alle Benachrichtigungstypen können jetzt ratenbegrenzt werden, um eine Benachrichtigungsflut zu vermeiden
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.6.0</span>
+                <span class="text-sm text-gray-400">7. Januar 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Der Tab „SQL Audit&quot; ist jetzt unter Security &gt; Permissions verfügbar, um Berechtigungsänderungen instanzübergreifend nachzuverfolgen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Übersichtsseite der Availability Group zeigt jetzt an, ob sekundäre Repliken Lesezugriffe erlauben
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Virtuelle Maschinen mit PostgreSQL werden jetzt auf der Seite Estate &gt; Virtual Machines unterstützt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  KI-gestützte Abfrageanalyse jetzt im Tab „Aktuelle Aktivität&quot; für SQL-Server- und PostgreSQL-Instanzen verfügbar
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.5.0</span>
+                <span class="text-sm text-gray-400">11. Dezember 2025</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  KI-gestützte Abfrageanalyse unterstützt jetzt Oracle- und MySQL-Instanzen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Tags können jetzt auf SQL-Server- und PostgreSQL-Datenbanken angewendet werden
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Alarmunterdrückungsfenster können jetzt über Tags auf einzelne Datenbanken angewendet werden
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.4.0</span>
+                <span class="text-sm text-gray-400">1. Dezember 2025</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Unterstützung für Zertifikatsauthentifizierung für Linux-PostgreSQL-Server jetzt in der Vorschau
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Unterstützung für PostgreSQL 18 ist jetzt verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Benutzerdefinierter Text kann jetzt zu E-Mail-Benachrichtigungen bei Alarmen hinzugefügt werden
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  MySQL-Instanzen auf AWS Aurora werden jetzt unterstützt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Berechtigungsüberwachung jetzt für Azure Managed Instances verfügbar
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.2.0</span>
+                <span class="text-sm text-gray-400">29. Oktober 2025</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Benutzerdefinierte Metriken und Alarme jetzt für PostgreSQL verfügbar
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Fehler beim Speichern der Alarmkonfiguration werden jetzt mit klaren Fehlermeldungen in der Oberfläche angezeigt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neue Alarmtypen für fehlgeschlagene Replikationsjobs und fehlgeschlagene Replikations-Wartungsjobs hinzugefügt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Seite Estate &gt; Virtual Machines hinzugefügt, um die Nutzung virtueller Maschinen zu überwachen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Analyseseite mit modernem Design aktualisiert
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.1.0</span>
+                <span class="text-sm text-gray-400">16. Oktober 2025</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Native ServiceNow-Integration hinzugefügt, um bei Alarmen automatisch Incidents zu erstellen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Native Microsoft-Teams-Integration für Alarmbenachrichtigungen hinzugefügt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  MySQL-Instanzen auf Azure Flexible Server werden jetzt unterstützt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Überwachung von Oracle Data Guard wird jetzt unterstützt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Seite „Query Executions&quot; zeigt jetzt die mit jeder Abfrage verbundenen Memory Grants an
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Das Cmdlet Update-RedgateMonitorMonitoredObjectCredential ermöglicht die Aktualisierung von Zugangsdaten für bestehende überwachte Server
+                </li>
+              
+            </ul>
+          </div>
+        
+      </div>
+
+      
+        <button
+          id="show-more-releases"
+          onclick="toggleReleases()"
+          class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
+          style="color:#e8392d;"
+          data-more-text="14 ältere Releases anzeigen ↓"
+          data-fewer-text="Weniger Releases anzeigen ↑">
+          14 ältere Releases anzeigen ↓
+        </button>
+        <script>
+          function toggleReleases() {
+            const extras = document.querySelectorAll('.release-extra');
+            const btn = document.getElementById('show-more-releases');
+            const hidden = extras[0].classList.contains('hidden');
+            extras.forEach(el => el.classList.toggle('hidden', !hidden));
+            btn.textContent = hidden ? btn.dataset.fewerText : btn.dataset.moreText;
+          }
+        </script>
+      
+
+      
+        <p class="text-xs text-gray-400 mt-3">
+          Zuletzt aktualisiert am 2026-06-16
+          
+          
+            · Zeigt Änderungen bis 16. Oktober 2025
+          
+        </p>
+      
+    </section>
+  
+
+  <!-- Back link -->
+  <a href="/redgate_handbook/de/" class="text-sm font-medium hover:underline" style="color:#e8392d;">← Zurück zu allen Produkten</a>
+
+</div>
+
+    </main>
+
+  </body>
+</html>

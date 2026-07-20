@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+  <head>
+    <title><%= t(:site_title) %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="<%= asset("/icon.svg") %>" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<%= asset("/css/tailwind.css") %>">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <a href="<%= home_url %>" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> <%= t(:brand_suffix) %>
+      </a>
+
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <% nav_links.each do |label, url, active| %>
+          <a href="<%= url %>" class="transition hover:underline <%= active ? 'text-white underline' : 'text-gray-300 hover:text-white' %>" style="text-decoration-color:#e8392d;"><%= label %></a>
+        <% end %>
+
+        <div class="flex items-center gap-2 pl-4 border-l border-gray-700">
+          <a href="<%= lang_links["en"] %>" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 <%= "!grayscale-0 !opacity-100" if locale == "en" %>" aria-label="English" title="English">
+            <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
+              <rect width="30" height="20" fill="#012169"/>
+              <path d="M0,0 L30,20 M30,0 L0,20" stroke="#FFFFFF" stroke-width="4"/>
+              <path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.5"/>
+              <path d="M15,0 V20 M0,10 H30" stroke="#FFFFFF" stroke-width="6"/>
+              <path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.5"/>
+            </svg>
+          </a>
+          <a href="<%= lang_links["de"] %>" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 <%= "!grayscale-0 !opacity-100" if locale == "de" %>" aria-label="Deutsch" title="Deutsch">
+            <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
+              <rect width="30" height="6.67" y="0" fill="#000000"/>
+              <rect width="30" height="6.67" y="6.67" fill="#DD0000"/>
+              <rect width="30" height="6.67" y="13.33" fill="#FFCE00"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <%= content %>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Redgate Handbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/redgate_handbook/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/redgate_handbook/css/tailwind.css">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <a href="/redgate_handbook/de/" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> Handbook
+      </a>
+
+      <div class="flex items-center gap-6 text-sm font-medium">
+        
+          <a href="/redgate_handbook/de/products/monitor/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Monitor</a>
+        
+          <a href="/redgate_handbook/de/products/flyway/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Flyway</a>
+        
+          <a href="/redgate_handbook/de/products/toolbelt_essentials/" class="transition hover:underline text-white underline" style="text-decoration-color:#e8392d;">Toolbelt Essentials</a>
+        
+
+        <div class="flex items-center gap-2 pl-4 border-l border-gray-700">
+          <a href="/redgate_handbook/products/toolbelt_essentials/" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 " aria-label="English" title="English">
+            <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
+              <rect width="30" height="20" fill="#012169"/>
+              <path d="M0,0 L30,20 M30,0 L0,20" stroke="#FFFFFF" stroke-width="4"/>
+              <path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.5"/>
+              <path d="M15,0 V20 M0,10 H30" stroke="#FFFFFF" stroke-width="6"/>
+              <path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.5"/>
+            </svg>
+          </a>
+          <a href="/redgate_handbook/de/products/toolbelt_essentials/" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 !grayscale-0 !opacity-100" aria-label="Deutsch" title="Deutsch">
+            <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
+              <rect width="30" height="6.67" y="0" fill="#000000"/>
+              <rect width="30" height="6.67" y="6.67" fill="#DD0000"/>
+              <rect width="30" height="6.67" y="13.33" fill="#FFCE00"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="max-w-6xl mx-auto px-6 py-12">
+
+  <!-- Header -->
+  <div class="mb-10">
+    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;">Produktübersicht</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-3">SQL Toolbelt Essentials</h1>
+    <p class="text-xl text-gray-500">Das essenzielle Toolkit für SQL-Server-Entwickler</p>
+  </div>
+
+  <!-- What it does -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">Was es macht</h2>
+    <p class="text-gray-600 leading-relaxed">SQL Toolbelt Essentials bündelt die meistgenutzten SQL-Server-Tools von Redgate in einem Paket — Schemavergleich, Datenvergleich, intelligente Autovervollständigung und schnelle Objektsuche. Die Tools, zu denen SQL-Server-Entwickler täglich greifen, zum gebündelten Preis.</p>
+  </section>
+
+  <!-- Supported Platforms -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-4">Unterstützte Plattformen</h2>
+      <div class="flex flex-wrap gap-8 items-center">
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">SQL Server</span>
+          </div>
+        
+      </div>
+      
+    </section>
+  
+
+  <!-- Key Features -->
+  <section class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">Hauptfunktionen</h2>
+
+    
+
+      
+      <div id="feature-tabs">
+
+        
+        <div class="flex flex-wrap border-b border-gray-200 mb-6">
+          
+            <button
+              onclick="showTab(0)"
+              id="tab-btn-0"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              SQL Compare
+            </button>
+          
+            <button
+              onclick="showTab(1)"
+              id="tab-btn-1"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              SQL Data Compare
+            </button>
+          
+            <button
+              onclick="showTab(2)"
+              id="tab-btn-2"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              SQL Prompt
+            </button>
+          
+            <button
+              onclick="showTab(3)"
+              id="tab-btn-3"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              SQL Search
+            </button>
+          
+        </div>
+
+        
+        
+          <div id="tab-panel-0" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">SQL Compare</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Vergleichen und bereitstellen von SQL-Server-Datenbankschemas in wenigen Minuten. Sehen Sie genau, was sich zwischen zwei Datenbanken unterscheidet, generieren Sie ein Deployment-Skript und wenden Sie es an — mit vollständiger Vorschau, bevor sich etwas ändert.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Schema-Diff</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Side-by-Side-Vergleich beliebiger zweier SQL-Server-Datenbanken, Skripte oder Quellcode-Ordner.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Generierung von Deployment-Skripten</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Generieren Sie mit einem Klick ein sicheres, geordnetes Deployment-Skript — oder führen Sie es direkt aus.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://documentation.red-gate.com/sc" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Versionskontroll-Integration</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Vergleichen Sie gegen einen Skriptordner in Git, um Schema und Code synchron zu halten.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-1" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">SQL Data Compare</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Vergleichen und synchronisieren Sie Daten zwischen SQL-Server-Datenbanken auf Zeilenebene. Finden Sie genau, welche Zeilen sich unterscheiden, und stellen Sie nur das bereit, was sich geändert hat — ideal, um Referenzdaten und Nachschlagetabellen über Umgebungen hinweg synchron zu halten.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Zeilengenauer Diff</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Sehen Sie Einfügungen, Aktualisierungen und Löschungen zwischen zwei beliebigen Datenbanken.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Selektives Deployment</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Wählen Sie genau, welche Zeilen synchronisiert werden — Sie behalten immer die Kontrolle.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Vergleich von Backup und Live-Datenbank</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Vergleichen Sie eine Live-Datenbank mit einem Backup, um zu verstehen, was sich geändert hat.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-2" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">SQL Prompt</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Intelligente Autovervollständigung, Code-Formatierung und Snippet-Verwaltung für SQL Server Management Studio und Azure Data Studio. Schreiben Sie SQL schneller und mit weniger Fehlern.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Kontextbezogene Autovervollständigung</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Vorschläge, die Ihr Schema verstehen — Tabellen, Spalten, Aliasnamen und mehr.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Code-Formatierung</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Formatieren Sie beliebiges SQL sofort mit einem einzigen Tastenkürzel im Stil Ihres Teams.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Snippets</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Speichern und wiederverwenden Sie Boilerplate-SQL — gängige Abfragen, Vorlagen und Muster.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://marketplace.visualstudio.com/items?itemName=red-gate.sql-prompt" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ SQL Prompt für VS Code</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Jetzt auch als VS-Code-Erweiterung verfügbar.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-3" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">SQL Search</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Finden Sie jedes Datenbankobjekt — Tabellen, Spalten, gespeicherte Prozeduren, Views — serverübergreifend in Sekunden. Kostenloses SSMS-Plugin, enthalten in Toolbelt Essentials.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Suche über alle Datenbanken</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Eine Suchleiste, jedes Objekt auf dem Server — kein Durchklicken des Objekt-Explorers Datenbank für Datenbank mehr nötig.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Abhängigkeiten finden</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Sehen Sie, was auf ein Objekt verweist, bevor Sie es ändern oder löschen.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <a href="https://www.red-gate.com/products/sql-search/" target="_blank" class="text-sm font-semibold no-underline" style="color:#e8392d;">→ Kostenloser Download</a>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">SQL Search ist auch als eigenständiges kostenloses Tool verfügbar.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+
+      </div>
+
+      <script>
+        function showTab(activeIndex) {
+          const totalTabs = 4;
+          for (let i = 0; i < totalTabs; i++) {
+            const panel = document.getElementById('tab-panel-' + i);
+            const btn = document.getElementById('tab-btn-' + i);
+            if (i === activeIndex) {
+              panel.classList.remove('hidden');
+              btn.style.borderBottom = '2px solid #e8392d';
+              btn.style.color = '#e8392d';
+              btn.style.fontWeight = '600';
+            } else {
+              panel.classList.add('hidden');
+              btn.style.borderBottom = '2px solid transparent';
+              btn.style.color = '#6b7280';
+              btn.style.fontWeight = '500';
+            }
+          }
+        }
+        document.addEventListener('DOMContentLoaded', function() { showTab(0); });
+      </script>
+
+    
+  </section>
+
+  <!-- Demo Servers -->
+  
+
+  <!-- Useful Links -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-3">Nützliche Links</h2>
+      <ul class="space-y-2">
+        
+          <li>
+            <a href="https://www.red-gate.com/products/sql-toolbelt-essentials/" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → SQL Toolbelt Essentials – Übersicht
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/sc" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → SQL-Compare-Dokumentation
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/sp" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → SQL-Prompt-Dokumentation
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://www.red-gate.com/products/sql-search/" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → SQL Search (kostenloser Download)
+            </a>
+          </li>
+        
+      </ul>
+    </section>
+  
+
+  <!-- What's New -->
+  
+
+  <!-- Back link -->
+  <a href="/redgate_handbook/de/" class="text-sm font-medium hover:underline" style="color:#e8392d;">← Zurück zu allen Produkten</a>
+
+</div>
+
+    </main>
+
+  </body>
+</html>

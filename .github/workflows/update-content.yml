@@ -1,0 +1,39 @@
+name: Update release notes
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+
+      - name: Fetch latest release notes
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: ruby fetch_releases.rb
+
+      - name: Regenerate static site
+        run: ruby generate.rb
+
+      - name: Commit and push if content changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/releases_data.json public
+          if git diff --cached --quiet; then
+            echo "No content changes."
+          else
+            git commit -m "Weekly release notes refresh"
+            git push
+          fi
