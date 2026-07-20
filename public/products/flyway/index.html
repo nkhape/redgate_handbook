@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redgate Handbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tailwind.css">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> Handbook
+      </a>
+
+      <div class="flex gap-6 text-sm font-medium">
+        
+          <a href="/products/monitor/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Monitor</a>
+        
+          <a href="/products/flyway/" class="transition hover:underline text-white underline" style="text-decoration-color:#e8392d;">Flyway</a>
+        
+          <a href="/products/test_data_manager/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Test Data Manager</a>
+        
+          <a href="/products/toolbelt_essentials/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Toolbelt Essentials</a>
+        
+      </div>
+    </nav>
+
+    <main>
+      <div class="max-w-6xl mx-auto px-6 py-12">
+
+  <!-- Header -->
+  <div class="mb-10">
+    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;">Product Overview</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-3">Redgate Flyway</h1>
+    <p class="text-xl text-gray-500">Database migrations made easy</p>
+  </div>
+
+  <!-- What it does -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">What it does</h2>
+    <p class="text-gray-600 leading-relaxed">Flyway is an open-source database migration tool that lets teams version-control their schema changes alongside application code. It applies migrations in order, tracks what&#39;s been run, and integrates with any CI/CD pipeline — so your database moves with your code, every time.</p>
+  </section>
+
+  <!-- Supported Platforms -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-4">Supported Platforms</h2>
+      <div class="flex flex-wrap gap-8 items-center">
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">SQL Server</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">PostgreSQL</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">MySQL</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">Oracle</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" alt="MariaDB" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">MariaDB</span>
+          </div>
+        
+      </div>
+      
+        <p class="text-sm text-gray-400 mt-4">
+          <a href="https://documentation.red-gate.com/fd/supported-databases-and-versions-143754067.html" target="_blank" class="hover:underline" style="color:#e8392d;">plus 50+ more with foundational support →</a>
+        </p>
+      
+    </section>
+  
+
+  <!-- Key Features -->
+  <section class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">Key Features</h2>
+
+    
+
+      
+      <div id="feature-tabs">
+
+        
+        <div class="flex flex-wrap border-b border-gray-200 mb-6">
+          
+            <button
+              onclick="showTab(0)"
+              id="tab-btn-0"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Database Version Control
+            </button>
+          
+            <button
+              onclick="showTab(1)"
+              id="tab-btn-1"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              CI/CD Integration
+            </button>
+          
+            <button
+              onclick="showTab(2)"
+              id="tab-btn-2"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Quality Gates
+            </button>
+          
+            <button
+              onclick="showTab(3)"
+              id="tab-btn-3"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Visibility &amp; Reporting
+            </button>
+          
+        </div>
+
+        
+        
+          <div id="tab-panel-0" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/images/flyway/migration-script.png" alt="Database Version Control" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Database Version Control</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Every database change is version-controlled — written down, ordered, and tracked, just like application code. No guessing what&#39;s been applied where.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Works however you want</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Either way, Flyway generates the actual deployment script for you — respecting dependencies and applying changes in the right order.</p>
+                          
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
+                              
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                  
+                                    <a href="https://documentation.red-gate.com/fd/choosing-the-right-approach-with-flyway-246972498.html#ChoosingtherightapproachwithFlyway-Migrations-basedapproachwithauto-generationofmigrationscripts" target="_blank" class="text-xs font-semibold uppercase tracking-wide mb-1 no-underline hover:underline block" style="color:#e8392d;">Migrations-based →</a>
+                                  
+                                  <p class="text-sm text-gray-600 mb-0 leading-snug">Write out each change, step by step.</p>
+                                </div>
+                              
+                                <div class="bg-gray-50 rounded-lg p-3">
+                                  
+                                    <a href="https://documentation.red-gate.com/fd/choosing-the-right-approach-with-flyway-246972498.html#ChoosingtherightapproachwithFlyway-State-basedapproach" target="_blank" class="text-xs font-semibold uppercase tracking-wide mb-1 no-underline hover:underline block" style="color:#e8392d;">State-based →</a>
+                                  
+                                  <p class="text-sm text-gray-600 mb-0 leading-snug">Describe the end result — Flyway works out how to get there.</p>
+                                </div>
+                              
+                            </div>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Ordered &amp; tracked</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Every change runs in the same order, on every environment, every time.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Undo when needed</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Roll back a change cleanly instead of writing a manual fix.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-1" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/images/flyway/pipeline.png" alt="CI/CD Integration" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">CI/CD Integration</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Flyway plugs straight into the pipelines your team already uses, so migrations run automatically and identically on every deploy — no manual steps, no &quot;works on my machine.&quot;</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Fits any pipeline</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Installs as a simple command-line tool, so it fits into almost any build or deployment process.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Works with what you have</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">GitHub Actions, Jenkins, Azure DevOps, and more.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-2" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/images/flyway/rules.png" alt="Quality Gates" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Quality Gates</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Nothing reaches production without a check first.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Dry runs</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">See exactly what will change before it touches the database.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Automatic checks</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Use pre-built checks, or add your own easily, to flag risky or non-compliant changes before they&#39;re deployed.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Sign-off required</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Sensitive environments can require manual approval before going ahead.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-3" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+                  <div class="bg-gray-50 border-r border-gray-100 p-6 flex items-center justify-center" style="flex:2 1 520px; height:360px;">
+                    <img src="/images/flyway/report.png" alt="Visibility &amp; Reporting" class="w-full h-full object-contain rounded-md block" />
+                  </div>
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Visibility &amp; Reporting</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">One place to see the health and history of every database deployment — not just for the person who ran it.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Deployment dashboard</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">See what&#39;s been deployed, when, and where, across every project and environment.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Reports for every deployment</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">What changed can be reviewed before a deployment is approved.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Drift alerts</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Get notified if a database changes outside Flyway&#39;s control.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Full audit trail</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Know who did what, when, and why.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+
+      </div>
+
+      <script>
+        function showTab(activeIndex) {
+          const totalTabs = 4;
+          for (let i = 0; i < totalTabs; i++) {
+            const panel = document.getElementById('tab-panel-' + i);
+            const btn = document.getElementById('tab-btn-' + i);
+            if (i === activeIndex) {
+              panel.classList.remove('hidden');
+              btn.style.borderBottom = '2px solid #e8392d';
+              btn.style.color = '#e8392d';
+              btn.style.fontWeight = '600';
+            } else {
+              panel.classList.add('hidden');
+              btn.style.borderBottom = '2px solid transparent';
+              btn.style.color = '#6b7280';
+              btn.style.fontWeight = '500';
+            }
+          }
+        }
+        document.addEventListener('DOMContentLoaded', function() { showTab(0); });
+      </script>
+
+    
+  </section>
+
+  <!-- Demo Servers -->
+  
+
+  <!-- Useful Links -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-3">Useful Links</h2>
+      <ul class="space-y-2">
+        
+          <li>
+            <a href="https://documentation.red-gate.com/flyway" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Flyway Documentation
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/fd/first-steps-flyway-autopilot-a-beginners-guide-254152325.html" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → First Steps: Flyway Autopilot Beginner&#39;s Guide
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://www.red-gate.com/products/flyway/editions/" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Community vs. Enterprise Edition
+            </a>
+          </li>
+        
+      </ul>
+    </section>
+  
+
+  <!-- What's New -->
+  
+    <section class="mb-10">
+      <div class="flex items-baseline gap-3 mb-3">
+        <h2 class="text-lg font-semibold text-gray-800">What's New</h2>
+        
+          
+          
+          <span class="text-xs text-gray-400">February 5, 2026 – June 4, 2026</span>
+        
+      </div>
+
+      
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:text-[#e8392d] [&_a]:font-medium [&_a]:hover:underline">Recent releases bring powerful new capabilities for database management and deployment workflows. The <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">PostgreSQL filter UI now supports multiple rules per object type</a>, giving you fine-grained control over comparison and deployment. <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Code review is now integrated directly into deployment and generation screens</a>, surfacing potential issues before scripts run. For Oracle deployments, <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">new options add existence checks to INSERT statements and permissions checks to GRANT/REVOKE statements</a>, reducing deployment risk. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">GitHub Actions workflow generation is now available</a>, streamlining CI/CD integration. Teams also benefit from <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">expanded code analysis rules</a> and <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Native Connectors support for SQLite and enhanced PostgreSQL/MySQL progress reporting</a>.</p>
+      
+
+      <div class="flex flex-col gap-4">
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.5.5</span>
+                <span class="text-sm text-gray-400">June 4, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  PostgreSQL filter UI now allows filtering across any object type, giving you more flexibility in managing database comparisons.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.8.0</span>
+                <span class="text-sm text-gray-400">June 4, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Offline permits now show a warning when they&#39;re expiring within the next 30 days, helping you avoid deployment disruptions.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Progress reporting for PostgreSQL, MySQL, and SQLite is now faster and more transparent.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.5.4</span>
+                <span class="text-sm text-gray-400">June 3, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Postgres filter editor now allows multiple rules per object type, enabling complex filtering patterns like &#39;include when table name equals X&#39; alongside exclude rules.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.7.0</span>
+                <span class="text-sm text-gray-400">May 29, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  You can now load custom SQLFluff rules into the Check command, enabling organization-specific code quality standards.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.5.3</span>
+                <span class="text-sm text-gray-400">May 27, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Oracle deployments now support adding existence checks to index creation statements, reducing script failures due to duplicate objects.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Sign-in link can now be copied to clipboard, making authentication easier in restricted browser environments.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.5.2</span>
+                <span class="text-sm text-gray-400">May 26, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Filters UI for PostgreSQL projects is now available, letting you exclude specific objects during comparison.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Flyway Desktop now restores your previously open tabs when you restart the application.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.6.2</span>
+                <span class="text-sm text-gray-400">May 21, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Environment variable resolver syntax now works across all Flyway configuration parameters, not just connection properties, giving you more flexibility in automation.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.5.0</span>
+                <span class="text-sm text-gray-400">May 18, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Automated deployment workflows now support manual approval steps for GitHub environments, enabling controlled, auditable deployments.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.6.0</span>
+                <span class="text-sm text-gray-400">May 8, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Deploy command now supports Native Connectors mode, improving performance and reducing JDBC connectivity overhead.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Auth command now defers to existing license providers instead of re-authenticating, streamlining your licensing workflow.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.4.3</span>
+                <span class="text-sm text-gray-400">May 7, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  SQL Server deployments now support existence checks for INSERT statements, preventing errors from duplicate rows.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Oracle checksumIncludeReferencedScripts parameter is now supported in migration commands, giving you more control over how migrations are validated.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.4.2</span>
+                <span class="text-sm text-gray-400">April 29, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Automated Deployment page now generates GitHub Actions workflow files automatically, eliminating manual CI/CD setup.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.5.0</span>
+                <span class="text-sm text-gray-400">April 27, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Azure Key Vault is now supported as a secrets resolver, enabling secure credential management in Azure environments.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Cassandra now supports Native Connectors mode for faster, more reliable deployments.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.3.4</span>
+                <span class="text-sm text-gray-400">April 17, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Code review issues now underline the full line of problematic code in addition to adding an icon, making issues easier to spot and fix.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.3.3</span>
+                <span class="text-sm text-gray-400">April 16, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Apply fix actions are now available in the code review panel for issues with suggested fixes, letting you resolve problems with one click.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.4.0</span>
+                <span class="text-sm text-gray-400">April 14, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  New RG23 rule allows you to configure and enforce forbidden alias names in your SQL scripts.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Gradle plugin now supports Gradle&#39;s configuration cache, improving build performance for teams using Gradle.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Check command now generates SARIF 2.1.0 reports compatible with GitHub Code Scanning and Azure DevOps for integrated security scanning.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.2.3</span>
+                <span class="text-sm text-gray-400">April 7, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  New Oracle option IncludePermissionsUserCheck lets you script conditional GRANT and REVOKE statements that skip execution if the current user is the grantee, preventing permission errors.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Projects with deprecated configuration fields can now be automatically upgraded when opened, eliminating manual migration steps.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.2.0</span>
+                <span class="text-sm text-gray-400">March 26, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Three new code review rules (RG19, RG20, RG21) enforce naming conventions for tables, object names, and custom prefixes, improving code consistency across teams.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Check code now generates SARIF reports for integration with GitHub Code Scanning and Azure DevOps, enabling centralized code quality tracking.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.2.0</span>
+                <span class="text-sm text-gray-400">March 17, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Code review is now displayed on generate migrations and deployment script screens, surfacing potential issues before deployment.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.1.0</span>
+                <span class="text-sm text-gray-400">March 9, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  The init command can now automatically update TOML configuration files for Desktop users, simplifying configuration management.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Foundational support for Babelfish has been added, expanding database compatibility.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.1.0</span>
+                <span class="text-sm text-gray-400">February 18, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Oracle comparison now offers options to ignore invisible columns and invisible indexes, reducing unnecessary drift detection.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Multiple project tabs can now be opened simultaneously, improving your workflow when managing multiple databases.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.0.3</span>
+                <span class="text-sm text-gray-400">February 12, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Version control diff viewer now includes previous/next change navigation buttons, making it easier to review multiple changes.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.0.2</span>
+                <span class="text-sm text-gray-400">February 20, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  New -check.generateReport flag lets you control whether check writes results to a file, giving you more flexibility in automated workflows.
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Auth command can now output results as JSON when outputType=json is set, enabling integration with JSON-based pipelines.
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.0.1</span>
+                <span class="text-sm text-gray-400">February 5, 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Full release notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Automated deployment page now includes scripts for deploying specific migrations and rolling back deployments, giving you granular deployment control.
+                </li>
+              
+            </ul>
+          </div>
+        
+      </div>
+
+      
+        <button
+          id="show-more-releases"
+          onclick="toggleReleases()"
+          class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
+          style="color:#e8392d;">
+          Show 18 older releases ↓
+        </button>
+        <script>
+          function toggleReleases() {
+            const extras = document.querySelectorAll('.release-extra');
+            const btn = document.getElementById('show-more-releases');
+            const hidden = extras[0].classList.contains('hidden');
+            extras.forEach(el => el.classList.toggle('hidden', !hidden));
+            btn.textContent = hidden
+              ? 'Show fewer releases ↑'
+              : 'Show 18 older releases ↓';
+          }
+        </script>
+      
+
+      
+        <p class="text-xs text-gray-400 mt-3">
+          Last updated 2026-06-16
+          
+          
+            · Showing changes back to February 5, 2026
+          
+        </p>
+      
+    </section>
+  
+
+  <!-- Back link -->
+  <a href="/" class="text-sm font-medium hover:underline" style="color:#e8392d;">← Back to all products</a>
+
+</div>
+
+    </main>
+
+  </body>
+</html>

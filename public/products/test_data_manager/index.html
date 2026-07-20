@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redgate Handbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tailwind.css">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> Handbook
+      </a>
+
+      <div class="flex gap-6 text-sm font-medium">
+        
+          <a href="/products/monitor/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Monitor</a>
+        
+          <a href="/products/flyway/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Flyway</a>
+        
+          <a href="/products/test_data_manager/" class="transition hover:underline text-white underline" style="text-decoration-color:#e8392d;">Test Data Manager</a>
+        
+          <a href="/products/toolbelt_essentials/" class="transition hover:underline text-gray-300 hover:text-white" style="text-decoration-color:#e8392d;">Toolbelt Essentials</a>
+        
+      </div>
+    </nav>
+
+    <main>
+      <div class="max-w-6xl mx-auto px-6 py-12">
+
+  <!-- Header -->
+  <div class="mb-10">
+    <p class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#e8392d;">Product Overview</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-3">Redgate Test Data Manager</h1>
+    <p class="text-xl text-gray-500">Safe, realistic test data on demand</p>
+  </div>
+
+  <!-- What it does -->
+  <section class="mb-8">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">What it does</h2>
+    <p class="text-gray-600 leading-relaxed">Test Data Manager helps teams provision masked, compliant, and production-like data for testing — without exposing real customer data. Developers and QA engineers get the data they need, self-service, without waiting on a DBA or risking a GDPR breach.</p>
+  </section>
+
+  <!-- Supported Platforms -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-4">Supported Platforms</h2>
+      <div class="flex flex-wrap gap-8 items-center">
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">SQL Server</span>
+          </div>
+        
+          <div class="flex flex-col items-center gap-1.5" style="min-width:64px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" class="w-8 h-8 object-contain" />
+            <span class="text-gray-400 text-center" style="font-size:11px;">Oracle</span>
+          </div>
+        
+      </div>
+      
+    </section>
+  
+
+  <!-- Key Features -->
+  <section class="mb-10">
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">Key Features</h2>
+
+    
+
+      
+      <div id="feature-tabs">
+
+        
+        <div class="flex flex-wrap border-b border-gray-200 mb-6">
+          
+            <button
+              onclick="showTab(0)"
+              id="tab-btn-0"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Data Masking &amp; Anonymisation
+            </button>
+          
+            <button
+              onclick="showTab(1)"
+              id="tab-btn-1"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Self-Service Provisioning
+            </button>
+          
+            <button
+              onclick="showTab(2)"
+              id="tab-btn-2"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              Compliance &amp; Governance
+            </button>
+          
+            <button
+              onclick="showTab(3)"
+              id="tab-btn-3"
+              class="px-5 py-3 text-sm bg-transparent border-0 cursor-pointer border-b-2 border-transparent text-gray-500 font-medium">
+              CI/CD &amp; Pipeline Integration
+            </button>
+          
+        </div>
+
+        
+        
+          <div id="tab-panel-0" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Data Masking &amp; Anonymisation</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Replace sensitive production data with realistic synthetic values — names, emails, addresses, card numbers — while preserving the shape and referential integrity of the data. The result looks real, behaves real, and contains nothing it shouldn&#39;t.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Deterministic masking</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">The same input always produces the same masked output, so joins still work across tables.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Format-preserving</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Masked values match the format of the original — so application validation still passes.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Custom masking rules</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Define your own masking logic for domain-specific fields.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-1" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Self-Service Provisioning</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Developers and testers request the data they need without raising a ticket or waiting on a DBA. Provision a fresh, masked copy of a database in minutes — not days.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">On-demand clones</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Spin up a masked database copy for any environment, any time.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Subsetting</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Provision a representative slice of production data — not the full 10TB — keeping test environments lean and fast.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">CI/CD integration</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Automate data provisioning as part of your pipeline so every test run starts with clean, consistent data.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-2" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">Compliance &amp; Governance</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Built for teams who need to demonstrate compliance with GDPR, HIPAA, and other data privacy regulations. Every provisioning action is logged and auditable.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">GDPR-ready</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">No PII ever leaves production unmasked — full audit trail of what was provisioned and to whom.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Policy enforcement</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Define organisation-wide masking policies that can&#39;t be bypassed by individual teams.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Data classification</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Automatically detect and tag sensitive columns across your database estate.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+          <div id="tab-panel-3" class="hidden">
+            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden card-hover">
+              <div class="flex flex-wrap items-stretch">
+
+                
+                
+
+                
+                <div class="p-8" style="flex:1 1 280px;">
+                  <h3 class="text-lg font-semibold text-gray-900 mb-3">CI/CD &amp; Pipeline Integration</h3>
+                  
+                    <p class="text-sm text-gray-500 leading-relaxed mb-3">Test Data Manager fits into the pipelines you already have. Provision fresh test data automatically on every build — no manual prep, no stale snapshots.</p>
+                  
+                  
+                  
+                    <div class="flex flex-col gap-3 mt-2">
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">REST API</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Trigger provisioning from any pipeline tool — Jenkins, GitHub Actions, Azure DevOps, and more.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">CLI</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">Script provisioning steps alongside your deployment automation.</p>
+                          
+                        </div>
+                      
+                        <div>
+                          
+                            <span class="text-sm font-semibold text-gray-700">Supports SQL Server and Oracle</span>
+                          
+                          <p class="text-sm text-gray-500 mt-0.5 mb-0">With more databases on the roadmap.</p>
+                          
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        
+
+      </div>
+
+      <script>
+        function showTab(activeIndex) {
+          const totalTabs = 4;
+          for (let i = 0; i < totalTabs; i++) {
+            const panel = document.getElementById('tab-panel-' + i);
+            const btn = document.getElementById('tab-btn-' + i);
+            if (i === activeIndex) {
+              panel.classList.remove('hidden');
+              btn.style.borderBottom = '2px solid #e8392d';
+              btn.style.color = '#e8392d';
+              btn.style.fontWeight = '600';
+            } else {
+              panel.classList.add('hidden');
+              btn.style.borderBottom = '2px solid transparent';
+              btn.style.color = '#6b7280';
+              btn.style.fontWeight = '500';
+            }
+          }
+        }
+        document.addEventListener('DOMContentLoaded', function() { showTab(0); });
+      </script>
+
+    
+  </section>
+
+  <!-- Demo Servers -->
+  
+
+  <!-- Useful Links -->
+  
+    <section class="mb-10">
+      <h2 class="text-lg font-semibold text-gray-800 mb-3">Useful Links</h2>
+      <ul class="space-y-2">
+        
+          <li>
+            <a href="https://www.red-gate.com/products/test-data-manager/" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Test Data Manager Overview
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://documentation.red-gate.com/test-data-manager" target="_blank" class="text-sm font-medium hover:underline" style="color:#e8392d;">
+              → Documentation
+            </a>
+          </li>
+        
+      </ul>
+    </section>
+  
+
+  <!-- What's New -->
+  
+
+  <!-- Back link -->
+  <a href="/" class="text-sm font-medium hover:underline" style="color:#e8392d;">← Back to all products</a>
+
+</div>
+
+    </main>
+
+  </body>
+</html>

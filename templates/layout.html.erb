@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redgate Handbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tailwind.css">
+  </head>
+  <body class="bg-white min-h-screen font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-[#111827] text-white px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-semibold text-lg tracking-tight hover:text-[#e8392d] transition">
+        <span class="text-[#e8392d]">Redgate</span> Handbook
+      </a>
+
+      <div class="flex gap-6 text-sm font-medium">
+        <% [["Monitor", "monitor"], ["Flyway", "flyway"], ["Test Data Manager", "test_data_manager"], ["Toolbelt Essentials", "toolbelt_essentials"]].each do |label, key| %>
+          <a href="/products/<%= key %>/" class="transition hover:underline <%= product == key ? 'text-white underline' : 'text-gray-300 hover:text-white' %>" style="text-decoration-color:#e8392d;"><%= label %></a>
+        <% end %>
+      </div>
+    </nav>
+
+    <main>
+      <%= content %>
+    </main>
+
+  </body>
+</html>

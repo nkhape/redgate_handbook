@@ -1,11 +1,6 @@
 services:
   - type: web
     name: redgate-handbook
-    runtime: ruby
-    buildCommand: "./bin/render-build.sh"
-    startCommand: "bin/rails server -p $PORT"
-    envVars:
-      - key: RAILS_MASTER_KEY
-        sync: false
-      - key: RAILS_ENV
-        value: production
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./public
