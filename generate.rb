@@ -7,6 +7,7 @@ require "yaml"
 require "json"
 require "fileutils"
 require "cgi"
+require "rbconfig"
 
 ROOT = File.expand_path(__dir__)
 DATA_DIR = File.join(ROOT, "data")
@@ -129,6 +130,10 @@ end
 releases_path = File.join(DATA_DIR, "releases_data.json")
 RELEASES = File.exist?(releases_path) ? deep_symbolize(JSON.parse(File.read(releases_path))) : {}
 
+unless system(RbConfig.ruby, File.join(ROOT, "build_css.rb"))
+  warn "Tailwind rebuild failed or skipped — reusing existing assets/css/tailwind.css"
+end
+
 FileUtils.rm_rf(OUT_DIR)
 FileUtils.mkdir_p(OUT_DIR)
 
@@ -136,7 +141,7 @@ FileUtils.mkdir_p(OUT_DIR)
 FileUtils.cp_r(File.join(ASSETS_DIR, "images"), OUT_DIR)
 FileUtils.mkdir_p(File.join(OUT_DIR, "css"))
 FileUtils.cp(File.join(ASSETS_DIR, "css", "tailwind.css"), File.join(OUT_DIR, "css", "tailwind.css"))
-%w[icon.png icon.svg robots.txt 404.html].each do |file|
+%w[icon.svg robots.txt 404.html].each do |file|
   FileUtils.cp(File.join(ASSETS_DIR, file), File.join(OUT_DIR, file))
 end
 

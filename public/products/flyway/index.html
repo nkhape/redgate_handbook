@@ -9,11 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/redgate_handbook/css/tailwind.css">
-    <style>
-      .lang-flag { filter: grayscale(1); opacity: .45; transition: filter .15s, opacity .15s; }
-      .lang-flag:hover { filter: grayscale(.5); opacity: .75; }
-      .lang-flag.active { filter: none; opacity: 1; }
-    </style>
   </head>
   <body class="bg-white min-h-screen font-sans antialiased">
 
@@ -33,7 +28,7 @@
         
 
         <div class="flex items-center gap-2 pl-4 border-l border-gray-700">
-          <a href="/redgate_handbook/products/flyway/" class="lang-flag rounded-sm overflow-hidden active" aria-label="English" title="English">
+          <a href="/redgate_handbook/products/flyway/" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 !grayscale-0 !opacity-100" aria-label="English" title="English">
             <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
               <rect width="30" height="20" fill="#012169"/>
               <path d="M0,0 L30,20 M30,0 L0,20" stroke="#FFFFFF" stroke-width="4"/>
@@ -42,7 +37,7 @@
               <path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.5"/>
             </svg>
           </a>
-          <a href="/redgate_handbook/de/products/flyway/" class="lang-flag rounded-sm overflow-hidden " aria-label="Deutsch" title="Deutsch">
+          <a href="/redgate_handbook/de/products/flyway/" class="rounded-sm overflow-hidden transition grayscale opacity-45 hover:grayscale-50 hover:opacity-75 " aria-label="Deutsch" title="Deutsch">
             <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" class="block">
               <rect width="30" height="6.67" y="0" fill="#000000"/>
               <rect width="30" height="6.67" y="6.67" fill="#DD0000"/>
@@ -455,11 +450,7 @@
       </div>
 
       
-        <style>
-          .release-summary a { font-weight: 600; color: inherit; text-decoration: underline; text-decoration-color: #d1d5db; text-underline-offset: 2px; }
-          .release-summary a:hover { text-decoration-color: currentColor; }
-        </style>
-        <p class="release-summary text-gray-600 leading-relaxed mb-6">Recent releases bring powerful new capabilities for database management and deployment workflows. The <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">PostgreSQL filter UI now supports multiple rules per object type</a>, giving you fine-grained control over comparison and deployment. <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Code review is now integrated directly into deployment and generation screens</a>, surfacing potential issues before scripts run. For Oracle deployments, <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">new options add existence checks to INSERT statements and permissions checks to GRANT/REVOKE statements</a>, reducing deployment risk. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">GitHub Actions workflow generation is now available</a>, streamlining CI/CD integration. Teams also benefit from <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">expanded code analysis rules</a> and <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Native Connectors support for SQLite and enhanced PostgreSQL/MySQL progress reporting</a>.</p>
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Recent releases bring powerful new capabilities for database management and deployment workflows. The <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">PostgreSQL filter UI now supports multiple rules per object type</a>, giving you fine-grained control over comparison and deployment. <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Code review is now integrated directly into deployment and generation screens</a>, surfacing potential issues before scripts run. For Oracle deployments, <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">new options add existence checks to INSERT statements and permissions checks to GRANT/REVOKE statements</a>, reducing deployment risk. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">GitHub Actions workflow generation is now available</a>, streamlining CI/CD integration. Teams also benefit from <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">expanded code analysis rules</a> and <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Native Connectors support for SQLite and enhanced PostgreSQL/MySQL progress reporting</a>.</p>
       
 
       

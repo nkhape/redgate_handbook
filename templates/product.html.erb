@@ -199,11 +199,7 @@
       </div>
 
       <% if present?(releases[:summary]) %>
-        <style>
-          .release-summary a { font-weight: 600; color: inherit; text-decoration: underline; text-decoration-color: #d1d5db; text-underline-offset: 2px; }
-          .release-summary a:hover { text-decoration-color: currentColor; }
-        </style>
-        <p class="release-summary text-gray-600 leading-relaxed mb-6"><%= sanitize_summary(releases[:summary]) %></p>
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600"><%= sanitize_summary(releases[:summary]) %></p>
       <% end %>
 
       <% visible_count = 3 %>

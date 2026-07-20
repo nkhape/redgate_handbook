@@ -6,3 +6,6 @@
 
 # Ignore all environment files (ANTHROPIC_API_KEY for local release fetches).
 /.env*
+
+# Downloaded standalone Tailwind CLI binary (see build_css.rb).
+/.cache/
