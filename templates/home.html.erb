@@ -2,7 +2,7 @@
   <h1 class="text-4xl font-bold text-gray-900 mb-2">Redgate Product Handbook</h1>
   <p class="text-lg text-gray-500 mb-10">Quick reference for sales & solutions teams</p>
 
-  <% product_logos = { "monitor" => "Monitor_logo.svg", "flyway" => "Flyway_logo.svg", "test_data_manager" => "TDM_logo.png", "toolbelt_essentials" => "TBE_logo.png" } %>
+  <% product_logos = { "monitor" => "Monitor_logo.svg", "flyway" => "Flyway_logo.svg", "toolbelt_essentials" => "TBE_logo.png" } %>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     <% ["monitor", "flyway"].each do |product_key| %>
       <a href="/products/<%= product_key %>/" class="block bg-white border border-gray-200 rounded-xl p-6 card-hover group">

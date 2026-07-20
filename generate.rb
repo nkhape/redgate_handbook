@@ -93,7 +93,7 @@ PRODUCTS = products_data[:en][:products]
 releases_path = File.join(DATA_DIR, "releases_data.json")
 RELEASES = File.exist?(releases_path) ? deep_symbolize(JSON.parse(File.read(releases_path))) : {}
 
-PRODUCT_KEYS = [:monitor, :flyway, :test_data_manager, :toolbelt_essentials]
+PRODUCT_KEYS = [:monitor, :flyway, :toolbelt_essentials]
 
 FileUtils.rm_rf(OUT_DIR)
 FileUtils.mkdir_p(OUT_DIR)

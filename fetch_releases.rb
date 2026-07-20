@@ -17,9 +17,8 @@ RSS_FEED_URL = "https://dialgforgsu.github.io/re-check/feed.xml"
 DATA_PATH = File.join(__dir__, "data", "releases_data.json")
 
 PRODUCT_RSS_PREFIXES = {
-  "monitor"           => [ "Redgate Monitor" ],
-  "flyway"            => [ "Flyway Desktop", "Flyway CLI" ],
-  "test_data_manager" => [ "Test Data Manager" ]
+  "monitor" => [ "Redgate Monitor" ],
+  "flyway"  => [ "Flyway Desktop", "Flyway CLI" ]
 }.freeze
 
 def fetch_rss_items
