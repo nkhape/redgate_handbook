@@ -428,6 +428,7 @@
         <p class="text-gray-600 leading-relaxed mb-6 [&_a]:text-[#e8392d] [&_a]:font-medium [&_a]:hover:underline">Aktuelle Releases bringen leistungsstarke Verbesserungen für die Überwachung Ihres gesamten Datenbankbestands. <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Die SQL-Agent-Jobüberwachung unterstützt jetzt Contained Availability Groups</a>, während <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">native ServiceNow- und Microsoft-Teams-Benachrichtigungen</a> Ihren Alarmierungs-Workflow optimieren. Für Cloud-Kunden ist <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">die Überwachung einzelner Abfrageausführungen jetzt für Azure SQL Database und Azure SQL Managed Instance verfügbar</a> und bietet tiefere Einblicke in Performance-Probleme. Die Plattform wurde zudem in der Bedienbarkeit verbessert, mit schnelleren Ladezeiten auf den Speicherplatzseiten und einer besseren <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Blocking-Tree-Visualisierung</a>; PostgreSQL-Kunden profitieren außerdem von einer intelligenteren Erkennung von Indexänderungen in Abfrageplänen.</p>
       
 
+      
       <div class="flex flex-col gap-4">
         
           <div class="bg-white border border-gray-200 rounded-xl p-6 ">
@@ -535,7 +536,7 @@
             </ul>
           </div>
         
-          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v14.16.0</span>
@@ -560,7 +561,7 @@
             </ul>
           </div>
         
-          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v14.15.0</span>
@@ -993,9 +994,9 @@
           onclick="toggleReleases()"
           class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
           style="color:#e8392d;"
-          data-more-text="12 ältere Releases anzeigen ↓"
+          data-more-text="14 ältere Releases anzeigen ↓"
           data-fewer-text="Weniger Releases anzeigen ↑">
-          12 ältere Releases anzeigen ↓
+          14 ältere Releases anzeigen ↓
         </button>
         <script>
           function toggleReleases() {

@@ -202,9 +202,10 @@
         <p class="text-gray-600 leading-relaxed mb-6 [&_a]:text-[#e8392d] [&_a]:font-medium [&_a]:hover:underline"><%= sanitize_summary(releases[:summary]) %></p>
       <% end %>
 
+      <% visible_count = 3 %>
       <div class="flex flex-col gap-4">
         <% releases[:items].each_with_index do |release, index| %>
-          <div class="bg-white border border-gray-200 rounded-xl p-6 <%= index >= 5 ? 'hidden release-extra' : '' %>">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 <%= index >= visible_count ? 'hidden release-extra' : '' %>">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v<%= h(release[:version]) %></span>
@@ -226,15 +227,15 @@
         <% end %>
       </div>
 
-      <% if releases[:items].length > 5 %>
+      <% if releases[:items].length > visible_count %>
         <button
           id="show-more-releases"
           onclick="toggleReleases()"
           class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
           style="color:#e8392d;"
-          data-more-text="<%= h(t(:show_older_releases, count: releases[:items].length - 5)) %>"
+          data-more-text="<%= h(t(:show_older_releases, count: releases[:items].length - visible_count)) %>"
           data-fewer-text="<%= h(t(:show_fewer_releases)) %>">
-          <%= t(:show_older_releases, count: releases[:items].length - 5) %>
+          <%= t(:show_older_releases, count: releases[:items].length - visible_count) %>
         </button>
         <script>
           function toggleReleases() {
