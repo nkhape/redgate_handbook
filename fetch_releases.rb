@@ -12,9 +12,10 @@ require "json"
 require "uri"
 require "rexml/document"
 require "date"
+require "fileutils"
 
 RSS_FEED_URL = "https://dialgforgsu.github.io/re-check/feed.xml"
-DATA_PATH = File.join(__dir__, "data", "releases_data.json")
+RELEASES_DIR = File.join(__dir__, "data", "releases")
 
 PRODUCT_RSS_PREFIXES = {
   "monitor" => [ "Redgate Monitor" ],
@@ -159,9 +160,7 @@ def fetch_releases_for(product_key, all_items)
 end
 
 def save_releases(product_key, releases)
-  data = File.exist?(DATA_PATH) ? JSON.parse(File.read(DATA_PATH)) : {}
-
-  data[product_key] = %w[en de].to_h do |locale|
+  data = %w[en de].to_h do |locale|
     locale_data = releases.fetch(locale)
     [locale, {
       "fetched_at" => Date.today.to_s,
@@ -170,8 +169,10 @@ def save_releases(product_key, releases)
     }]
   end
 
-  File.write(DATA_PATH, JSON.pretty_generate(data))
-  puts "Saved to #{DATA_PATH}."
+  FileUtils.mkdir_p(RELEASES_DIR)
+  path = File.join(RELEASES_DIR, "#{product_key}.json")
+  File.write(path, JSON.pretty_generate(data))
+  puts "Saved to #{path}."
 end
 
 requested_product = ARGV[0]
