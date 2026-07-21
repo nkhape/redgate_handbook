@@ -152,6 +152,7 @@ def translate_to_german(english)
     - Translate each string in "highlights" into German.
     - Reformat "date" into German date format (e.g. "20. Juli 2026").
     - Translate the "summary" HTML string, keeping any <a href="..."> tags and their href values unchanged — translate only the visible link text and surrounding text.
+    - Never use double quotes (" or „ ") anywhere in the translated German text, including around feature or product names — a literal double-quote character breaks the JSON string you're writing. If you'd normally set off a term, either don't, or use single quotes (') instead.
 
     Return ONLY valid JSON — no explanation, no markdown, no code fences. Use this exact structure:
     {
