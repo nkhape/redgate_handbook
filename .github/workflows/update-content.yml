@@ -31,7 +31,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          TIMESTAMP=$(date -u +"%Y-%m-%dT%H%M%SZ")
+          TIMESTAMP=$(date -u +"%Y/%m/%d-%H:%MUTC")
           COMMITTED=false
 
           declare -A PRODUCT_NAMES=( [monitor]="Monitor" [flyway]="Flyway" )
