@@ -106,7 +106,9 @@ def process_with_claude(items)
   uri = URI("https://api.anthropic.com/v1/messages")
   http = Net::HTTP.new(uri.host, uri.port)
   http.use_ssl = true
-  http.read_timeout = 60
+  # Bilingual output from up to 50 RSS items can take a while on Haiku — 60s
+  # was too tight and made larger products (e.g. Flyway's ~60 items) time out.
+  http.read_timeout = 180
   http.open_timeout = 10
 
   request = Net::HTTP::Post.new(uri)
