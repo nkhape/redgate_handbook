@@ -172,7 +172,10 @@ def translate_to_german(english)
     #{english_json}
   PROMPT
 
-  call_claude(prompt, max_tokens: 8192)
+  # German runs longer than English for the same content, and translating an
+  # already-large item list (e.g. 24+ versions) can outgrow 8192 tokens
+  # mid-response — seen in practice as truncated/malformed JSON.
+  call_claude(prompt, max_tokens: 16000)
 end
 
 def fetch_releases_for(product_key, all_items)
