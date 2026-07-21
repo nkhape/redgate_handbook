@@ -1,8 +1,8 @@
-name: Update release notes
+name: fetch latest release notes
 
 on:
   schedule:
-    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+    - cron: "0 6 * * 0" # Sundays 06:00 UTC
   workflow_dispatch: {}
 
 permissions:
@@ -26,14 +26,29 @@ jobs:
       - name: Regenerate static site
         run: ruby generate.rb
 
-      - name: Commit and push if content changed
+      - name: Commit changes, one commit per product that actually changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/releases_data.json public
-          if git diff --cached --quiet; then
-            echo "No content changes."
-          else
-            git commit -m "Weekly release notes refresh"
+
+          TIMESTAMP=$(date -u +"%Y/%m/%d-%H:%MUTC")
+          COMMITTED=false
+
+          declare -A PRODUCT_NAMES=( [monitor]="Monitor" [flyway]="Flyway" )
+
+          for key in "${!PRODUCT_NAMES[@]}"; do
+            name="${PRODUCT_NAMES[$key]}"
+            json="data/releases/${key}.json"
+
+            if [ -n "$(git status --porcelain -- "$json")" ]; then
+              git add "$json" "public/products/${key}/index.html" "public/de/products/${key}/index.html"
+              git commit -m "${TIMESTAMP}_${name}_release-note-updates"
+              COMMITTED=true
+            fi
+          done
+
+          if [ "$COMMITTED" = true ]; then
             git push
+          else
+            echo "No release note changes found."
           fi

@@ -127,8 +127,11 @@ PRODUCTS = LOCALES.to_h do |locale|
   [locale, deep_symbolize(YAML.load_file(File.join(DATA_DIR, "products.#{locale}.yml")))]
 end
 
-releases_path = File.join(DATA_DIR, "releases_data.json")
-RELEASES = File.exist?(releases_path) ? deep_symbolize(JSON.parse(File.read(releases_path))) : {}
+RELEASES_DIR = File.join(DATA_DIR, "releases")
+RELEASES = PRODUCT_KEYS.each_with_object({}) do |key, hash|
+  path = File.join(RELEASES_DIR, "#{key}.json")
+  hash[key] = File.exist?(path) ? deep_symbolize(JSON.parse(File.read(path))) : nil
+end
 
 unless system(RbConfig.ruby, File.join(ROOT, "build_css.rb"))
   warn "Tailwind rebuild failed or skipped — reusing existing assets/css/tailwind.css"
