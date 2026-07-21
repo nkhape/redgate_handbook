@@ -1,15 +1,24 @@
 {
   "en": {
     "fetched_at": "2026-07-21",
-    "summary": "Recent updates bring powerful new capabilities for database management and deployment automation. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Native Connectors mode now supports SQLite and Deploy commands</a>, while <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Databricks advanced capabilities are available in preview</a>. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Azure Key Vault integration</a> enhances secrets management, and the <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Automated Deployment page now generates GitHub Actions workflows with manual approval support</a>. Teams benefit from improved PostgreSQL filtering options, faster migration saving, and better error messaging across platforms—making deployments safer and more streamlined.",
+    "summary": "Recent releases bring powerful new capabilities for database management and deployment automation. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Drift resolution now generates scripts automatically</a> with dedicated folder configuration, while <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">code review features integrated into the UI</a> catch potential issues before deployment. Teams can now <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">generate GitHub Actions workflows automatically</a> for CI/CD pipelines, and <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">new database support includes Databricks, Babelfish, and Native Connectors for SQLite</a>. Oracle users benefit from <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">existence checks on index creation</a> and permission safeguards, while PostgreSQL projects gain <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">powerful filtering capabilities</a> for precise object selection during comparison.",
     "items": [
       {
         "version": "13.0.0",
         "date": "July 20, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Drift and change analysis results now include unique identifiers for each difference, letting you resolve specific issues without affecting others",
-          "AI agents can now call Flyway commands directly through a new Flyway MCP server interface"
+          "Drift detection now includes unique identifiers for each difference, making it easier to track and resolve specific schema mismatches",
+          "AI-powered Flyway MCP server available to expose development tools that AI agents can use to run migrations and state-based deployments"
+        ]
+      },
+      {
+        "version": "9.6.1",
+        "date": "July 16, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Shadow database provisioning now always available to Enterprise customers for safer pre-deployment testing",
+          "Project settings now allow switching between state-based and migration-based deployments at any time"
         ]
       },
       {
@@ -17,10 +26,9 @@
         "date": "July 9, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "PostgreSQL projects can now disable constraint checks during static data loads for faster deployments",
-          "Help text for key commands now shows relevant settings and usage examples, making it easier to configure Flyway correctly",
-          "Docker provisioning now provides clear error messages when the Docker CLI is missing or the Docker daemon isn't running",
-          "Flyway starts faster by loading database drivers on-demand instead of upfront"
+          "PostgreSQL now supports a disable-constraints-for-static-data option for smoother data loading workflows",
+          "Help messages now show relevant configuration parameters and usage examples for faster troubleshooting",
+          "Docker provisioner errors are now much clearer when Docker CLI is missing or daemon isn't running"
         ]
       },
       {
@@ -28,7 +36,77 @@
         "date": "July 6, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Databricks advanced capabilities support is now available in public preview, enabling deeper integration with Databricks environments"
+          "Databricks advanced capabilities now available in public preview for lakehouse deployments"
+        ]
+      },
+      {
+        "version": "9.5.10",
+        "date": "June 30, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Failed push operations now show a clear explanation and offer a one-click 'Pull changes' button to resolve conflicts"
+        ]
+      },
+      {
+        "version": "12.10.0",
+        "date": "June 30, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "Smart Docker provisioner now reuses build database containers across multiple Flyway commands, reducing setup time",
+          "Postgres and MySQL Docker containers now start with valid credentials and usable default schemas, enabling faster provisioning",
+          "Configuration-only commands now start faster by skipping unnecessary Flyway instance creation"
+        ]
+      },
+      {
+        "version": "9.5.8",
+        "date": "June 18, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Drift resolution folder can now be configured as an advanced parameter on the Migrations page",
+          "Generated migration saving is now faster"
+        ]
+      },
+      {
+        "version": "12.9.0",
+        "date": "June 18, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "New check.driftResolutionFolder setting lets you control exactly where drift resolution scripts are generated",
+          "Drift, changes, and dryrun commands now report phase-level progress for better visibility into long-running operations"
+        ]
+      },
+      {
+        "version": "9.5.5",
+        "date": "June 4, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "PostgreSQL filter UI now supports filtering across any object type with flexible rule combinations"
+        ]
+      },
+      {
+        "version": "12.8.0",
+        "date": "June 4, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "License expiry warnings now alert you 30 days before offline permits expire, preventing deployment interruptions",
+          "Progress reporting significantly improved for PostgreSQL, MySQL, and SQLite operations"
+        ]
+      },
+      {
+        "version": "9.5.4",
+        "date": "June 3, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Postgres filter editor now supports multiple rules per object type, enabling complex inclusion and exclusion patterns simultaneously"
+        ]
+      },
+      {
+        "version": "9.5.3",
+        "date": "May 27, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Oracle now supports optional existence checks on index creation statements to prevent deployment errors",
+          "Sign-in link can now be copied to clipboard for environments where browser cannot open automatically"
         ]
       },
       {
@@ -36,8 +114,8 @@
         "date": "May 26, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "PostgreSQL projects can now filter out specific objects during comparison to focus on what matters",
-          "Previously opened project tabs are automatically restored when you launch Flyway Desktop"
+          "PostgreSQL projects now have a dedicated Filters UI to exclude unwanted objects during comparison",
+          "Flyway Desktop now automatically restores your previously open tabs when you launch the application"
         ]
       },
       {
@@ -45,8 +123,17 @@
         "date": "May 21, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Environment variable syntax now works in all Flyway configuration parameters, not just database connection settings",
-          "CockroachDB version 26 is now supported"
+          "Environment variable syntax now works across all Flyway configuration parameters, not just connection properties",
+          "CockroachDB v26 is now fully supported"
+        ]
+      },
+      {
+        "version": "9.5.0",
+        "date": "May 18, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Automated Deployment workflows now support manual approval steps for teams using GitHub environments",
+          "Choice between state-based and migration-based deployments moved to the Deployment page for greater flexibility"
         ]
       },
       {
@@ -54,8 +141,8 @@
         "date": "May 8, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Deploy command now supports Native Connectors mode for direct database connections without JDBC",
-          "Configuration errors from obsolete parameters now expose the specific parameters and reasons in structured data"
+          "Native Connectors mode now supported for Deploy command, enabling faster direct database connections",
+          "Simplified namespace handling allows mixing scoped and unscoped namespaces for more flexible configuration"
         ]
       },
       {
@@ -63,8 +150,8 @@
         "date": "May 7, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "SQL Server deployments can now use existence checks for INSERT statements to prevent duplicate key errors",
-          "You can now configure custom folders for storing drift resolution scripts"
+          "SQL Server deployments can now use existence checks on INSERT statements to prevent constraint violations",
+          "Oracle checksumIncludeReferencedScripts parameter now available to control whether referenced scripts affect checksums"
         ]
       },
       {
@@ -72,7 +159,7 @@
         "date": "April 29, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "The Automated Deployment page now generates ready-to-use GitHub Actions workflow files, eliminating manual setup"
+          "Automated Deployment page now generates ready-to-use GitHub Actions workflow files for instant CI/CD integration"
         ]
       },
       {
@@ -80,8 +167,8 @@
         "date": "April 27, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Azure Key Vault can now be used as a secrets resolver for secure credential management",
-          "Cassandra now uses Native Connectors mode by default for better performance and reliability"
+          "Azure Key Vault now supported as a secrets resolver for secure credential management",
+          "Native Connectors mode now available for Cassandra, replacing the legacy JDBC approach for better performance"
         ]
       },
       {
@@ -89,9 +176,25 @@
         "date": "April 14, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Three new code review rules help enforce naming conventions: forbidden alias names, table name pluralization checks, and bracket-enclosed object names",
-          "A new configurable rule lets you enforce naming prefixes across tables, views, procedures, functions, and schemas",
-          "Gradle plugin now works seamlessly with Gradle's configuration cache for faster builds"
+          "New RG23 code review rule allows you to configure and enforce forbidden alias names",
+          "Oracle checksumIncludeReferencedScripts parameter lets you control whether referenced scripts are included in migration checksums",
+          "Gradle configuration cache now fully supported in flyway-gradle-plugin"
+        ]
+      },
+      {
+        "version": "9.3.4",
+        "date": "April 17, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Code review issues now underline entire lines in addition to icon annotations for better visibility"
+        ]
+      },
+      {
+        "version": "9.3.3",
+        "date": "April 16, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Code review panel now includes an apply fix action for issues with suggested corrections"
         ]
       },
       {
@@ -99,8 +202,8 @@
         "date": "March 31, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "SQLite is now supported in Native Connectors mode",
-          "Code review output now includes file position information and suggested fixes for easier remediation"
+          "SQLite now available in Native Connectors mode for better performance and direct database access",
+          "Code review JSON output now includes detailed file position data and optional suggested fixes"
         ]
       },
       {
@@ -108,8 +211,8 @@
         "date": "March 26, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Code review now generates SARIF reports for seamless integration with GitHub Code Scanning, Azure DevOps, and other CI/CD platforms",
-          "Three new code review rules enforce best practices: object name pluralization, bracket-enclosed identifiers, and configurable naming prefixes"
+          "Three new code review rules: RG19 (table name pluralization check), RG20 (bracketed object names), and RG21 (configurable naming prefixes)",
+          "Code review now generates SARIF 2.1.0 reports for integration with GitHub Code Scanning and Azure DevOps"
         ]
       },
       {
@@ -117,7 +220,7 @@
         "date": "March 17, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Code review display now appears on migration generation and deployment script screens, showing potential issues identified by SQL Fluff analysis"
+          "Code review display now integrated into generate migrations and deployment script screens to catch issues before deployment"
         ]
       },
       {
@@ -125,9 +228,9 @@
         "date": "March 9, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "The init command now automatically updates TOML configuration files for Desktop users, streamlining project setup",
-          "Foundational support for Babelfish has been added for SQL Server compatibility",
-          "InsertRowLock now supports custom locking strategies for databases without primary key support"
+          "Flyway init command now automatically updates TOML configuration files for Desktop users",
+          "InsertRowLock now supports custom locking strategies for databases without primary key support",
+          "Foundational support for Babelfish database added"
         ]
       },
       {
@@ -135,8 +238,8 @@
         "date": "February 20, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "New flag lets you control whether check command writes results to a file, giving you more flexibility in CI/CD pipelines",
-          "Auth command can now output results as JSON for programmatic integration"
+          "New -check.generateReport flag lets you control whether check results are written to files",
+          "Auth command output can now be formatted as JSON for programmatic integration"
         ]
       },
       {
@@ -144,23 +247,57 @@
         "date": "February 18, 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Oracle comparison now supports filtering invisible columns and invisible indexes for cleaner deployment scripts",
-          "Multiple project tabs can now be opened simultaneously for easier project management"
+          "Oracle comparison now supports ignoring invisible columns and invisible indexes for cleaner deployments",
+          "Multiple project tabs can now be open simultaneously for easier project management"
+        ]
+      },
+      {
+        "version": "9.0.3",
+        "date": "February 12, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Version control diff viewer now includes previous/next navigation buttons for easier change review"
+        ]
+      },
+      {
+        "version": "12.0.1",
+        "date": "February 12, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "Oracle schema history tables now use synonyms to enable unquoted access",
+          "New entraId alias available for azureAdInteractive resolver to simplify Azure authentication"
+        ]
+      },
+      {
+        "version": "9.0.1",
+        "date": "February 5, 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Automated deployment page now includes scripts for deploying specific migrations and rolling back deployments"
         ]
       }
     ]
   },
   "de": {
     "fetched_at": "2026-07-21",
-    "summary": "Neue Updates bieten leistungsstarke Funktionen für Datenbankmanagement und Deployment-Automatisierung. Der <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Native Connectors-Modus unterstützt jetzt SQLite und Deploy-Befehle</a>, während <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">erweiterte Databricks-Funktionen in der Vorschau verfügbar sind</a>. Die <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Azure Key Vault-Integration</a> verbessert die Verwaltung von Geheimnissen, und die <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Seite für automatisierte Bereitstellung generiert jetzt GitHub Actions-Workflows mit Unterstützung für manuelle Genehmigung</a>. Teams profitieren von verbesserten PostgreSQL-Filteroptionen, schnellerem Speichern von Migrationen und besseren Fehlermeldungen auf allen Plattformen – für sicherere und rationalisierte Bereitstellungen.",
+    "summary": "Aktuelle Versionen bringen leistungsstarke neue Funktionen für Datenbankverwaltung und Bereitstellungsautomation. <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">Die Drift-Auflösung generiert nun automatisch Skripte</a> mit dedizierter Ordnerkonfiguration, während <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Code-Review-Funktionen in die Benutzeroberfläche integriert sind</a> und potenzielle Probleme vor der Bereitstellung erkennen. Teams können nun <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">GitHub Actions-Workflows automatisch generieren</a> für CI/CD-Pipelines, und <a href=\"https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html\">neue Datenbankunterstützung umfasst Databricks, Babelfish und Native Connectors für SQLite</a>. Oracle-Benutzer profitieren von <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">Existenzprüfungen bei der Indexerstellung</a> und Berechtigungsschutzmaßnahmen, während PostgreSQL-Projekte <a href=\"https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html\">leistungsstarke Filterfunktionen</a> zur präzisen Objektauswahl während des Vergleichs nutzen können.",
     "items": [
       {
         "version": "13.0.0",
         "date": "20. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Ergebnisse der Drift- und Änderungsanalyse enthalten jetzt eindeutige Kennungen für jeden Unterschied, sodass Sie spezifische Probleme beheben können, ohne andere zu beeinflussen",
-          "KI-Agenten können jetzt Flyway-Befehle direkt über eine neue Flyway MCP-Serverschnittstelle aufrufen"
+          "Die Drift-Erkennung umfasst nun eindeutige Identifikatoren für jeden Unterschied, was es einfacher macht, spezifische Schemainkompatibilitäten zu verfolgen und zu beheben",
+          "KI-gestützter Flyway MCP-Server verfügbar, um Entwicklungswerkzeuge bereitzustellen, die KI-Agenten zum Ausführen von Migrationen und zustandsgestützten Bereitstellungen verwenden können"
+        ]
+      },
+      {
+        "version": "9.6.1",
+        "date": "16. Juli 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Die Bereitstellung von Shadow-Datenbanken ist nun immer für Enterprise-Kunden verfügbar, um sicherere Tests vor der Bereitstellung zu ermöglichen",
+          "Projekteinstellungen ermöglichen nun den Wechsel zwischen zustandsgestützten und migrationsgestützten Bereitstellungen jederzeit"
         ]
       },
       {
@@ -168,10 +305,9 @@
         "date": "9. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "PostgreSQL-Projekte können Einschränkungsprüfungen während des statischen Datenladevorns nun deaktivieren, um schnellere Bereitstellungen zu ermöglichen",
-          "Die Hilfetexte für wichtige Befehle zeigen nun relevante Einstellungen und Verwendungsbeispiele, um Flyway korrekter zu konfigurieren",
-          "Die Docker-Bereitstellung bietet jetzt eindeutige Fehlermeldungen, wenn die Docker-CLI fehlt oder der Docker-Daemon nicht läuft",
-          "Flyway startet schneller, indem Datenbankbereitstellungen bei Bedarf geladen werden, anstatt vorausschauend"
+          "PostgreSQL unterstützt nun eine Option zum Deaktivieren von Einschränkungen für statische Daten für reibungslosere Datenlade-Workflows",
+          "Hilfemeldungen zeigen nun relevante Konfigurationsparameter und Verwendungsbeispiele für schnellere Fehlerbehebung",
+          "Docker-Provisioner-Fehler sind nun viel aussagekräftiger, wenn Docker CLI fehlt oder der Daemon nicht ausgeführt wird"
         ]
       },
       {
@@ -179,7 +315,77 @@
         "date": "6. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Die Unterstützung erwiterter Databricks-Funktionen ist jetzt in der öffentlichen Vorschau verfügbar und ermöglicht eine tiefere Integration mit Databricks-Umgebungen"
+          "Databricks-Funktionen sind nun in der Public Preview für Lakehouse-Bereitstellungen verfügbar"
+        ]
+      },
+      {
+        "version": "9.5.10",
+        "date": "30. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Fehlgeschlagene Push-Operationen zeigen nun eine klare Erklärung und bieten eine Schaltfläche zum Abrufen von Änderungen mit einem Klick, um Konflikte zu beheben"
+        ]
+      },
+      {
+        "version": "12.10.0",
+        "date": "30. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "Der intelligente Docker-Provisioner verwendet nun Build-Datenbank-Container über mehrere Flyway-Befehle hinweg erneut und verkürzt die Einrichtungszeit",
+          "Postgres- und MySQL-Docker-Container starten nun mit gültigen Anmeldedaten und verwendbaren Standard-Schemata für schnellere Bereitstellung",
+          "Nur-Konfiguration-Befehle starten nun schneller, indem die unnötige Erstellung von Flyway-Instanzen übersprungen wird"
+        ]
+      },
+      {
+        "version": "9.5.8",
+        "date": "18. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Der Drift-Auflösungsordner kann nun als erweiterter Parameter auf der Migrations-Seite konfiguriert werden",
+          "Das Speichern generierter Migrationen ist nun schneller"
+        ]
+      },
+      {
+        "version": "12.9.0",
+        "date": "18. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "Die neue Einstellung check.driftResolutionFolder ermöglicht es Ihnen, genau zu kontrollieren, wo Drift-Auflösungsskripte generiert werden",
+          "Drift-, Changes- und Dryrun-Befehle melden nun Fortschritt auf Phasenebene für bessere Sichtbarkeit bei lang laufenden Operationen"
+        ]
+      },
+      {
+        "version": "9.5.5",
+        "date": "4. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Die PostgreSQL-Filter-Benutzeroberfläche unterstützt nun Filterung über jeden Objekttyp mit flexiblen Regelkombinationen"
+        ]
+      },
+      {
+        "version": "12.8.0",
+        "date": "4. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "Warnungen zum Ablauf der Lizenz benachrichtigen Sie nun 30 Tage, bevor Offline-Genehmigungen ablaufen, um Bereitstellungsunterbrechungen zu vermeiden",
+          "Fortschrittsberichte erheblich verbessert für PostgreSQL-, MySQL- und SQLite-Operationen"
+        ]
+      },
+      {
+        "version": "9.5.4",
+        "date": "3. Juni 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Der Postgres-Filter-Editor unterstützt nun mehrere Regeln pro Objekttyp und ermöglicht komplexe Inklusions- und Exklusionsmuster gleichzeitig"
+        ]
+      },
+      {
+        "version": "9.5.3",
+        "date": "27. Mai 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Oracle unterstützt nun optionale Existenzprüfungen bei Index-Erstellungsaussagen, um Bereitstellungsfehler zu vermeiden",
+          "Der Anmeldungslink kann nun in die Zwischenablage kopiert werden für Umgebungen, in denen der Browser nicht automatisch öffnen kann"
         ]
       },
       {
@@ -187,8 +393,8 @@
         "date": "26. Mai 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "PostgreSQL-Projekte können jetzt spezifische Objekte während des Vergleichs herausfiltern, um sich auf das Wesentliche zu konzentrieren",
-          "Zuvor geöffnete Projekttabs werden beim Starten von Flyway Desktop automatisch wiederhergestellt"
+          "PostgreSQL-Projekte haben nun eine dedizierte Filters-Benutzeroberfläche, um unerwünschte Objekte während des Vergleichs auszuschließen",
+          "Flyway Desktop stellt nun automatisch Ihre zuvor offenen Registerkarten wieder her, wenn Sie die Anwendung starten"
         ]
       },
       {
@@ -196,8 +402,17 @@
         "date": "21. Mai 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Die Umgebungsvariablen-Syntax funktioniert jetzt in allen Flyway-Konfigurationsparametern, nicht nur in den Datenbankverbindungseinstellungen",
-          "CockroachDB Version 26 wird jetzt unterstützt"
+          "Die Syntax für Umgebungsvariablen funktioniert nun in allen Flyway-Konfigurationsparametern, nicht nur in Verbindungseigenschaften",
+          "CockroachDB v26 wird nun vollständig unterstützt"
+        ]
+      },
+      {
+        "version": "9.5.0",
+        "date": "18. Mai 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Automatisierte Bereitstellungs-Workflows unterstützen nun manuelle Genehmigungsschritte für Teams, die GitHub-Umgebungen verwenden",
+          "Die Auswahl zwischen zustandsgestützten und migrationsgestützten Bereitstellungen wurde auf die Bereitstellungsseite verschoben für größere Flexibilität"
         ]
       },
       {
@@ -205,8 +420,8 @@
         "date": "8. Mai 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Der Deploy-Befehl unterstützt jetzt den Native Connectors-Modus für direkte Datenbankverbindungen ohne JDBC",
-          "Konfigurationsfehler aus veralteten Parametern zeigen nun die spezifischen Parameter und Gründe in strukturierten Daten auf"
+          "Der Native Connectors-Modus wird nun für den Deploy-Befehl unterstützt und ermöglicht schnellere direkte Datenbankverbindungen",
+          "Vereinfachte Namespace-Behandlung ermöglicht das Mischen von Scoped- und Unscoped-Namespaces für flexiblere Konfiguration"
         ]
       },
       {
@@ -214,8 +429,8 @@
         "date": "7. Mai 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "SQL Server-Bereitstellungen können jetzt Existenzprüfungen für INSERT-Anweisungen verwenden, um Fehler bei doppelten Schlüsseln zu vermeiden",
-          "Sie können nun benutzerdefinierte Ordner zum Speichern von Drift-Lösungsskripten konfigurieren"
+          "SQL Server-Bereitstellungen können nun Existenzprüfungen bei INSERT-Aussagen verwenden, um Einschränkungsverletzungen zu vermeiden",
+          "Der Oracle-Parameter checksumIncludeReferencedScripts ist nun verfügbar, um zu kontrollieren, ob referenzierte Skripte Checksummen beeinflussen"
         ]
       },
       {
@@ -223,7 +438,7 @@
         "date": "29. April 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Die Seite für automatisierte Bereitstellung generiert jetzt einsatzbereite GitHub Actions-Workflow-Dateien und spart manuelle Einrichtung"
+          "Die Seite \"Automatisierte Bereitstellung\" generiert nun einsatzbereite GitHub Actions-Workflow-Dateien für sofortige CI/CD-Integration"
         ]
       },
       {
@@ -231,8 +446,8 @@
         "date": "27. April 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Azure Key Vault kann jetzt als Secrets Resolver für sichere Anmeldedatenverwaltung verwendet werden",
-          "Cassandra verwendet jetzt standardmäßig den Native Connectors-Modus für bessere Leistung und Zuverlässigkeit"
+          "Azure Key Vault wird nun als Geheimnisse-Resolver für sichere Anmeldedatenverwaltung unterstützt",
+          "Der Native Connectors-Modus ist nun für Cassandra verfügbar und ersetzt den Legacy-JDBC-Ansatz für bessere Leistung"
         ]
       },
       {
@@ -240,9 +455,25 @@
         "date": "14. April 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Drei neue Code-Review-Regeln helfen bei der Durchsetzung von Namenskonventionen: verbotene Aliasnamen, Prüfungen der Tabellennamenpluralisierung und in Klammern eingeschlossene Objektnamen",
-          "Eine neue konfigurierbare Regel ermöglicht Ihnen, Namensvorsilben für Tabellen, Ansichten, Prozeduren, Funktionen und Schemas zu erzwingen",
-          "Das Gradle-Plugin funktioniert jetzt nahtlos mit dem Gradle-Konfigurationscache für schnellere Builds"
+          "Neue Code-Review-Regel RG23 ermöglicht die Konfiguration und Durchsetzung verbotener Aliasnamen",
+          "Der Oracle-Parameter checksumIncludeReferencedScripts ermöglicht es Ihnen, zu kontrollieren, ob referenzierte Skripte in Migrations-Checksummen enthalten sind",
+          "Gradle-Konfiguration-Cache wird nun vollständig im flyway-gradle-plugin unterstützt"
+        ]
+      },
+      {
+        "version": "9.3.4",
+        "date": "17. April 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Code-Review-Probleme unterstreichen nun zusätzlich zu Symbol-Anmerkungen ganze Zeilen für bessere Sichtbarkeit"
+        ]
+      },
+      {
+        "version": "9.3.3",
+        "date": "16. April 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Das Code-Review-Panel enthält nun eine Aktion zum Anwenden von Fixes für Probleme mit vorgeschlagenen Korrektionen"
         ]
       },
       {
@@ -250,8 +481,8 @@
         "date": "31. März 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "SQLite wird jetzt im Native Connectors-Modus unterstützt",
-          "Die Code-Review-Ausgabe enthält jetzt Dateipositionsinformationen und empfohlene Korrektionen für einfachere Behebung"
+          "SQLite ist nun im Native Connectors-Modus verfügbar für bessere Leistung und direkten Datenbankzugriff",
+          "Die Code-Review-JSON-Ausgabe enthält nun detaillierte Dateipositionsdaten und optionale vorgeschlagene Fixes"
         ]
       },
       {
@@ -259,8 +490,8 @@
         "date": "26. März 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Code Review generiert jetzt SARIF-Berichte für nahtlose Integration mit GitHub Code Scanning, Azure DevOps und anderen CI/CD-Plattformen",
-          "Drei neue Code-Review-Regeln setzen Best Practices durch: Objektnamenpluralisierung, in Klammern eingeschlossene Identifizierer und konfigurierbare Namensvorsilben"
+          "Drei neue Code-Review-Regeln: RG19 (Pluralisierungsprüfung für Tabellennamen), RG20 (Objektnamen in Klammern) und RG21 (konfigurierbare Benennungspräfixe)",
+          "Code Review generiert nun SARIF 2.1.0-Berichte für die Integration mit GitHub Code Scanning und Azure DevOps"
         ]
       },
       {
@@ -268,7 +499,7 @@
         "date": "17. März 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Die Code-Review-Anzeige wird jetzt auf Bildschirmen zur Migrationsgenerierung und zum Deployment-Skript angezeigt und zeigt potenzielle Probleme, die durch SQL Fluff-Analyse identifiziert wurden"
+          "Die Code-Review-Anzeige ist nun in Bildschirme zum Generieren von Migrationen und Bereitstellungsskripten integriert, um Probleme vor der Bereitstellung zu erkennen"
         ]
       },
       {
@@ -276,9 +507,9 @@
         "date": "9. März 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Der init-Befehl aktualisiert jetzt automatisch TOML-Konfigurationsdateien für Desktop-Benutzer und rationalisiert die Projekteinrichtung",
-          "Grundlegende Unterstützung für Babelfish für SQL Server-Kompatibilität wurde hinzugefügt",
-          "InsertRowLock unterstützt jetzt benutzerdefinierte Sperrenstrategien für Datenbanken ohne Unterstützung für Primärschlüssel"
+          "Der Flyway-Init-Befehl aktualisiert nun automatisch TOML-Konfigurationsdateien für Desktop-Benutzer",
+          "InsertRowLock unterstützt nun benutzerdefinierte Sperr-Strategien für Datenbanken ohne Unterstützung für Primärschlüssel",
+          "Grundlegende Unterstützung für Babelfish-Datenbank hinzugefügt"
         ]
       },
       {
@@ -286,8 +517,8 @@
         "date": "20. Februar 2026",
         "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
         "highlights": [
-          "Ein neues Flag ermöglicht Ihnen, zu kontrollieren, ob der check-Befehl Ergebnisse in eine Datei schreibt, und gibt Ihnen mehr Flexibilität in CI/CD-Pipelines",
-          "Der auth-Befehl kann jetzt Ergebnisse als JSON ausgeben für programmgesteuerte Integration"
+          "Das neue Flag -check.generateReport ermöglicht die Kontrolle, ob Check-Ergebnisse in Dateien geschrieben werden",
+          "Die Ausgabe des Auth-Befehls kann nun als JSON formatiert werden für programmgesteuerte Integration"
         ]
       },
       {
@@ -295,8 +526,33 @@
         "date": "18. Februar 2026",
         "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
         "highlights": [
-          "Der Oracle-Vergleich unterstützt jetzt das Filtern unsichtbarer Spalten und unsichtbarer Indizes für bereinigere Deployment-Skripte",
-          "Mehrere Projekttabs können jetzt gleichzeitig geöffnet werden für einfachere Projektverwaltung"
+          "Der Oracle-Vergleich unterstützt nun das Ignorieren unsichtbarer Spalten und unsichtbarer Indizes für sauberere Bereitstellungen",
+          "Mehrere Projekt-Registerkarten können nun gleichzeitig geöffnet sein für einfachere Projektverwaltung"
+        ]
+      },
+      {
+        "version": "9.0.3",
+        "date": "12. Februar 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Der Versionskontroll-Diff-Viewer enthält nun Navigationsschaltflächen für Vor- und Zurück für einfachere Änderungsüberprüfung"
+        ]
+      },
+      {
+        "version": "12.0.1",
+        "date": "12. Februar 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html",
+        "highlights": [
+          "Oracle-Schema-History-Tabellen verwenden nun Synonyme für unzitierten Zugriff",
+          "Neuer entraId-Alias verfügbar für den azureAdInteractive-Resolver zur Vereinfachung der Azure-Authentifizierung"
+        ]
+      },
+      {
+        "version": "9.0.1",
+        "date": "5. Februar 2026",
+        "docs_url": "https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html",
+        "highlights": [
+          "Die Seite \"Automatisierte Bereitstellung\" enthält nun Skripte zum Bereitstellen spezifischer Migrationen und zum Zurückrollen von Bereitstellungen"
         ]
       }
     ]
