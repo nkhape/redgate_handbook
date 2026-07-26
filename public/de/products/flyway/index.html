@@ -445,16 +445,41 @@
         
           
           
-          <span class="text-xs text-gray-400">20. Februar 2026 – 20. Juli 2026</span>
+          <span class="text-xs text-gray-400">5. Februar 2026 – 21. Juli 2026</span>
         
       </div>
 
       
-        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">In den letzten drei Monaten hat Flyway bedeutende Verbesserungen für Desktop und CLI bereitgestellt, mit großen Erfolgen bei Code-Qualität, Deployment-Automatisierung und Datenbankkompatibilität. Die <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">neuen Code-Review-Funktionen</a> in Desktop erkennen potenzielle SQL-Probleme während der Migration-Generierung und des Deployments, während <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">erweiterte Code-Analyse-Regeln</a> bei der Durchsetzung von Naming-Standards und Best Practices in deinen Migrationen helfen. Beim Deployment optimiert <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">die GitHub Actions-Workflow-Generierung</a> die CI/CD-Integration, und neue <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Oracle-Deployment-Optionen</a> fügen Existenzprüfungen und Berechtigungsvalidierung hinzu, um Deployment-Fehler zu reduzieren. Desktops <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">PostgreSQL-Filter-UI</a> gibt Teams jetzt detaillierte Kontrolle über den Objektvergleich, während CLI-Verbesserungen wie <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Native Connectors-Unterstützung für SQLite und Cassandra</a>, <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Azure Key Vault-Integration</a> und <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">bessere Fehlerberichte für Drift-Auflösung</a> Enterprise-Deployments stärken und die Fehlerbehebungszeit verkürzen.</p>
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Aktuelle Updates bieten leistungsstarke Funktionen für die präzise und sichere Verwaltung von Datenbankbereitstellungen. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Oracle unterstützt jetzt Existenzprüfungen und die Online-Indexerstellung</a>, um Bereitstellungsfehler zu vermeiden, während <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">PostgreSQL-Projekte erweiterte Filteroptionen</a> für eine granulare Objektkontrolle bei Vergleichen erhalten. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Code-Überprüfung ist jetzt direkt in die Migrationserstellung und Bereitstellungsbildschirme integriert</a> und erkennt Qualitätsprobleme, bevor sie in die Produktion gelangen. Verbesserte Filterung, schnellere Migrationserstellung und optimierte Fehlermeldungen in Desktop und CLI machen die Datenbankverwaltung zuverlässiger und benutzerfreundlicher.</p>
       
 
       
       <div class="flex flex-col gap-4">
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.6.2</span>
+                <span class="text-sm text-gray-400">21. Juli 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Oracle-Bereitstellungen können jetzt die ONLINE-Klausel zu Indexerstellungsanweisungen hinzufügen, um Indizes zu erstellen, ohne die Tabelle zu sperren
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Das Datenbankverbindungsdialogfeld öffnet sich jetzt bereit, um Ihre erste Datenbank hinzuzufügen, anstatt einen leeren Zustand anzuzeigen und damit Friktionen für neue Benutzer zu reduzieren
+                </li>
+              
+            </ul>
+          </div>
         
           <div class="bg-white border border-gray-200 rounded-xl p-6 ">
             <div class="flex items-center justify-between mb-3">
@@ -470,78 +495,18 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Drift-Erkennung enthält jetzt eindeutige IDs für jeden Unterschied, sodass du spezifische Probleme lösen kannst, ohne den gesamten Vergleich erneut auszuführen
+                  Die Drift-Erkennung ordnet jetzt jedem Unterschied eindeutige IDs zu, sodass Sie spezifische Schemafehler isoliert beheben können
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  KI-Agenten können jetzt direkt Flyway-Befehle über den neuen Flyway MCP Server aufrufen und ermöglichen intelligere Migrationsautomatisierung
+                  KI-Agenten können jetzt Flyway-Operationen programmatisch über die neue Model Context Protocol Server-Schnittstelle auslösen
                 </li>
               
             </ul>
           </div>
         
           <div class="bg-white border border-gray-200 rounded-xl p-6 ">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.6.1</span>
-                <span class="text-sm text-gray-400">16. Juli 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die geführte Shadow-Bereitstellung ist jetzt immer für Enterprise-Kunden verfügbar und entfernt frühere Vorschau-Beschränkungen
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Du kannst jetzt zwischen zustandsbasiertem und migrationsbasiertem Deployment wechseln, auch nachdem du Migration-Skripte zu deinem Projekt hinzugefügt hast
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.11.0</span>
-                <span class="text-sm text-gray-400">9. Juli 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Eine neue PostgreSQL-Option ermöglicht dir, Constraints während des statischen Datenladeens vorübergehend zu deaktivieren und senkt damit die Deployment-Komplexität und verbessert die Performance
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Help-Befehl zeigt jetzt relevante Konfigurationsparameter und Verwendungsbeispiele an, was es Teams erleichtert, verfügbare Optionen zu finden
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Docker-Provisioner gibt dir jetzt klare, dedizierte Fehlermeldungen, wenn Docker nicht installiert oder nicht ausgeführt wird, statt kryptischer Fehlermeldungen
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Kaltstart-Zeit für Flyway CLI wurde durch den Wechsel von eagerer zu verzögerter Ladens von Datenbanktreibern verbessert
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v9.6.0</span>
@@ -555,7 +520,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Databricks erweiterte Funktionen sind jetzt in der öffentlichen Vorschau verfügbar und erweitern Flywyas Unterstützung für moderne Datenplattformen
+                  Databricks-erweiterte Funktionen sind jetzt in der öffentlichen Vorschau verfügbar und ermöglichen zustandsbasierte Bereitstellungen für Databricks-Benutzer
                 </li>
               
             </ul>
@@ -564,8 +529,8 @@
           <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.10.0</span>
-                <span class="text-sm text-gray-400">30. Juni 2026</span>
+                <span class="text-sm font-semibold text-gray-900">v12.11.0</span>
+                <span class="text-sm text-gray-400">9. Juli 2026</span>
               </div>
               <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
                 Vollständige Release Notes →
@@ -575,22 +540,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der intelligente Docker-Provisioner verwendet Build-Container jetzt mehrmals über verschiedene Flyway-Befehle hinweg, was die Setup-Zeit für wiederholte Operationen reduziert
+                  PostgreSQL-Bereitstellungen können Einschränkungen während des statischen Datenladeens jetzt deaktivieren und so die Leistung beim Laden großer Datenmengen verbessern
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Docker-Container für Postgres und MySQL werden jetzt mit gültigen Anmeldedaten und Standard-Schemata bereitgestellt, sodass Provisioning und Migrationen sofort erfolgreich sind
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Native Connectors Modus ist jetzt standardmäßig für Cassandra aktiviert und liefert bessere Performance und einfachere Konfiguration
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Fehler bei der Drift-Auflösung führen nicht mehr dazu, dass die gesamte Check Drift-Operation fehlschlägt – Drift wird immer noch gemeldet und alle auflösbaren Skripte werden generiert
+                  Die CLI-Hilfe zeigt jetzt echte Verwendungsbeispiele und relevante Konfigurationsparameter und erleichtert damit die Ermittlung der richtigen Syntax
                 </li>
               
             </ul>
@@ -610,7 +565,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Wenn ein Push aufgrund von Remote-Änderungen abgelehnt wird, erklärt der Fehler jetzt das Problem und bietet eine Schaltfläche &#39;Pull changes&#39;, um es sofort zu beheben
+                  Push-Konflikte werden jetzt sofort mit einer Schaltfläche &#39;Änderungen abrufen&#39; mit einem Klick gelöst, wodurch die Rätselraten bei Versionskontrollfehlern entfällt
                 </li>
               
             </ul>
@@ -619,8 +574,8 @@
           <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.9.0</span>
-                <span class="text-sm text-gray-400">18. Juni 2026</span>
+                <span class="text-sm font-semibold text-gray-900">v12.10.0</span>
+                <span class="text-sm text-gray-400">30. Juni 2026</span>
               </div>
               <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
                 Vollständige Release Notes →
@@ -630,12 +585,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die neue Einstellung check.driftResolutionFolder lässt dich konfigurieren, wo Drift-Auflösungs-Skripte generiert werden, was dir bessere Kontrolle über deine Deployment-Artefakte gibt
+                  Docker-Container für Postgres und MySQL werden jetzt automatisch mit gültigen Anmeldedaten und einem verwendbaren Standardschema konfiguriert, wodurch Provisionsausfälle entfallen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Befehle Check drift, changes und dryrun melden jetzt Fortschritt auf Phase-Ebene, was es einfacher macht zu verstehen, wo Zeit in langwierigen Operationen aufgewendet wird
+                  Die Drift-Auflösung schlägt nicht mehr fehl, wenn Schemaunterschede Objekttypen mit Leerzeichen in ihren Namen enthalten
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Fehlende Callback-Ordner werden jetzt elegant übersprungen, anstatt Migrationen zu blockieren
                 </li>
               
             </ul>
@@ -655,12 +615,32 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Drift-Analyse-Operationen auf der Migrationsseite unterstützen jetzt die Konfiguration des Drift-Auflösungs-Ordners, sodass du kontrollierst, wo generierte Skripte gespeichert werden
+                  Sie können jetzt angeben, wo Drift-Auflösungsskripte gespeichert werden, um automatisch generierte Fehlerbehebungen in Ihrer Projektstruktur zu organisieren
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.9.0</span>
+                <span class="text-sm text-gray-400">18. Juni 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Drift-Erkennung, Änderungsanalyse und Dry-Run-Befehle melden jetzt Fortschritt auf Phasenebene und geben Sichtbarkeit für langwierige Operationen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Das Speichern generierter Migrationen ist jetzt schneller und verbessert die Benutzererfahrung während der Entwicklungszyklen
+                  Flyway CLI beendet sich jetzt mit unterschiedlichen, maschinenlesbaren Fehlercodes für jeden Fehlertyp und ermöglicht so bessere Automatisierung und Fehlerbehandlung
                 </li>
               
             </ul>
@@ -680,7 +660,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die PostgreSQL-Filter-UI unterstützt jetzt Filterung über alle Objekttypen, was dir mehr Flexibilität gibt, um Objekte während des Vergleichs auszuschließen oder einzubeziehen
+                  Die PostgreSQL-Filter-UI unterstützt jetzt das Filtern über jeden Objekttyp und gibt Ihnen vollständige Flexibilität, um unerwünschte Objekte aus Vergleichen auszuschließen
                 </li>
               
             </ul>
@@ -700,7 +680,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway warnt dich jetzt, wenn eine Offline-Lizenz innerhalb von 30 Tagen abläuft, um unerwartete Unterbrechungen deiner Deployments zu verhindern
+                  Warnungen zum Lizenzablauf erscheinen jetzt 30 Tage vor dem Ablauf Ihres Offline-Genehmigung und verhindern damit unerwartete Lizenzausfälle in der Produktion
                 </li>
               
             </ul>
@@ -720,32 +700,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der PostgreSQL-Filter-Editor ermöglicht jetzt mehrere Regeln pro Objekttyp und ermöglicht komplexe Filtermuster wie &#39;Include wenn Tabellenname = X&#39; neben &#39;Exclude table&#39;
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.5.3</span>
-                <span class="text-sm text-gray-400">27. Mai 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Eine neue Oracle-Option fügt Existenzprüfungen zu Index-Erstellungs-Skripten hinzu und verhindert Fehler, wenn Indizes bereits existieren, und verbessert die Idempotenz
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Sign-in-Link kann jetzt in die Zwischenablage kopiert werden, was Benutzern in Umgebungen hilft, in denen automatisches Browser-Öffnen nicht verfügbar ist
+                  PostgreSQL-Filterung ermöglicht jetzt mehrere Regeln pro Objekttyp und unterstützt damit komplexe Szenarien wie &#39;Tabelle X einschließen, aber alle anderen Tabellen ausschließen&#39;
                 </li>
               
             </ul>
@@ -765,12 +720,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Filters UI-Unterstützung für PostgreSQL-Projekte lässt dich jetzt Objekte während des Vergleichs ausschließen und reduziert damit Noise in deiner Änderungserkennung
+                  PostgreSQL-Projekte haben jetzt einen visuellen Filter-Editor zum Ausschließen von Objekten während des Vergleichs, was der Kontrolle für andere Datenbanken entspricht
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway Desktop stellt jetzt deine zuvor geöffneten Tabs beim Start wieder her und verbessert damit die Workflow-Kontinuität
+                  Flyway Desktop stellt jetzt Ihre zuvor geöffneten Projekt-Registerkarten wieder her, wenn Sie die Anwendung starten und sparen damit Zeit zwischen Sessions
                 </li>
               
             </ul>
@@ -790,12 +745,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Umgebungsvariablen-Resolver-Syntax funktioniert jetzt in allen Flyway-Konfigurationsparametern, nicht nur in Verbindungseigenschaften, und gibt dir mehr Flexibilität in deinem CI/CD-Setup
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Cockroach v26 wird jetzt offiziell unterstützt
+                  Umgebungsvariablensyntax funktioniert jetzt in allen Konfigurationsparametern, nicht nur in Datenbankverbindungseigenschaften, und gibt Ihnen mehr Flexibilität für dynamische Konfiguration
                 </li>
               
             </ul>
@@ -804,8 +754,8 @@
           <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.5.0</span>
-                <span class="text-sm text-gray-400">18. Mai 2026</span>
+                <span class="text-sm font-semibold text-gray-900">v9.5.3</span>
+                <span class="text-sm text-gray-400">27. Mai 2026</span>
               </div>
               <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
                 Vollständige Release Notes →
@@ -815,7 +765,27 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Automatisierte Deployment-Workflows unterstützen jetzt manuelle Genehmigungsschritte für GitHub-Umgebungen mit erforderlichen Reviewern und fügen Governance deinen Deployments hinzu
+                  Oracle-Bereitstellungen können Skripten jetzt Existenzprüfungen hinzufügen und verhindern damit Indexerstellungsfehler, wenn der Index bereits in der Produktion vorhanden ist
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.7.0</span>
+                <span class="text-sm text-gray-400">29. Mai 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Benutzerdefinierte SQLFluff-Regeln können jetzt zur Verwendung in Code-Review-Prüfungen geladen werden und ermöglichen es Ihnen, Ihre organisationsspezifischen SQL-Standards durchzusetzen
                 </li>
               
             </ul>
@@ -835,12 +805,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway unterstützt jetzt Native Connectors Modus für den Deploy-Befehl und liefert bessere Performance und native Datenbankintegration
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Vereinfachtes Namespace-Scoping ermöglicht dir jetzt, Scoped- und Unscoped-Namespaces zu mischen, was dir mehr Flexibilität in deiner Konfiguration gibt
+                  Der Deploy-Befehl unterstützt jetzt den Native Connectors-Modus für verbesserte Leistung und reduzierte Verbindungsoverhead
                 </li>
               
             </ul>
@@ -860,12 +825,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Eine neue SQL Server Daten-Deployment-Option fügt Existenzprüfungen zu INSERT-Anweisungen hinzu und verhindert Fehler durch doppelte Schlüssel in deinen Deployments
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Unterstützung für den Parameter oracle.checksumIncludeReferencedScripts in Migrations-Befehlen lässt dich kontrollieren, ob referenzierte Skripte Checksummen beeinflussen
+                  SQL Server-Bereitstellungen können jetzt Existenzprüfungen für INSERT-Anweisungen verwenden und verhindern damit Fehler mit doppelten Schlüsseln bei erneuter Bereitstellung
                 </li>
               
             </ul>
@@ -885,7 +845,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Seite Automated Deployment generiert jetzt GitHub Actions Workflow-Dateien und ermöglicht nahtlose CI/CD-Integration mit deinen GitHub-Repositorys
+                  Die Seite für automatisierte Bereitstellung generiert jetzt GitHub Actions-Workflow-Dateien und ermöglicht eine CI/CD-Integration mit GitHub mit einem Klick
                 </li>
               
             </ul>
@@ -905,12 +865,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway unterstützt jetzt Azure Key Vault als Secrets-Resolver und integriert sich nahtlos mit deiner Azure-Sicherheitsinfrastruktur
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Native Connectors Modus ist jetzt für Cassandra verfügbar und ersetzt die veraltete JDBC-basierte Methode mit besserer Performance
+                  Flyway unterstützt jetzt Azure Key Vault als Secrets Resolver und ermöglicht sichere Anmeldedatenverwaltung für Azure-Bereitstellungen
                 </li>
               
             </ul>
@@ -919,8 +874,8 @@
           <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.3.4</span>
-                <span class="text-sm text-gray-400">17. April 2026</span>
+                <span class="text-sm font-semibold text-gray-900">v9.2.3</span>
+                <span class="text-sm text-gray-400">7. April 2026</span>
               </div>
               <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
                 Vollständige Release Notes →
@@ -930,27 +885,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Code-Review-Probleme unterstreichen jetzt die ganze Zeile zusätzlich zum Hinzufügen einer Icon-Annotation und machen Probleme in deinem Editor sichtbarer
+                  Oracle-Bereitstellungen können Berechtigungsanweisungen jetzt automatisch überspringen, wenn der ausführende Benutzer der Berechtigte ist, und eliminieren damit Berechtigungsfehler in Mehrbenutzerumgebungen
                 </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.3.3</span>
-                <span class="text-sm text-gray-400">16. April 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Das Code-Review-Panel enthält jetzt eine Apply fix-Aktion für Probleme mit vorgeschlagenen Fixes und lässt dich Probleme mit einem Klick beheben
+                  Projekte, die mit älteren Flyway-Versionen erstellt wurden, werden jetzt automatisch aktualisiert, wenn sie geöffnet werden, und eliminieren damit Konfigurationswarnungen
                 </li>
               
             </ul>
@@ -970,77 +910,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die neue RG23-Regel lässt dich verbotene Alias-Namen in deinem SQL-Code durchsetzen und verhindert problematische Naming-Muster
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die neue RG19-Regel prüft, dass Tabellennamen nicht im Plural sind, und hilft dir, konsistente Naming-Konventionen zu erhalten
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die neue RG20-Regel setzt durch, dass Objektnamen in quadratischen Klammern enthalten sind und verbessert damit die Konsistenz in deinen Skripten
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die neue konfigurierbare RG21-Regel lässt dich Naming-Präfixe für Tabellen, Views, Prozeduren, Funktionen und Schemata durchsetzen
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.3.0</span>
-                <span class="text-sm text-gray-400">31. März 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway enthält jetzt SQLite-Unterstützung im Native Connectors Modus und ermöglicht bessere Performance für SQLite-Deployments
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Check code-Befehl enthält jetzt zusätzliche Eigenschaften in der JSON-Ausgabe (Engine, Dateiposition und optionale Fixes) und verbessert die Integration mit externen Tools
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.2.0</span>
-                <span class="text-sm text-gray-400">26. März 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Code-Analyse-Regeln RG19 und RG20 helfen dir, konsistente Naming-Konventionen in deinen Migrationen durchzusetzen
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Check code-Befehl generiert jetzt SARIF 2.1.0 Report-Dateien und ermöglicht Integration mit GitHub Code Scanning, Azure DevOps und anderen SARIF-kompatiblen Tools
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die konfigurierbare Einstellung check.code.noqaSeverity lässt dich kontrollieren, wie Flyway die --noqa-Nutzung in Migrationen meldet
+                  Neue Code-Review-Regeln erzwingen Namenskonventionen: konfigurierbare verbotene Aliasnamen (RG23), nicht pluralisierte Tabellennamen (RG19), eingeklammerte Objektnamen (RG20) und Benennungspräfixe (RG21)
                 </li>
               
             </ul>
@@ -1060,7 +930,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Code-Review-Anzeige wird jetzt auf den Bildschirmen Generate migrations und Deployment script angezeigt und zeigt potenzielle Probleme, die von SQLFluff und anderen Code-Analyse-Engines identifiziert wurden, bevor du bereitstellst
+                  Code-Überprüfung ist jetzt in die Migrationserstellung und Bereitstellungsskript-Bildschirme integriert und zeigt Codequalitätsprobleme an, bevor Skripte in die Produktion gelangen
                 </li>
               
             </ul>
@@ -1069,8 +939,8 @@
           <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.1.1</span>
-                <span class="text-sm text-gray-400">17. März 2026</span>
+                <span class="text-sm font-semibold text-gray-900">v12.2.0</span>
+                <span class="text-sm text-gray-400">26. März 2026</span>
               </div>
               <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
                 Vollständige Release Notes →
@@ -1080,7 +950,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Nicht-Statement-Level-Callbacks sind jetzt in Native Connectors für Undo-, Info-, Baseline- und Repair-Befehle implementiert und erweitern die Unterstützung für erweiterte Callback-Muster
+                  Der Check-Befehl generiert jetzt SARIF-Berichte, die mit GitHub Code Scanning und Azure DevOps kompatibel sind und die Code-Überprüfung in Ihre bestehenden Sicherheits-Workflows integrieren
                 </li>
               
             </ul>
@@ -1100,12 +970,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway unterstützt jetzt die Verwendung des Init-Befehls, um TOML-Konfigurationsdateien für Desktop-Benutzer automatisch zu aktualisieren und verbessert damit die Verwaltung von Konfigurationsdateien
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  InsertRowLock unterstützt jetzt benutzerdefinierte Locking-Strategien für Datenbanken ohne Primärschlüssel-Unterstützung und erweitert damit die Deployment-Möglichkeiten
+                  Flyway unterstützt jetzt den init-Befehl zum automatischen Aktualisieren von TOML-Konfigurationsdateien und optimiert damit die Konfigurationsverwaltung für Desktop-Benutzer
                 </li>
               
             </ul>
@@ -1125,32 +990,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Oracle-Vergleichsoptionen lassen dich unsichtbare Spalten und unsichtbare Indizes ignorieren und reduzieren damit Noise in deiner Änderungserkennung
+                  Der Oracle-Vergleich unterstützt jetzt das Ignorieren unsichtbarer Spalten und unsichtbarer Indizes und reduziert damit das Rauschen in Schemavergleichen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Mehrere Projekt-Tabs können jetzt geöffnet werden, sodass du über mehrere Projekte hinweg arbeiten kannst, ohne Kontexte zu wechseln
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.0.3</span>
-                <span class="text-sm text-gray-400">12. Februar 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Version Control Diff Viewer enthält jetzt Navigationstasten für vorherige/nächste Änderung, was es einfacher macht, mehrere Änderungen in einer einzelnen Ansicht zu überprüfen
+                  Es können jetzt mehrere Projekt-Registerkarten gleichzeitig geöffnet werden, sodass Sie projektübergreifend arbeiten können, ohne zu schließen und erneut zu öffnen
                 </li>
               
             </ul>
@@ -1170,12 +1015,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Oracle verwendet jetzt Synonyme auf neuen Schema- und Snapshot-History-Tabellen, sodass sie unquotiert aufgerufen werden können und deine Skripte vereinfacht werden
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der neue Alias für den azureAdInteractive-Resolver lässt dich die kürzere Kennung &#39;entraId&#39; für Azure-Authentifizierung verwenden
+                  Oracle verwendet jetzt Synonyme in neuen Schema- und Snapshot-Historiendatenstellen, um darauf in Skripten ohne Anführungszeichen zu verweisen
                 </li>
               
             </ul>
@@ -1195,32 +1035,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Automated Deployment Seite enthält jetzt Skripte für die Bereitstellung spezifischer Migrationen und das Rollback von Deployments, was dir detaillierte Kontrolle über deine Releases gibt
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v12.0.2</span>
-                <span class="text-sm text-gray-400">20. Februar 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Das neue Flag -check.generateReport lässt dich kontrollieren, ob check Ergebnisse in eine Datei schreiben soll, und verbessert damit die Automatisierungs-Flexibilität
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Auth-Befehl kann Ergebnisse jetzt als JSON ausgeben, wenn outputType=json gesetzt ist, und ermöglicht damit programmatischen Zugriff auf Authentifizierungsinformationen
+                  Die Seite für automatisierte Bereitstellung enthält jetzt Skripte zum Bereitstellen spezifischer Migrationen und zum Rollback von Bereitstellungen und gibt Ihnen präzise Kontrolle über Produktionsänderungen
                 </li>
               
             </ul>
@@ -1234,9 +1049,9 @@
           onclick="toggleReleases()"
           class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
           style="color:#e8392d;"
-          data-more-text="29 ältere Releases anzeigen ↓"
+          data-more-text="24 ältere Releases anzeigen ↓"
           data-fewer-text="Weniger Releases anzeigen ↑">
-          29 ältere Releases anzeigen ↓
+          24 ältere Releases anzeigen ↓
         </button>
         <script>
           function toggleReleases() {
@@ -1251,10 +1066,10 @@
 
       
         <p class="text-xs text-gray-400 mt-3">
-          Zuletzt aktualisiert am 2026-07-21
+          Zuletzt aktualisiert am 2026-07-26
           
           
-            · Zeigt Änderungen bis 20. Februar 2026
+            · Zeigt Änderungen bis 5. Februar 2026
           
         </p>
       
