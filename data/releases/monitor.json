@@ -1,18 +1,28 @@
 {
   "en": {
-    "fetched_at": "2026-08-02",
-    "summary": "Recent updates bring powerful new monitoring capabilities across your database estate. <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Aurora PostgreSQL clusters now offer richer visibility</a> with detailed instance metrics and automatic writer instance monitoring, while <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">individual query execution monitoring is now available for Azure SQL Database and Managed Instance</a>. Security-conscious teams will appreciate <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">masked webhook headers</a> and new alerts for <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">IO stalls on SQL Server and MySQL</a>, plus <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">database permission change alerts for Enterprise customers</a>. A modernized <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Reports experience</a> and expanded cloud support—including <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Google Cloud SQL for PostgreSQL</a>—round out the release.",
+    "fetched_at": "2026-08-09",
+    "summary": "Recent releases bring powerful new capabilities to Monitor, including <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Docker container support</a> for easier deployment, <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">AI-powered Redgate Assistant</a> for intelligent monitoring insights, and enhanced cloud support with <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Google Cloud SQL monitoring for PostgreSQL and SQL Server</a>. Alert notifications are now more informative, automatically including threshold values and trigger details, while <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Aurora PostgreSQL monitoring has been completely reworked</a> to provide detailed cluster-level insights and automatic monitoring of writer and reader instances. New <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">IO stalls alerting for SQL Server and MySQL</a> helps customers identify storage performance bottlenecks, while enterprise customers gain new security capabilities including <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">database permission change alerts</a> powered by SQL Audit.",
     "items": [
+      {
+        "version": "14.28.0",
+        "date": "August 5, 2026",
+        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+        "highlights": [
+          "Run Redgate Monitor in Docker containers for more flexible deployment options",
+          "Redgate Assistant (preview) provides AI-powered monitoring insights and analysis",
+          "Alert notifications now include the exact metric values and thresholds that triggered them",
+          "Aurora PostgreSQL now shows comprehensive instance-level metrics and cluster configuration details"
+        ]
+      },
       {
         "version": "14.27.0",
         "date": "July 29, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Sensitive webhook headers like authorization credentials are now masked in the UI and API to prevent accidental exposure",
-          "New Power BI Report Server status alert allows independent monitoring of SQL Server 2025's new reporting platform",
-          "Modern Reports experience provides an updated interface with improved layout and usability",
-          "IO stalls alert for SQL Server and MySQL notifies you when storage operations are experiencing excessive wait times",
-          "Read-only databases can now be included on the Backups page when enabled"
+          "New Power BI Report Server monitoring alert for SQL Server 2025 environments",
+          "Modern Reports experience with improved interface and layout",
+          "New IO stalls alert for SQL Server and MySQL detects storage performance degradation",
+          "Read-only databases can now be included on the Backups page for complete visibility"
         ]
       },
       {
@@ -20,9 +30,8 @@
         "date": "July 22, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Aurora PostgreSQL cluster monitoring now shows detailed metrics about each instance, cluster events, and aggregated query performance in one view",
-          "Clusters with auto-monitoring enabled now automatically monitor writer instances as well as reader instances",
-          "Individual query execution monitoring is now available for Azure SQL Database, Azure SQL Managed Instance, and Google Cloud SQL for SQL Server"
+          "Aurora PostgreSQL monitoring completely redesigned with cluster overview, detailed instance metrics, and cluster events",
+          "Individual query execution monitoring now available for Azure SQL Database and Azure SQL Managed Instance"
         ]
       },
       {
@@ -30,9 +39,8 @@
         "date": "July 16, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "SQL Audit is now out of preview for Enterprise edition, providing full audit trail capabilities",
-          "Virtual Machines page shows per-disk details including space used, capacity, and performance metrics (IOPS and throughput)",
-          "Virtual Machines page is now out of preview and ready for production use"
+          "SQL Audit moves out of preview and is now generally available for enterprise customers",
+          "Virtual Machines page shows per-disk performance metrics including space, IOPS, and throughput"
         ]
       },
       {
@@ -40,9 +48,8 @@
         "date": "July 10, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Google Cloud SQL monitoring is now available for PostgreSQL instances",
-          "Virtual Machines page lists SQL Server instances running on each machine with version and edition information",
-          "New database permission change alert for Enterprise customers tracks when permissions are granted, revoked, denied, or ownership is transferred"
+          "Google Cloud SQL monitoring now available for PostgreSQL instances",
+          "Enterprise: New database permission change alert tracks who modified permissions and when"
         ]
       },
       {
@@ -50,9 +57,8 @@
         "date": "July 1, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Google Cloud SQL monitoring is now available for SQL Server instances",
-          "Virtual Machines page now displays average network throughput metrics for each machine",
-          "Availability groups now persist in the PowerShell module for up to 24 hours after a monitoring gap, preventing false alerts about missing objects"
+          "Google Cloud SQL monitoring now available for SQL Server instances",
+          "New preview of Cluster and Availability Group overview pages"
         ]
       },
       {
@@ -60,7 +66,7 @@
         "date": "June 25, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "New REST API documentation interface is faster, fully searchable, and makes exploring and testing endpoints easier"
+          "Built-in REST API documentation now faster and fully searchable for easier integration"
         ]
       },
       {
@@ -68,7 +74,7 @@
         "date": "June 16, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Snapshot backups can now be excluded from sampling using configuration settings"
+          "New REST API documentation interface with faster performance and full search capability"
         ]
       },
       {
@@ -76,8 +82,8 @@
         "date": "June 10, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "SQL Agent job monitoring is now available for Contained Availability Groups, capturing job definitions, history, activity, and schedules",
-          "Blocking tree viewer has been improved for better usability and control"
+          "SQL Agent job monitoring now available for Contained Availability Groups",
+          "New Analysis page with improved chart rendering for complex data series"
         ]
       },
       {
@@ -85,10 +91,9 @@
         "date": "June 3, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Native ServiceNow and Microsoft Teams notifications are now out of preview and ready for production use",
-          "Individual query execution monitoring is now available for Azure SQL Database and Azure SQL Managed Instance",
-          "Inaccessible SQL Server databases now show 'Monitoring with limited sampling' status in amber, with specific error details listed",
-          "PostgreSQL query plan history now distinguishes plans using different indexes, making index changes visible as plan changes"
+          "Native ServiceNow and Microsoft Teams notifications move out of preview",
+          "Individual query execution monitoring now available for Azure SQL Database and Azure SQL Managed Instance",
+          "PostgreSQL query plan history now distinguishes plans based on different indexes for better visibility"
         ]
       },
       {
@@ -96,10 +101,8 @@
         "date": "May 28, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Linux host CPU utilization now excludes I/O wait time, providing more accurate CPU usage metrics",
-          "New server role membership change alert tracks when principals are added to or removed from server roles",
-          "Query Executions tab now shows the Spills column indicating pages each query spilled to tempdb",
-          "Effective costs now displayed on the Virtual Machines page alongside billed costs"
+          "Enterprise: New server role membership change alert tracks privilege escalation events",
+          "Query Executions page now shows Spills column for tempdb usage visibility"
         ]
       },
       {
@@ -107,8 +110,8 @@
         "date": "May 14, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "AWS EC2 instance cost details are now visible on the Estate > Virtual Machines page",
-          "Daily costs graph added to the VM details sidebar with comparison period overlay support"
+          "See AWS EC2 instance cost details directly in Monitor for cloud spend visibility",
+          "Daily cost graphs with comparison period overlay support for VM cost analysis"
         ]
       },
       {
@@ -116,7 +119,8 @@
         "date": "April 23, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Monitoring PostgreSQL Aurora reader instances is now supported with automatic monitoring capability"
+          "PostgreSQL Aurora reader instances can now be automatically monitored via cluster configuration",
+          "Enterprise: New alert category groups Enterprise-only alerts for better organization"
         ]
       },
       {
@@ -124,9 +128,9 @@
         "date": "April 16, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Database exclusion by name option now available for various alert types, reducing false positives",
-          "Azure virtual machine cost details are now visible on the virtual machine page",
-          "AI Alert analysis is now available for Long-running query, Deadlock, and Blocking process alerts"
+          "Exclude specific databases by name from various alert types for cleaner alerting",
+          "See Azure virtual machine cost details directly in Monitor",
+          "AI Alert analysis now available for Long-running query, Deadlock, and Blocking process alerts"
         ]
       },
       {
@@ -134,9 +138,9 @@
         "date": "April 9, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Azure virtual machine subscription details are now visible on the virtual machine page",
-          "New SQL Audit file rollover alert notifies when audit files rollover within a single sampling interval",
-          "Custom metric alert detail text is now included in script and webhook notifications for richer alert context"
+          "See Azure virtual machine subscription details for better cost allocation",
+          "Enterprise: SQL Audit file rollover alert detects missed audit events",
+          "Custom metric alert details now included in webhook notifications and scripts"
         ]
       },
       {
@@ -144,9 +148,8 @@
         "date": "March 26, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Disk read and write latency metrics now available on the analysis page for Amazon RDS hosts",
-          "SQL Server query plans now display information about the instance they originated from",
-          "Query Executions tab is now available on SQL Server instance overviews with setup guidance"
+          "Disk read and write latency metrics added to Analysis page for Amazon RDS hosts",
+          "SQL Server query plans now display the originating instance information"
         ]
       },
       {
@@ -154,7 +157,7 @@
         "date": "March 19, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "New Analysis graph experience is now the default with improved performance, better user experience, and modern design"
+          "New Analysis graph experience is now the default with improved performance and modern design"
         ]
       },
       {
@@ -162,10 +165,9 @@
         "date": "March 11, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Index sampling is now enabled by default for all PostgreSQL instances",
-          "Blocking processes table now shows system processes, and the blocking process alert now alerts about system processes",
-          "Machine: processor time metric added for Linux hosts, showing CPU usage excluding hypervisor steal time",
-          "AWS EC2 cloud details support added to the Virtual Machines page for Monitor SaaS"
+          "Index sampling now enabled by default for PostgreSQL for better performance insights",
+          "Blocking processes table now includes system processes for complete blocking visibility",
+          "Enterprise: SQL Audit now supports all database principal change action types"
         ]
       },
       {
@@ -173,9 +175,9 @@
         "date": "March 4, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Top waits data is now available for PostgreSQL on the server overview and database details pages",
-          "PostgreSQL tracked queries are now available from the database overview page",
-          "Custom metric queries now support secondary queries that add context when alerts are raised"
+          "Top waits data now available for PostgreSQL on server overview and database details pages",
+          "Custom metric secondary query adds context to alert notifications",
+          "PostgreSQL tracked queries now available from database overview page"
         ]
       },
       {
@@ -183,8 +185,8 @@
         "date": "February 18, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Backup priority column added to the SQL Server Availability Group page for each replica",
-          "Extended Event sampling support restored for SQL Server 2008R2 SP2 CU12 and SQL Server 2012 SP1 CU6"
+          "Availability Group page now shows backup priority for each replica",
+          "Script notifications now include failover cluster active node name for better alerting context"
         ]
       },
       {
@@ -192,7 +194,8 @@
         "date": "January 29, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Current activity pages with AI capability now available for Oracle and MySQL instances"
+          "Current activity pages with AI capability added for Oracle and MySQL instances",
+          "Enterprise: SQL Audit now supports all server principal change action types"
         ]
       },
       {
@@ -200,9 +203,8 @@
         "date": "January 22, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Virtual Machines page now displays cloud resource details for Azure VMs in the details sidebar",
-          "Microsoft Teams notifications now include a link to the alert in Redgate Monitor",
-          "All notification types can now be rate limited to prevent notification overload"
+          "Virtual Machines page now displays cloud resource details for Azure VMs",
+          "All notification types can now be rate-limited to prevent notification overload"
         ]
       },
       {
@@ -210,9 +212,8 @@
         "date": "January 7, 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "SQL Audit is now available in preview in the Security > Permissions page for self-managed and Amazon RDS SQL Server instances",
-          "New Cluster and Availability Group overview page now available in preview",
-          "Support for virtual machines running PostgreSQL on the Estate > Virtual Machines page"
+          "Enterprise: SQL Audit moves to preview with audit event tracking for permission changes",
+          "Availability Group overview page now shows readable secondary replica information"
         ]
       },
       {
@@ -220,9 +221,7 @@
         "date": "December 11, 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "AI-powered query analysis now supports Oracle and MySQL instances in addition to SQL Server and PostgreSQL",
-          "7-day history option added to the history tab on the Server overview page",
-          "Tags can now be applied to SQL Server and PostgreSQL databases"
+          "AI-powered query analysis now supports Oracle and MySQL instances"
         ]
       },
       {
@@ -230,10 +229,19 @@
         "date": "December 1, 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Certificate authentication support for Linux PostgreSQL servers now in preview",
-          "PostgreSQL 18 is now supported",
-          "Custom text can now be added to alert email notifications",
-          "Monitoring of MySQL instances running on AWS Aurora is now supported"
+          "Certificate authentication support for Linux PostgreSQL servers (preview)",
+          "PostgreSQL 18 support now available",
+          "Custom text can be added to alert email notifications",
+          "MySQL monitoring on AWS Aurora is now supported",
+          "Enterprise: Permissions monitoring now available for Azure Managed Instances"
+        ]
+      },
+      {
+        "version": "14.3.0",
+        "date": "November 17, 2025",
+        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+        "highlights": [
+          "AI-powered query analysis (preview) provides performance improvement suggestions"
         ]
       },
       {
@@ -241,10 +249,10 @@
         "date": "October 29, 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Custom metrics and alerts are now available for PostgreSQL",
-          "Estate > Virtual Machines page added to monitor virtual machine usage and costs",
+          "Custom metrics and alerts now available for PostgreSQL",
+          "New Virtual Machines page monitors virtual machine usage across your infrastructure",
           "Analysis page updated with new modern design",
-          "New alert types for Replication job failure and Replication maintenance job failure"
+          "New Replication job failure and Replication maintenance job failure alert types"
         ]
       },
       {
@@ -252,29 +260,40 @@
         "date": "October 16, 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Native ServiceNow integration allows ServiceNow incidents to be raised automatically when alerts occur",
-          "Native Microsoft Teams integration enables alert notifications directly to Teams channels",
-          "Monitoring of MySQL instances running on Azure Flexible Server is now supported",
-          "Extended Oracle support now includes Oracle Data Guard monitoring",
-          "Overall wait event/class information now available for Oracle installations as a graph or table"
+          "Native ServiceNow integration for incident creation on alerts",
+          "Native Microsoft Teams integration for alert notifications",
+          "MySQL monitoring on Azure Flexible Server now supported",
+          "Extended Oracle support includes Oracle Data Guard monitoring",
+          "Overall wait event information for Oracle with graph and table views",
+          "Enterprise: Ability to export sysadmins and securityadmins across all servers"
         ]
       }
     ]
   },
   "de": {
-    "fetched_at": "2026-08-02",
-    "summary": "Jüngste Updates bringen leistungsstarke neue Überwachungsfunktionen über Ihren gesamten Datenbankbestand. <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Aurora-PostgreSQL-Cluster bieten nun umfassendere Sichtbarkeit</a> mit detaillierten Instanzmetriken und automatischer Überwachung der Writer-Instanz, während <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">die Überwachung einzelner Abfrageausführungen jetzt für Azure SQL Database und Managed Instance verfügbar ist</a>. Sicherheitsbewusste Teams werden sich über <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">maskierte Webhook-Header</a> und neue Warnungen für <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">IO-Stalls auf SQL Server und MySQL</a> freuen, sowie <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Warnungen für Datenbankberechtigungsänderungen für Enterprise-Kunden</a>. Eine modernisierte <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Reports-Erfahrung</a> und erweiterte Cloud-Unterstützung – einschließlich <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Google Cloud SQL für PostgreSQL</a> – runden das Release ab.",
+    "fetched_at": "2026-08-09",
+    "summary": "Aktuelle Versionen bringen leistungsstarke neue Funktionen zu Monitor, darunter <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Docker-Container-Unterstützung</a> für einfachere Bereitstellung, <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">KI-gestützter Redgate Assistant</a> für intelligente Monitoring-Erkenntnisse und erweiterte Cloud-Unterstützung mit <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Google Cloud SQL-Monitoring für PostgreSQL und SQL Server</a>. Benachrichtigungen sind nun informativer und enthalten automatisch Schwellenwerte und Auslösedetails. Gleichzeitig wurde <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Aurora-PostgreSQL-Monitoring vollständig überarbeitet</a>, um detaillierte Erkenntnisse auf Cluster-Ebene und automatisches Monitoring von Writer- und Reader-Instanzen zu bieten. Neue <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">IO-Stalls-Warnungen für SQL Server und MySQL</a> helfen Kunden, Storage-Performance-Engpässe zu identifizieren. Unternehmenskunden erhalten neue Sicherheitsfunktionen, darunter <a href=\"https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html\">Warnungen über Änderungen an Datenbankberechtigungen</a>, die von SQL Audit unterstützt werden.",
     "items": [
+      {
+        "version": "14.28.0",
+        "date": "5. August 2026",
+        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+        "highlights": [
+          "Redgate Monitor in Docker-Containern ausführen für flexiblere Bereitstellungsoptionen",
+          "Redgate Assistant (Vorschau) bietet KI-gestützte Monitoring-Erkenntnisse und -Analysen",
+          "Benachrichtigungen enthalten nun die genauen Metrikwerte und Schwellenwerte, die sie ausgelöst haben",
+          "Aurora PostgreSQL zeigt nun umfassende Metriken auf Instanzebene und Details zur Cluster-Konfiguration"
+        ]
+      },
       {
         "version": "14.27.0",
         "date": "29. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Sensitive Webhook-Header wie Authentifizierungsanmeldedaten werden jetzt in der Benutzeroberfläche und API maskiert, um versehentliche Offenlegung zu verhindern",
-          "Neue Power-BI-Report-Server-Status-Warnung ermöglicht unabhängige Überwachung der neuen Reporting-Plattform von SQL Server 2025",
-          "Die modernisierte Reports-Erfahrung bietet eine aktualisierte Benutzeroberfläche mit verbessertem Layout und Benutzerfreundlichkeit",
-          "IO-Stalls-Warnung für SQL Server und MySQL benachrichtigt Sie, wenn Speichervorgänge übermäßige Wartezeiten verursachen",
-          "Schreibgeschützte Datenbanken können jetzt auf der Backup-Seite einbezogen werden, wenn dies aktiviert ist"
+          "Neue Power BI Report Server-Monitoring-Warnung für SQL Server 2025-Umgebungen",
+          "Modern Reports-Erlebnis mit verbesserter Benutzeroberfläche und Layout",
+          "Neue IO-Stalls-Warnung für SQL Server und MySQL erkennt Storage-Performance-Verschlechterung",
+          "Schreibgeschützte Datenbanken können nun auf der Backups-Seite eingebunden werden für vollständige Übersicht"
         ]
       },
       {
@@ -282,9 +301,8 @@
         "date": "22. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die Überwachung von Aurora-PostgreSQL-Clustern zeigt jetzt detaillierte Metriken für jede Instanz, Cluster-Events und aggregierte Abfrageleistung in einer Ansicht",
-          "Cluster mit aktivierter automatischer Überwachung überwachen jetzt automatisch auch Writer-Instanzen sowie Reader-Instanzen",
-          "Die Überwachung einzelner Abfrageausführungen ist jetzt für Azure SQL Database, Azure SQL Managed Instance und Google Cloud SQL für SQL Server verfügbar"
+          "Aurora-PostgreSQL-Monitoring komplett neu gestaltet mit Cluster-Übersicht, detaillierten Instanzmetriken und Cluster-Ereignissen",
+          "Überwachung einzelner Abfrageausführungen nun verfügbar für Azure SQL Database und Azure SQL Managed Instance"
         ]
       },
       {
@@ -292,9 +310,8 @@
         "date": "16. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "SQL Audit ist jetzt nicht mehr als Vorschau für die Enterprise Edition verfügbar und bietet vollständige Audit-Trail-Funktionalität",
-          "Die Seite Virtuelle Maschinen zeigt Details pro Datenträger, einschließlich genutztem Speicher, Kapazität und Leistungsmetriken (IOPS und Durchsatz)",
-          "Die Seite Virtuelle Maschinen ist jetzt nicht mehr als Vorschau verfügbar und produktionsreif"
+          "SQL Audit verlässt Vorschau und ist nun allgemein für Unternehmenskunden verfügbar",
+          "Virtual Machines-Seite zeigt Pro-Disk-Performance-Metriken einschließlich Speicher, IOPS und Durchsatz"
         ]
       },
       {
@@ -302,9 +319,8 @@
         "date": "10. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die Überwachung von Google Cloud SQL ist jetzt für PostgreSQL-Instanzen verfügbar",
-          "Die Seite Virtuelle Maschinen listet SQL Server-Instanzen auf jeder Maschine mit Versions- und Edition-Informationen auf",
-          "Neue Warnung für Datenbankberechtigungsänderungen für Enterprise-Kunden verfolgt, wenn Berechtigungen erteilt, widerrufen, verweigert werden oder das Eigentumsrecht übertragen wird"
+          "Google Cloud SQL-Monitoring nun verfügbar für PostgreSQL-Instanzen",
+          "Enterprise: Neue Warnung zur Änderung von Datenbankberechtigungen verfolgt, wer Berechtigungen geändert hat und wann"
         ]
       },
       {
@@ -312,9 +328,8 @@
         "date": "1. Juli 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die Überwachung von Google Cloud SQL ist jetzt für SQL Server-Instanzen verfügbar",
-          "Die Seite Virtuelle Maschinen zeigt jetzt durchschnittliche Netzwerkdurchsatzmetriken für jede Maschine an",
-          "Verfügbarkeitsgruppen bleiben jetzt bis zu 24 Stunden nach einer Überwachungslücke im PowerShell-Modul bestehen und verhindern falsche Warnungen über fehlende Objekte"
+          "Google Cloud SQL-Monitoring nun verfügbar für SQL Server-Instanzen",
+          "Neue Vorschau von Cluster- und Availability Group-Übersichtsseiten"
         ]
       },
       {
@@ -322,7 +337,7 @@
         "date": "25. Juni 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die neue REST-API-Dokumentationsoberfläche ist schneller, vollständig durchsuchbar und erleichtert das Erkunden und Testen von Endpoints"
+          "Integrierte REST-API-Dokumentation nun schneller und vollständig durchsuchbar für einfachere Integration"
         ]
       },
       {
@@ -330,7 +345,7 @@
         "date": "16. Juni 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Snapshot-Backups können jetzt mit Konfigurationseinstellungen von der Stichprobenprüfung ausgeschlossen werden"
+          "Neue REST-API-Dokumentationsschnittstelle mit verbesserter Performance und vollständiger Suchfunktion"
         ]
       },
       {
@@ -338,8 +353,8 @@
         "date": "10. Juni 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die Überwachung von SQL Agent-Jobs ist jetzt für Contained Availability Groups verfügbar und erfasst Jobdefinitionen, Verlauf, Aktivität und Zeitpläne",
-          "Der Blocking-Tree-Viewer wurde für bessere Benutzerfreundlichkeit und Kontrolle verbessert"
+          "SQL Agent-Job-Monitoring nun verfügbar für Contained Availability Groups",
+          "Neue Analysis-Seite mit verbessertem Chart-Rendering für komplexe Datenreihen"
         ]
       },
       {
@@ -347,10 +362,9 @@
         "date": "3. Juni 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Native ServiceNow- und Microsoft Teams-Benachrichtigungen sind jetzt nicht mehr als Vorschau verfügbar und produktionsreif",
-          "Die Überwachung einzelner Abfrageausführungen ist jetzt für Azure SQL Database und Azure SQL Managed Instance verfügbar",
-          "Unerreichbare SQL Server-Datenbanken zeigen jetzt den Status 'Überwachung mit eingeschränkter Stichprobenprüfung' in Bernsteinfarbe an, mit spezifischen Fehlerdetails",
-          "PostgreSQL-Abfragepläne unterscheiden jetzt Pläne, die unterschiedliche Indizes verwenden, wodurch Indexänderungen als Planänderungen sichtbar werden"
+          "Native ServiceNow- und Microsoft Teams-Benachrichtigungen verlassen Vorschau",
+          "Überwachung einzelner Abfrageausführungen nun verfügbar für Azure SQL Database und Azure SQL Managed Instance",
+          "PostgreSQL-Abfragepläne unterscheiden nun Pläne basierend auf verschiedenen Indizes für bessere Übersicht"
         ]
       },
       {
@@ -358,10 +372,8 @@
         "date": "28. Mai 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die CPU-Auslastung des Linux-Hosts schließt jetzt die I/O-Wartezeit aus und bietet präzisere CPU-Nutzungsmetriken",
-          "Neue Warnung für Änderungen der Serverrollenmitgliedschaft verfolgt, wenn Principals zu Serverrollen hinzugefügt oder daraus entfernt werden",
-          "Die Registerkarte Abfrageausführungen zeigt jetzt die Spalte 'Spills', die angibt, wie viele Seiten jede Abfrage in tempdb verschüttet hat",
-          "Effektive Kosten werden jetzt auf der Seite Virtuelle Maschinen neben den abgerechneten Kosten angezeigt"
+          "Enterprise: Neue Warnung zur Änderung der Serverrolle verfolgt Ereignisse bei Berechtigungserweiterung",
+          "Query Executions-Seite zeigt nun Spills-Spalte für Sichtbarkeit der tempdb-Nutzung"
         ]
       },
       {
@@ -369,8 +381,8 @@
         "date": "14. Mai 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "AWS EC2-Instanzkostendetails sind jetzt auf der Seite Estate > Virtuelle Maschinen sichtbar",
-          "Tägliches Kostendiagramm in der VM-Details-Seitenleiste mit Unterstützung für Vergleichszeitraum-Überlagerung hinzugefügt"
+          "Sehen Sie AWS EC2-Instanzkosten-Details direkt in Monitor für Cloud-Ausgabentransparenz",
+          "Tägliche Kostengrafiken mit Overlay-Unterstützung für Vergleichszeiträume zur VM-Kostenanalyse"
         ]
       },
       {
@@ -378,7 +390,8 @@
         "date": "23. April 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die Überwachung von PostgreSQL Aurora Reader-Instanzen wird jetzt unterstützt mit automatischer Überwachungsfunktion"
+          "PostgreSQL Aurora Reader-Instanzen können nun automatisch über Cluster-Konfiguration überwacht werden",
+          "Enterprise: Neue Warnungskategorie gruppiert Enterprise-exklusive Warnungen für bessere Organisation"
         ]
       },
       {
@@ -386,9 +399,9 @@
         "date": "16. April 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Option zum Ausschluss von Datenbanken nach Namen ist jetzt für verschiedene Warnungstypen verfügbar und reduziert falsch positive Meldungen",
-          "Azure-VM-Kostendetails sind jetzt auf der VM-Seite sichtbar",
-          "AI Alert-Analyse ist jetzt verfügbar für Long-running query, Deadlock und Blocking process-Warnungen"
+          "Schließen Sie spezifische Datenbanken nach Name von verschiedenen Warnungstypen aus für saubere Warnungen",
+          "Sehen Sie Azure-Virtual-Machine-Kosten-Details direkt in Monitor",
+          "KI-Warnungsanalyse nun verfügbar für Warnungen zu lang laufenden Abfragen, Deadlocks und blockierenden Prozessen"
         ]
       },
       {
@@ -396,9 +409,9 @@
         "date": "9. April 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Azure-VM-Abonnementdetails sind jetzt auf der VM-Seite sichtbar",
-          "Neue SQL Audit-Datei-Rollover-Warnung benachrichtigt, wenn Audit-Dateien innerhalb eines einzelnen Stichprobenintervalls Rollover durchführen",
-          "Benutzerdefinierter Metrik-Warnungsdetailtext ist jetzt in Script- und Webhook-Benachrichtigungen für reichhaltigeren Warnungskontext enthalten"
+          "Sehen Sie Azure-Virtual-Machine-Abonnement-Details für bessere Kostenzuordnung",
+          "Enterprise: SQL Audit-Datei-Rollover-Warnung erkennt verpasste Audit-Ereignisse",
+          "Details zu benutzerdefinierten Metriken-Warnungen sind nun in Webhook-Benachrichtigungen und -Skripten enthalten"
         ]
       },
       {
@@ -406,9 +419,8 @@
         "date": "26. März 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Disk-Lese- und Schreibverzögerungsmetriken sind jetzt auf der Analyse-Seite für Amazon RDS-Hosts verfügbar",
-          "SQL Server-Abfragepläne zeigen jetzt Informationen über die Instanz an, aus der sie stammen",
-          "Die Registerkarte Abfrageausführungen ist jetzt auf SQL Server-Instanzübersichten mit Setup-Anleitung verfügbar"
+          "Metriken für Festplattenlese- und Schreiblatenz zur Analysis-Seite für Amazon RDS-Hosts hinzugefügt",
+          "SQL Server-Abfragepläne zeigen nun die Informationen der ursprünglichen Instanz an"
         ]
       },
       {
@@ -416,7 +428,7 @@
         "date": "19. März 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die neue Analyse-Diagrammerfahrung ist jetzt das Standard mit verbesserter Leistung, besserer Benutzererfahrung und modernem Design"
+          "Neue Analysis-Graphenerfahrung ist nun Standard mit verbesserter Performance und modernem Design"
         ]
       },
       {
@@ -424,10 +436,9 @@
         "date": "11. März 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Index-Sampling ist jetzt standardmäßig für alle PostgreSQL-Instanzen aktiviert",
-          "Die Blocking Processes-Tabelle zeigt jetzt Systemprozesse, und die Blocking Process-Warnung warnt jetzt vor Systemprozessen",
-          "Machine: processor time-Metrik für Linux-Hosts hinzugefügt und zeigt CPU-Nutzung ohne Hypervisor-Steal-Zeit",
-          "AWS EC2-Cloud-Details-Unterstützung wurde zur Seite Virtuelle Maschinen für Monitor SaaS hinzugefügt"
+          "Index-Sampling nun standardmäßig für PostgreSQL aktiviert für bessere Performance-Erkenntnisse",
+          "Tabelle der blockierenden Prozesse enthält nun Systemprozesse für vollständige Blockierungssichtbarkeit",
+          "Enterprise: SQL Audit unterstützt nun alle Aktionstypen für Änderungen der Datenbankprinzipale"
         ]
       },
       {
@@ -435,9 +446,9 @@
         "date": "4. März 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Top Waits-Daten sind jetzt für PostgreSQL auf der Server-Übersichts- und Datenbankdetails-Seiten verfügbar",
-          "PostgreSQL tracked queries sind jetzt von der Datenbankübersichts-Seite verfügbar",
-          "Benutzerdefinierte Metrik-Abfragen unterstützen jetzt Sekundärabfragen, die beim Auslösen von Warnungen Kontext hinzufügen"
+          "Top-Waits-Daten nun verfügbar für PostgreSQL auf Server-Übersichts- und Datenbankdetails-Seiten",
+          "Benutzerdefinierte Metrik-Sekundärabfrage fügt Kontext zu Benachrichtigungen hinzu",
+          "Von PostgreSQL verfolgte Abfragen nun verfügbar von Datenbankübersichtsseite"
         ]
       },
       {
@@ -445,8 +456,8 @@
         "date": "18. Februar 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Backup-Prioritätsspalte zur SQL Server Availability Group-Seite für jedes Replikat hinzugefügt",
-          "Extended Event-Sampling-Unterstützung für SQL Server 2008R2 SP2 CU12 und SQL Server 2012 SP1 CU6 wiederhergestellt"
+          "Availability Group-Seite zeigt nun Backup-Priorität für jedes Replikat",
+          "Skript-Benachrichtigungen enthalten nun Namen des aktiven Failover-Cluster-Knotens für besseren Warnungskontext"
         ]
       },
       {
@@ -454,7 +465,8 @@
         "date": "29. Januar 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Current Activity-Seiten mit AI-Fähigkeit sind jetzt für Oracle- und MySQL-Instanzen verfügbar"
+          "Current Activity-Seiten mit KI-Funktion für Oracle- und MySQL-Instanzen hinzugefügt",
+          "Enterprise: SQL Audit unterstützt nun alle Aktionstypen für Änderungen der Serverprinzipale"
         ]
       },
       {
@@ -462,9 +474,8 @@
         "date": "22. Januar 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Die Seite Virtuelle Maschinen zeigt jetzt Cloud-Ressourcendetails für Azure-VMs in der Details-Seitenleiste",
-          "Microsoft Teams-Benachrichtigungen enthalten jetzt einen Link zur Warnung in Redgate Monitor",
-          "Alle Benachrichtigungstypen können jetzt ratenbegrenzt werden, um Benachrichtigungsüberlauf zu verhindern"
+          "Virtual Machines-Seite zeigt nun Cloud-Ressourcen-Details für Azure VMs",
+          "Alle Benachrichtigungstypen können nun begrenzt werden, um Benachrichtigungsüberflutung zu verhindern"
         ]
       },
       {
@@ -472,9 +483,8 @@
         "date": "7. Januar 2026",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "SQL Audit ist jetzt als Vorschau auf der Seite Security > Permissions für selbstverwaltete und Amazon RDS SQL Server-Instanzen verfügbar",
-          "Neue Übersichtsseite für Cluster und Verfügbarkeitsgruppe jetzt als Vorschau verfügbar",
-          "Unterstützung für virtuelle Maschinen mit PostgreSQL auf der Seite Estate > Virtuelle Maschinen"
+          "Enterprise: SQL Audit geht in Vorschau mit Audit-Event-Verfolgung für Berechtigungsänderungen",
+          "Availability Group-Übersichtsseite zeigt nun lesbare Informationen zu sekundären Replikaten"
         ]
       },
       {
@@ -482,9 +492,7 @@
         "date": "11. Dezember 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "AI-gestützte Abfrageanalyse unterstützt jetzt auch Oracle- und MySQL-Instanzen zusätzlich zu SQL Server und PostgreSQL",
-          "7-Tage-Historieoption zur Registerkarte Verlauf auf der Server-Übersichts-Seite hinzugefügt",
-          "Tags können jetzt auf SQL Server- und PostgreSQL-Datenbanken angewendet werden"
+          "KI-gestützte Abfrageanalyse unterstützt nun Oracle- und MySQL-Instanzen"
         ]
       },
       {
@@ -492,10 +500,19 @@
         "date": "1. Dezember 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Zertifikatauthentifizierungsunterstützung für Linux PostgreSQL-Server jetzt als Vorschau",
-          "PostgreSQL 18 wird jetzt unterstützt",
-          "Benutzerdefinierter Text kann jetzt zu Benachrichtigungen per E-Mail für Warnungen hinzugefügt werden",
-          "Die Überwachung von MySQL-Instanzen, die auf AWS Aurora ausgeführt werden, wird jetzt unterstützt"
+          "Zertifikatauthentifizierungsunterstützung für Linux PostgreSQL-Server (Vorschau)",
+          "PostgreSQL 18-Unterstützung nun verfügbar",
+          "Benutzerdefinierten Text zu Benachrichtigungs-E-Mails hinzufügen",
+          "MySQL-Monitoring auf AWS Aurora wird nun unterstützt",
+          "Enterprise: Berechtigungsüberwachung nun verfügbar für Azure Managed Instances"
+        ]
+      },
+      {
+        "version": "14.3.0",
+        "date": "17. November 2025",
+        "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
+        "highlights": [
+          "KI-gestützte Abfrageanalyse (Vorschau) bietet Verbesserungsvorschläge zur Performance"
         ]
       },
       {
@@ -503,10 +520,10 @@
         "date": "29. Oktober 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Benutzerdefinierte Metriken und Warnungen sind jetzt für PostgreSQL verfügbar",
-          "Estate > Virtuelle Maschinen-Seite hinzugefügt zur Überwachung von VM-Nutzung und Kosten",
-          "Analyse-Seite mit neuem modernem Design aktualisiert",
-          "Neue Warnungstypen für Replication Job Failure und Replication Maintenance Job Failure"
+          "Benutzerdefinierte Metriken und Warnungen nun verfügbar für PostgreSQL",
+          "Neue Virtual Machines-Seite überwacht Virtual Machine-Nutzung in Ihrer Infrastruktur",
+          "Analysis-Seite mit neuem modernem Design aktualisiert",
+          "Neue Warnungstypen: Replication Job Failure und Replication Maintenance Job Failure"
         ]
       },
       {
@@ -514,11 +531,12 @@
         "date": "16. Oktober 2025",
         "docs_url": "https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html",
         "highlights": [
-          "Native ServiceNow-Integration ermöglicht das automatische Erstellen von ServiceNow-Incidents bei Warnungen",
-          "Native Microsoft Teams-Integration ermöglicht Warnbenachrichtigungen direkt an Teams-Kanäle",
-          "Die Überwachung von MySQL-Instanzen auf Azure Flexible Server wird jetzt unterstützt",
-          "Erweiterte Oracle-Unterstützung umfasst jetzt Oracle Data Guard-Überwachung",
-          "Gesamte Wait Event/Class-Informationen sind jetzt für Oracle-Installationen als Diagramm oder Tabelle verfügbar"
+          "Native ServiceNow-Integration zur Incident-Erstellung bei Warnungen",
+          "Native Microsoft Teams-Integration für Benachrichtigungen",
+          "MySQL-Monitoring auf Azure Flexible Server wird nun unterstützt",
+          "Erweiterte Oracle-Unterstützung umfasst Oracle Data Guard-Monitoring",
+          "Gesamte Wait Event-Informationen für Oracle mit Graph- und Tabellenansichten",
+          "Enterprise: Möglichkeit, Sysadmins und Security-Admins auf allen Servern zu exportieren"
         ]
       }
     ]
