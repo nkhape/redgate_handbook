@@ -415,12 +415,12 @@
         
           
           
-          <span class="text-xs text-gray-400">16. Oktober 2025 – 10. September 2026</span>
+          <span class="text-xs text-gray-400">18. Februar 2026 – 10. September 2026</span>
         
       </div>
 
       
-        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Neueste Versionen bieten leistungsstarke neue Funktionen zur Überwachung moderner Datenbankumgebungen. <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Redgate Assistant bietet nun KI-gestützte Einblicke auf Serverübersichtsseiten für SQL Server</a>, während <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">MongoDB nun sichere Verbindungen über TLS mit Unterstützung selbstsignierter Zertifikate ermöglicht</a>. Die Plattform hat die Cloud-Abdeckung erheblich erweitert – <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Aurora PostgreSQL-Cluster zeigen nun detaillierte Metriken und überwachen automatisch Writer-Instanzen</a>, und <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Google Cloud SQL wird nun für SQL Server und PostgreSQL unterstützt</a>. Die Alert-Intelligenz hat sich verbessert mit <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">neuen Alerts für wiederholte SQL Server-Anmeldungsfehler und PostgreSQL-Tabellenaufblähung</a>, sowie <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Alert-Benachrichtigungen enthalten nun den auslösenden Wert und den überschrittenen Schwellwert</a>. Die Infrastruktur-Überwachung wurde auch erweitert mit <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">datenträger-spezifischen Details auf der Virtual Machines-Seite, die Speicherplatz, Kapazität und IOPS-Metriken anzeigen</a>.</p>
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Jüngste Updates bringen leistungsstarke neue Funktionen zur Überwachung moderner Datenbankumgebungen und zur Verbesserung der betrieblichen Effizienz. <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Redgate Assistant</a> bietet nun KI-gestützte Erkenntnisse direkt in der Monitoring-Oberfläche, während <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">Docker-Container-Unterstützung</a> flexible Bereitstellungsoptionen ermöglicht. Neue Warnungstypen für <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">wiederholte Anmeldungsfehler und Tabellen-Bloat-Erkennung</a> helfen, Sicherheitsprobleme und Performance-Probleme früher zu erkennen, und die erweiterte Cloud-Unterstützung umfasst nun <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">PostgreSQL Aurora Cluster-Überwachung</a> mit automatischer Instanz-Erkennung. Die <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html">verbesserte Reports-Oberfläche</a> ist nun das Standard-Erlebnis und bietet Ihren Teams eine schnellere, modernere Möglichkeit, die Datenbankintegrität in Ihrer gesamten Umgebung zu verfolgen.</p>
       
 
       
@@ -440,7 +440,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Custom Metric Alert-Abfragen können nun mehrere Spalten oder Zeilen als Tabelle zurückgeben, angezeigt in Alert-E-Mails und Detailseiten für umfassendere Kontexte
+                  Warnungsdetails zeigen jetzt umfangreiche Kontextinformationen mit benutzerdefinierten Metrik-Abfragen, die mehrere Werte als Tabellen in Warnungen und E-Mail-Benachrichtigungen zurückgeben
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Festplattenspeicher-Metriken sind nun für verwaltete Azure-Instanzen sichtbar
                 </li>
               
             </ul>
@@ -460,37 +465,32 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Redgate Assistant (Vorschau) ist nun auf SQL Server-Instanzübersichtsseiten verfügbar, um KI-gestützte Einblicke bereitzustellen
+                  Redgate Assistant (Vorschau) ist nun auf SQL Server-Übersichtsseiten verfügbar, um KI-gestützte Erkenntnisse bereitzustellen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Azure Flex-Hosts können sich mit benutzerseitig zugewiesenen verwalteten Identitäten authentifizieren für einfachere Credential-Verwaltung
+                  Azure Flex-Hosts können sich mit benutzerdefinierten verwalteten Identitäten authentifizieren, um sicherer mit Anmeldedaten umzugehen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL Aurora-Cluster zeigen nun P50-, P95- und P99-Perzentile für Machine-Metriken zur besseren Verständigung der Performance-Verteilung
+                  Die Seite für virtuelle Maschinen zeigt nun P50-, P95- und P99-Perzentile für Maschinenmetriken mit auf dem Median basierenden Nutzungsberechnungen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  REST API v2 Vorschau ist nun für Enterprise-Kunden mit Endpoints verfügbar, um Server aufzulisten und ihre Metrikdaten abzufragen
+                  PostgreSQL Aurora DB Cluster-Ansicht hinzugefügt, um CloudWatch-Metriken über alle Instanzen in einem Cluster abzubilden
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL Aurora DB hat nun eine dedizierte Cluster-Ansicht zum Graphen von CloudWatch-Metriken über alle Instanzen hinweg
+                  MongoDB kann sich nun über TLS verbinden, mit Optionen für selbstsignierte Zertifikate und anpassbare Timeout-Einstellungen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  MongoDB-Verbindungen können nun TLS mit Optionen zur Validierung selbstsignierter Zertifikate und zur Anpassung von Timeouts verwenden
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Azure Managed Instance-Verbindungen können nun vor dem Hinzufügen zur Überwachung getestet werden, um zu überprüfen, dass Credentials funktionieren
+                  Verbindungen zu verwalteten Azure-Instanzen können nun getestet werden, bevor sie zu überwachten Servern hinzugefügt werden
                 </li>
               
             </ul>
@@ -510,37 +510,47 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Modern Reports-Erlebnis ist nun die Standardeinstellung mit verbessertem visuellen Design und optimiertem Layout
+                  Verbessertes Reports-Erlebnis ist nun das Standard-Erlebnis mit erweiterten Kacheln und moderner Oberfläche
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Read-only MongoDB Replica Set sekundäre Instanzen können nun überwacht werden
+                  Schreibgeschützte MongoDB Replica Set-Sekundärinstanzen können nun überwacht werden
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Alerts werden automatisch aktiviert, wenn der Schweregrad ansteigt, um Sie auf die kritischsten Probleme zu konzentrieren
+                  Gelöschte Warnungen werden automatisch gelöst, wenn der Schweregrad anschließend ansteigt
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neuer Alert-Typ für wiederholte SQL Server-Anmeldungsfehler, wenn die Authentifizierung mehrfach innerhalb eines Zeitfensters fehlschlägt
+                  Neuer Warnungstyp für wiederholte Anmeldungsfehler, der ausgelöst wird, wenn mehrere SQL Server-Anmeldungsfehler innerhalb eines festgelegten Zeitfensters auftreten
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neuer Alert-Typ für PostgreSQL-Tabellenaufblähung zur Identifizierung von Speicherplatz-Rückgewinnungsmöglichkeiten
+                  Neuer Warnungstyp für PostgreSQL Tabellen-Bloat-Erkennung basierend auf totem Tupel-Prozentsatz
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL-Serverkonfigurationsseite zeigt nun Instanzparameter und Empfehlungen für wichtige Einstellungen
+                  PostgreSQL Server-Konfigurations-Registerkarte hinzugefügt mit aktuellen Parametern und Empfehlungen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Server-Level-Konfigurationsseite konsolidiert PostgreSQL-Einstellungen neben SQL Server-Konfiguration
+                  SQL Server Konfigurationsseite erweitert mit PostgreSQL-Registerkarte zur Überwachung von Konfigurationseinstellungen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neue Benutzerrolle &#39;Security&#39; bietet schreibgeschützten Zugriff auf Sicherheitsseiten ohne vollständigen Admin-Zugriff zu benötigen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Cluster- und Verfügbarkeitsgruppenübersichtsseiten sind nun das Standard-Erlebnis
                 </li>
               
             </ul>
@@ -560,7 +570,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PowerShell-Verschlüsselungsparameter akzeptieren nun Optional, Mandatory und Strict-Werte für flexible Verbindungssicherheitskonfiguration
+                  PowerShell Verschlüsselungsparameter akzeptiert nun Optional, Mandatory und Strict für bessere Kontrolle über die Verbindungssicherheit
                 </li>
               
             </ul>
@@ -580,22 +590,32 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Redgate Monitor kann nun in Docker-Containern für moderne Bereitstellungsszenarien ausgeführt werden
+                  Redgate Monitor kann nun in einem Docker-Container ausgeführt werden, um flexible Bereitstellung zu ermöglichen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Redgate Assistant (Vorschau) ist nun verfügbar, um bei der Fehlerbehebung von Performance-Problemen zu helfen
+                  Redgate Assistant (Vorschau) verfügbar, um KI-Erkenntnisse und Empfehlungen bereitzustellen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Alert-Benachrichtigungen zeigen nun den Metrikwert und den Schwellwert, der den Alert ausgelöst hat, für unmittelbaren Kontext
+                  MCP-Server (Vorschau) verfügbar zur Integration mit Drittanbieter-Tools
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neuer Alert-Typ für SQL Server-Anmeldungsfehler verfolgt Authentifizierungsfehler über Zeit
+                  Warnungsbenachrichtigungen enthalten nun den spezifischen Wert, der die Warnung ausgelöst hat, und den überschrittenen Schwellenwert
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neuer Warnungstyp für SQL Server Anmeldungsfehler unterstützt auf Amazon RDS SQL Server-Instanzen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Aurora PostgreSQL Instanzeneigenschaften-Bereich zeigt wichtige Konfigurationsdetails
                 </li>
               
             </ul>
@@ -615,7 +635,22 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neuer Alert-Typ für IO-Stalls überwacht Speicherlatenzen auf SQL Server und MySQL, um Performance-Verschlechterungen früh zu erkennen
+                  Neue Warnung für Power BI Report Server-Status ermöglicht unabhängige Warnungen von SQL Server Reporting Services
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neues Reports-Erlebnis verfügbar mit moderner Oberfläche und verbessertem Layout
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neuer Warnungstyp für IO-Stalls auf SQL Server und MySQL, wenn Speichervorgänge einen Schwellenwert überschreiten
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Schreibgeschützte Datenbanken können nun über eine Konfigurationseinstellung auf der Backups-Seite eingebunden werden
                 </li>
               
             </ul>
@@ -635,17 +670,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Aurora PostgreSQL-Cluster-Überwachung komplett überarbeitet, um detaillierte Instanzmetriken, Cluster-Events und aggregierte Query-Performance in einer Ansicht zu zeigen
+                  Aurora PostgreSQL Cluster-Überwachungserlebnis überarbeitet mit detaillierten Metriken, Cluster-Ereignissen und Abfrageleistungs-Aggregation
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Auto-Überwachung überwacht nun automatisch sowohl Writer- als auch Reader-Instanzen in Aurora PostgreSQL-Clustern
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Einzelne Query-Ausführungsüberwachung ist nun für Azure SQL Database und Azure SQL Managed Instance verfügbar
+                  Individuelle Abfrageausführungsüberwachung jetzt verfügbar für Azure SQL Database, Azure SQL Managed Instance und Google Cloud SQL für SQL Server
                 </li>
               
             </ul>
@@ -665,12 +695,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Virtual Machines-Seite zeigt nun datenträger-spezifische Details einschließlich genutztem Speicherplatz, Kapazität und IOPS-Metriken für jeden Datenträger
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Virtual Machines-Seite ist nun aus der Vorschau und einsatzbereit für die Produktion
+                  Seite Virtuelle Maschinen zeigt nun Einzelheiten pro Festplatte, einschließlich genutztem Speicherplatz, Kapazität und durchschnittlichem IOPS und Durchsatz
                 </li>
               
             </ul>
@@ -690,12 +715,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Google Cloud SQL-Überwachung ist nun für PostgreSQL-Instanzen verfügbar
+                  Google Cloud SQL-Überwachung nun verfügbar für PostgreSQL-Instanzen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Virtual Machines-Seite zeigt nun SQL Server-Instanzen auf jeder Maschine mit Versions- und Edition-Informationen
+                  Seite Virtuelle Maschinen listet SQL Server-Instanzen auf jeder Maschine mit Version und Edition auf
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neue Warnung für Datenbankberechtigungsänderungen für SQL Server mit aktiviertem SQL Audit
                 </li>
               
             </ul>
@@ -715,7 +745,27 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Google Cloud SQL-Überwachung ist nun für SQL Server-Instanzen verfügbar
+                  Google Cloud SQL-Überwachung nun verfügbar für SQL Server-Instanzen
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.22.0</span>
+                <span class="text-sm text-gray-400">25. Juni 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Neue REST API-Dokumentationsoberfläche ist schneller und vollständig durchsuchbar
                 </li>
               
             </ul>
@@ -732,11 +782,6 @@
               </a>
             </div>
             <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  REST API-Dokumentation komplett neu gestaltet mit schnellerem Interface, vollständiger Suchfunktion und leichteren Endpoint-Exploration und -Tests
-                </li>
               
             </ul>
           </div>
@@ -755,12 +800,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  SQL Agent Job-Überwachung ist nun für Contained Availability Groups verfügbar
+                  SQL Agent-Auftragsüberwachung nun verfügbar für enthaltene Verfügbarkeitsgruppen mit Auftragsdefinitionen, Verlauf, Aktivität und Zeitplänen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
                   Blocking Tree Viewer verbessert für bessere Benutzerfreundlichkeit und Kontrolle
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Zugriffstokens-Benutzeroberfläche zeigt nun ausgewählte Server an, auf die das Token Zugriff hat
                 </li>
               
             </ul>
@@ -780,17 +830,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Native ServiceNow- und Microsoft Teams-Benachrichtigungen sind nun nicht mehr in der Vorschau für sofortige Team-Zusammenarbeit
+                  Native ServiceNow- und Microsoft Teams-Benachrichtigungen sind nun nicht mehr in der Vorschau
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Einzelne Query-Ausführungsüberwachung ist nun für Azure SQL Database und Azure SQL Managed Instance verfügbar
+                  Individuelle Abfrageausführungsüberwachung nun verfügbar für Azure SQL Database und Azure SQL Managed Instance
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL Query-Plan-Historie unterscheidet nun Pläne mit unterschiedlichen Indizes, um Index-Änderungen sichtbar zu machen
+                  PostgreSQL Abfrageplan-Verlauf unterscheidet nun Pläne, die unterschiedliche Indizes verwenden
                 </li>
               
             </ul>
@@ -810,22 +860,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Linux Host CPU-Auslastung schließt nun I/O Wait-Zeit aus für genauere Nutzungsberichte
+                  Linux Host CPU-Auslastungsmetriken schließen nun I/O-Wartezeit für genauere Berichterstattung aus
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neuer Alert-Typ für Server-Rollenmitgliedschaftsänderungen zur Verfolgung von Privilege Escalations
+                  Neue Warnung für Serverrollen-Mitgliedschaftsänderungen verfügbar zur Erkennung von Berechtigungsänderungen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Query Executions-Seite zeigt nun Memory Grants für jede Query zur Identifizierung von Speicherdruck-Problemen
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Effektive Kosten zur Virtual Machines-Seite hinzugefügt für bessere Kostenübersicht neben abgerechneten Kosten
+                  Seite Abfrageausführungen zeigt Memory Grants für jede Abfrage, wenn verfügbar
                 </li>
               
             </ul>
@@ -845,12 +890,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  AWS EC2-Instanzkostendetails sind nun auf der Virtual Machines-Seite mit Tageskostengraphen und Vergleichsunterstützung sichtbar
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Cloud-Service-Credential-Tests sind nun umfassender mit detaillierten Fehlermeldungen
+                  AWS EC2 Instanz-Kostendetails sind nun auf der Seite Virtuelle Maschinen sichtbar
                 </li>
               
             </ul>
@@ -873,6 +913,11 @@
                   PostgreSQL Aurora Reader-Instanzen können nun automatisch über Cluster-Konfiguration überwacht werden
                 </li>
               
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Hyperlink für Warnungsdetails-Quelle leitet nun zu spezifischem Zeitpunkt und Datum der Warnung weiter
+                </li>
+              
             </ul>
           </div>
         
@@ -890,17 +935,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Alert-Typen können nun spezifische Datenbanken nach Name ausschließen für präzisere Alert-Kontrolle
+                  Warnungstypen ermöglichen nun das Ausschließen von Datenbanken nach Name für detailliertere Kontrolle
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Azure Virtual Machine-Kostendetails sind nun mit Abonnementinformationen sichtbar
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  KI-Analyse ist nun für Long-running Query, Deadlock und Blocking Process Alerts verfügbar
+                  KI-Warnungsanalyse nun verfügbar für Warnungstypen Langzeitabfrage, Deadlock und Blocking Process
                 </li>
               
             </ul>
@@ -920,12 +960,37 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Azure Virtual Machine-Abonnementdetails sind nun für bessere Infrastruktur-Transparenz angezeigt
+                  Benutzerdefinierte Metriken nun auf Oracle-Instanzen konfigurierbar
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Custom Metric Alert-Detailtext aus sekundären Abfragen ist nun in Script- und Webhook-Benachrichtigungen enthalten
+                  Abfragevergleich nun verfügbar für PostgreSQL Top Queries
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v14.13.0</span>
+                <span class="text-sm text-gray-400">26. März 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Metriken für Festplattenlese- und Schreiblatenz für Amazon RDS-Hosts hinzugefügt
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Registerkarte Abfrageausführungen nun auf SQL Server-Instanzübersichtsseiten verfügbar
                 </li>
               
             </ul>
@@ -945,17 +1010,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Analysis Graph-Erfahrung ist nun die Standardeinstellung mit verbesserter Performance und modernem Design
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  SQL Server- und PostgreSQL-Registerkarten für aktuelle Aktivität komplett modernisiert
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  CPU- und Speicherauslastungsstatistiken sind nun für SQL Server-Sitzungen in aktueller Aktivität sichtbar
+                  Neues Analysis Graph-Erlebnis ist nun das Standard-Erlebnis mit verbesserter Leistung und modernem Design
                 </li>
               
             </ul>
@@ -975,22 +1030,22 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Index-Sampling ist nun standardmäßig für PostgreSQL-Instanzen aktiviert für bessere Index-Gesundheitsüberwachung
+                  Index-Sampling ist nun standardmäßig für alle PostgreSQL-Instanzen aktiviert
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Blocking Processes-Tabelle zeigt nun Systemprozesse für vollständige Transparenz in Blocking-Szenarien
+                  Blocking Processes-Tabelle zeigt nun Systemprozesse in Blocking Process-Warnungen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Modernisierte Konfigurationsinformationsseite mit zusammenklappbaren Abschnitten für bessere Handhabung großer Umgebungen
+                  Verbesserte Leistung beim Laden von Host-Level-Metriken mit TimescaleDB Repository
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  KI-Analyse ist nun für MongoDB Top Queries verfügbar
+                  Machine Processor Time-Metrik für Linux-Hosts hinzugefügt, die CPU-Auslastung ohne Hypervisor Steal Time zeigt
                 </li>
               
             </ul>
@@ -1010,17 +1065,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Top Waits-Daten sind nun für PostgreSQL auf Server- und Datenbankübersichtsseiten verfügbar
+                  Top Waits-Daten nun verfügbar für PostgreSQL auf Server-Übersichts- und Datenbankdetails-Seiten
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL-verfolgbare Queries sind nun von der Datenbankübersichtsseite verfügbar
+                  PostgreSQL nachverfollgte Abfragen nun von der Datenbankübersichtsseite verfügbar
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Custom Metric-Abfragen können nun verbesserte Filteroptionen für zurückgegebene Werte verwenden
+                  Benutzerdefinierte Metrik-Abfragen können nun zusätzlichen Kontext hinzufügen, wenn Warnungen ausgelöst werden
                 </li>
               
             </ul>
@@ -1040,257 +1095,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  SQL Server Availability Group-Seite zeigt nun Backup-Priorität für jedes Replikat
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.8.0</span>
-                <span class="text-sm text-gray-400">29. Januar 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Current Activity-Seiten mit KI-Fähigkeit sind nun für Oracle- und MySQL-Instanzen verfügbar
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.7.0</span>
-                <span class="text-sm text-gray-400">22. Januar 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Virtual Machines-Seite zeigt nun Azure Cloud-Ressourcendetails in der Detailsleiste
+                  Spalte Backup-Priorität zur SQL Server Verfügbarkeitsgruppenleiste hinzugefügt
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Microsoft Teams-Benachrichtigungen enthalten nun einen direkten Link zum Alert in Redgate Monitor
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Alle Benachrichtigungstypen können nun ratenlimitiert werden, um Benachrichtigungsüberlastung mit konfigurierbaren Schwellwerten zu verhindern
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.6.0</span>
-                <span class="text-sm text-gray-400">7. Januar 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  SQL Audit-Registerkarte ist nun in der Vorschau auf der Security Permissions-Seite verfügbar, um Berechtigungsänderungen mit SQL Server Audit-Funktion nachzuverfolgen
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Cluster- und Availability Group-Übersichtsseiten bieten verbesserte Transparenz mit detaillierten Metriken
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Unterstützung für Virtual Machines mit PostgreSQL zur Virtual Machines-Seite hinzugefügt
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Konfigurationsseite ist nun durchsuchbar für einfachere Navigation
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.5.0</span>
-                <span class="text-sm text-gray-400">11. Dezember 2025</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  KI-gestützte Query-Analyse unterstützt nun Oracle- und MySQL-Instanzen zusätzlich zu SQL Server und PostgreSQL
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  7-Tage-Verlauf-Option zur History-Registerkarte auf Serverübersichtsseite hinzugefügt für erweiterte Trend-Analyse
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Tags können nun auf SQL Server- und PostgreSQL-Datenbanken angewendet werden
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.4.0</span>
-                <span class="text-sm text-gray-400">1. Dezember 2025</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Zertifikatauthentifizierung für Linux PostgreSQL-Server ist nun in der Vorschau
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL 18-Unterstützung ist nun verfügbar
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Benutzerdefinierter Text kann nun zu Alert-E-Mail-Benachrichtigungen hinzugefügt werden
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  MySQL-Instanzen auf AWS Aurora werden nun unterstützt
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Virtual Machines-Seite Vergleichsumschalter zeigt nun Auslastung über verschiedene Zeiträume hinweg
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.3.0</span>
-                <span class="text-sm text-gray-400">17. November 2025</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  KI-gestützte Query-Analyse bietet Ratschläge zu Query-Performance-Problemen und Verbesserungsvorschläge
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.2.0</span>
-                <span class="text-sm text-gray-400">29. Oktober 2025</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Custom Metrics und Alerts sind nun für PostgreSQL verfügbar
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Analysis-Seite mit modernem Design komplett aufgefrischt
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Virtual Machines-Seite hinzugefügt zur Überwachung von Virtual Machine-Auslastung und -Kosten
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Replication Job Failure- und Replication Maintenance Job Failure-Alert-Typen hinzugefügt für bessere Replication-Überwachung
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v14.1.0</span>
-                <span class="text-sm text-gray-400">16. Oktober 2025</span>
-              </div>
-              <a href="https://documentation.red-gate.com/monitor14/redgate-monitor-14-1+-release-notes-317489801.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Native ServiceNow-Integration ist nun verfügbar, um automatisch ServiceNow-Incidents zu erstellen, wenn Alerts auftreten
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Native Microsoft Teams-Integration ist nun für direkte Alert-Benachrichtigungen an Teams verfügbar
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  MySQL-Instanzen auf Azure Flexible Server werden nun unterstützt
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Oracle Data Guard-Überwachung wird nun unterstützt
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Host-Überwachung ist nun standardmäßig auf Add Monitored Server-Seiten aktiviert
+                  Script Notifications Alert-Daten enthalten nun Namen der aktiven Failover Cluster-Nodes
                 </li>
               
             </ul>
@@ -1304,9 +1114,9 @@
           onclick="toggleReleases()"
           class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
           style="color:#e8392d;"
-          data-more-text="27 ältere Releases anzeigen ↓"
+          data-more-text="21 ältere Releases anzeigen ↓"
           data-fewer-text="Weniger Releases anzeigen ↑">
-          27 ältere Releases anzeigen ↓
+          21 ältere Releases anzeigen ↓
         </button>
         <script>
           function toggleReleases() {
@@ -1321,10 +1131,10 @@
 
       
         <p class="text-xs text-gray-400 mt-3">
-          Zuletzt aktualisiert am 2026-09-13
+          Zuletzt aktualisiert am 2026-09-20
           
           
-            · Zeigt Änderungen bis 16. Oktober 2025
+            · Zeigt Änderungen bis 18. Februar 2026
           
         </p>
       
