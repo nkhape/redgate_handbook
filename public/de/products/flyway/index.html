@@ -445,18 +445,83 @@
         
           
           
-          <span class="text-xs text-gray-400">26. Mai 2026 – 17. September 2026</span>
+          <span class="text-xs text-gray-400">29. April 2026 – 24. September 2026</span>
         
       </div>
 
       
-        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Kürzliche Updates bringen leistungsstarke neue Funktionen für Datenbankenverwaltung und Bereitstellungsautomatisierung. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Snowflake-Erweiterte Funktionen</a> und <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Databricks-Erweiterte Funktionen</a> sind jetzt in öffentlicher Vorschau verfügbar und bieten Teams mehr Flexibilität mit modernen Cloud-Datenplattformen. Das <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">neue Flyway MCP mit Test Migrate und 3-seitigen Diff-Funktionen</a> verbessert Entwicklungs-Workflows, während <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">KI-gestützte Änderungserklärungen</a> Teams dabei helfen zu verstehen, was in ihrem Schema geschieht. Auf der Bereitstellungsseite bieten <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">automatisierte Bereitstellungs-Workflows mit manuellen Genehmigungsschritten</a> bessere Kontrolle über Produktionsänderungen, und verbesserte Fehlermeldungen für Git-, Docker- und Datenbankoperationen ermöglichen schnellere und einfachere Fehlerbehebung.</p>
+        <p class="text-gray-600 leading-relaxed mb-6 [&_a]:font-semibold [&_a]:underline [&_a]:decoration-gray-300 [&_a]:underline-offset-2 [&_a]:hover:decoration-gray-600">Aktuelle Updates bringen leistungsstarke neue Funktionen für Datenbankbereitstellung und Entwicklungs-Workflows. Der <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Deploy-Tab speichert nun automatisch Snapshots standardmäßig</a>, wodurch Drift-Analyse und Rollbacks sofort verfügbar sind, ohne zusätzliche Einrichtung. <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html">Snowflake Advanced Capabilities und Databricks Lakebase werden nun unterstützt</a>, was die Plattform-Abdeckung erheblich erweitert. Für Teams, die Automatisierung anstreben, <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">generiert die neue Seite 'Automated Deployment' GitHub Actions-Workflows</a>, um die CI/CD-Integration zu optimieren. <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html">Die Objekt-Historie enthält nun KI-gestützte Änderungserklärungen</a>, die Teams helfen, zu verstehen, was sich geändert hat und warum. Leistungs- und Benutzerbarkeitsverbesserungen in CLI und Desktop machen häufige Aufgaben schneller und intuitiver, während erweiterte Datenbankunterstützung die Kompatibilität mit Ihrer sich entwickelnden Infrastruktur sichert.</p>
       
 
       
       <div class="flex flex-col gap-4">
         
           <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.10.1</span>
+                <span class="text-sm text-gray-400">24. September 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Möglichkeit hinzugefügt, Diff-Einstellungen direkt aus der Objekt-Historie zu konfigurieren, um die Anpassung der Änderungsanzeige zu erleichtern
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v13.8.0</span>
+                <span class="text-sm text-gray-400">24. September 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Snowflake Snapshot-Historie wird nun unterstützt und ermöglicht Drift-Erkennung und Rollback-Funktionen für Snowflake-Datenbanken
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Drift-Ergebnisse werden nun in Flyway Pipelines veröffentlicht, wenn Drift-Prüfung aktiviert ist, was die Sichtbarkeit von Schemaänderungen in Ihren Bereitstellungen verbessert
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.10.0</span>
+                <span class="text-sm text-gray-400">22. September 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Bereitstellungen speichern nun automatisch Snapshots standardmäßig, wodurch Drift-Analyse und Rollback-Funktionen sofort verfügbar sind, ohne manuelle Konfiguration
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v9.9.1</span>
@@ -470,13 +535,13 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Verwenden Sie KI, um mit einem Klick zu erklären, was einzelne Schema-Änderungen an Ihren Datenbankobjekten bewirkt haben
+                  Die Objekt-Historie enthält nun eine Schaltfläche &#39;Explain this change&#39; mit Redgate-KI-Unterstützung, die Teams hilft, zu verstehen, was sich in jedem Commit geändert hat
                 </li>
               
             </ul>
           </div>
         
-          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v9.9.0</span>
@@ -490,18 +555,18 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Snowflake-Erweiterte Funktionen sind jetzt in öffentlicher Vorschau verfügbar und unterstützen anspruchsvollere Datenbankfunktionen
+                  Snowflake Advanced Capabilities-Unterstützung ist nun in der öffentlichen Vorschau verfügbar und ermöglicht zustandsbasierte Bereitstellung für Snowflake-Projekte
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Deploy-Tab lädt Migrationen automatisch neu, wenn Sie diese an anderer Stelle in Ihrem Projekt hinzufügen, generieren oder ausführen
+                  Der Deploy-Tab wird nun automatisch aktualisiert, wenn Migrationen an anderer Stelle im Projekt hinzugefügt werden, um die Bereitstellungsansicht synchron zu halten
                 </li>
               
             </ul>
           </div>
         
-          <div class="bg-white border border-gray-200 rounded-xl p-6 ">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
                 <span class="text-sm font-semibold text-gray-900">v13.7.0</span>
@@ -515,12 +580,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Test Migrate-Tool führt ausstehende Migrations-Skripte gegen Ihre Shadow-Datenbank aus, um Probleme vor der Produktion zu erkennen
+                  Flyway MCP führt ein neues Test Migrate-Tool ein, das ausstehende Migrationsskripte vor der Produktionsbereitstellung gegen eine Shadow-Datenbank validiert
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  3-seitige Diff-Funktion erstellt einen Checkpoint vor Schema-Updates und gibt Ihnen einen vollständigen Überblick über die Änderungen
+                  Flyway MCP unterstützt nun 3-seitigen Diff und vergleicht Datenbankänderungen gegen das Schemamodell und vorherige Snapshots für umfassende Änderungsanalyse
                 </li>
               
             </ul>
@@ -540,12 +605,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Snowflake Postgres wird jetzt als eigenständiger Datenbanktyp unterstützt
+                  Unterstützung für Snowflake Postgres als eigenständiger Datenbanktyp hinzugefügt, um zustandsbasierte Bereitstellungen für PostgreSQL-kompatible Snowflake-Projekte zu ermöglichen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Databricks-Verbindungsdialog hat jetzt dedizierte Felder für eine klarere Einrichtung Ihrer Data-Warehouse-Verbindung
+                  Databricks-Verbindungskonfiguration umfasst nun spezielle Felder für Server-Hostname, Port, HTTP-Pfad und Katalog, um die Verbindungseinrichtung zu vereinfachen
                 </li>
               
             </ul>
@@ -565,17 +630,17 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Dry-Run-Berichte enthalten jetzt eine Bereitstellungs-Übersichtstabelle, damit Sie überprüfen können, was passiert, bevor es ausgeführt wird
+                  Dry-Run-Berichte enthalten nun eine Bereitstellungsübersichtstabelle mit Informationen zur Bereitstellung, um Überprüfungen schneller und genauer zu machen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Code-Analyse kann jetzt spezifische Regelsätze ausschließen und verhindert falsche Positive bei Schema-Modellen, die nicht auf diese Regeln zutreffen
+                  Code-Analyse kann nun spezifische Regelsätze pro Projekt ausschließen, damit Schemamodelle keine Verstöße gegen nicht zutreffende Regeln melden
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Snowflake Postgres wird jetzt als unterstützter PostgreSQL-kompatibler Datenbanktyp erkannt
+                  Dry-Run-Berichte enthalten automatisch einen Hinweis, wenn Ergebnisse gekürzt werden, um unvollständige Überprüfungen zu verhindern
                 </li>
               
             </ul>
@@ -595,12 +660,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Verlauf auf Objektebene ist jetzt standardmäßig für Enterprise-Kunden aktiviert und bietet detaillierte Änderungsverfolgung
+                  Objekt-Historie ist nun standardmäßig für Enterprise-Benutzer als Vorschau-Funktion aktiviert und zeigt detaillierte Commit-für-Commit-Änderungsverfolgung für jedes Datenbankobjekt
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Benachrichtigungen teilen Ihnen automatisch mit, wenn es Upstream-Änderungen in der Versionskontrolle gibt, die Sie abrufen müssen
+                  Die Schema-Modell-Seite prüft nun automatisch auf Upstream-Änderungen in der Versionskontrolle und benachrichtigt Sie, wenn neue Änderungen verfügbar sind
                 </li>
               
             </ul>
@@ -620,12 +685,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Vergleichsfilter können jetzt für Databricks Lakebase-Projekte mit dem gleichen bekannten Filter-Editor konfiguriert werden
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Diff-Viewer zeigt jetzt Ihre aktuelle Position beim Vergleich von Schema-Versionen
+                  Vergleichsfilter können nun für Databricks Lakebase-Projekte konfiguriert werden und verwenden denselben intuitiven Filter-Editor wie PostgreSQL
                 </li>
               
             </ul>
@@ -645,7 +705,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Dry-Run-Skripte sind jetzt übersichtlicher und einfacher zu überprüfen, da unnötige Anweisungen entfernt wurden
+                  Debug-Protokolle zeigen nun finale Konfigurationsparameter mit ihren Ursprüngen, um die Behebung von Konfigurationsproblemen zu erleichtern
                 </li>
               
             </ul>
@@ -665,12 +725,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Die Bereitstellung auf eine nicht leere Datenbank, die noch nie basiert wurde, bietet jetzt automatisch an, sie zu basieren und fortzufahren
+                  Die Bereitstellung von Migrationen in einer nicht basierlichen, nicht leeren Datenbank bietet nun an, automatisch zu basieren und fortzufahren, was einen manuellen Schritt entfernt
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Datenbanken-Management-Dialog lädt Ihre Datenbanken jetzt sofort, anstatt zuerst leer zu erscheinen
+                  Guided Setup wird nun angeboten, wenn das Schema-Modell leer ist, um den Einstieg in zustandsbasierte Bereitstellungen zu erleichtern
                 </li>
               
             </ul>
@@ -690,12 +750,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway-Kommandozeile und Docker-Images verwenden jetzt automatisch die Proxy-Einstellungen Ihres Betriebssystems
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Snowflake-Parser unterstützt jetzt die Klausel AGENT IF EXISTS für flexiblere Objekterstellung
+                  Flyway nutzt nun automatisch Systemproxy-Einstellungen, was die Notwendigkeit für manuelle Proxy-Konfiguration in den meisten Umgebungen entfernt
                 </li>
               
             </ul>
@@ -715,7 +770,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Neue Seite für automatisierte Bereitstellung ist jetzt in öffentlicher Vorschau verfügbar und ermöglicht CI/CD-Workflows direkt aus dem Tool
+                  Neue Seite &#39;Automated Deployment&#39; ist nun in der öffentlichen Vorschau verfügbar und ermöglicht geplante Bereitstellungen mit Genehmigungsworkflows
                 </li>
               
             </ul>
@@ -735,97 +790,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  CockroachDB wird jetzt als eigenständiges Datenbankmodul mit dedizierter Unterstützung bereitgestellt
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v13.1.0</span>
-                <span class="text-sm text-gray-400">30. Juli 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Databricks Lakebase wird jetzt als PostgreSQL-kompatibler Datenbanktyp in öffentlicher Vorschau unterstützt
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Snapshot-Verlauf ist jetzt für Databricks verfügbar und bietet bessere Änderungsverfolgung
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.6.4</span>
-                <span class="text-sm text-gray-400">29. Juli 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Benachrichtigungen stapeln sich jetzt und werden nach 20 Sekunden automatisch geschlossen, um Ihre Benutzeroberfläche sauberer zu halten
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.6.3</span>
-                <span class="text-sm text-gray-400">28. Juli 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Databricks Lakebase wird jetzt als eigenständiger Datenbanktyp mit voller Funktionsparität unterstützt
-                </li>
-              
-            </ul>
-          </div>
-        
-          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.6.2</span>
-                <span class="text-sm text-gray-400">21. Juli 2026</span>
-              </div>
-              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
-                Vollständige Release Notes →
-              </a>
-            </div>
-            <ul class="flex flex-col gap-1.5">
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Oracle-Index-Erstellungsskripte können jetzt die ONLINE-Klausel enthalten, um Sperrungen während Bereitstellungen zu minimieren
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Der Dialog Zieldatenbanken verwalten öffnet sich jetzt direkt zum Hinzufügen einer Datenbank, wenn keine konfiguriert sind
+                  CockroachDB wird nun als dediziertes Datenbankmodul bereitgestellt und gewährleistet vollständige Kompatibilität und optimierte Unterstützung für CockroachDB-Bereitstellungen
                 </li>
               
             </ul>
@@ -845,17 +810,12 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Oracle-Bereitstellungen unterstützen jetzt die Option IncludeOnlineIndexCreation, um Blockierungen während Index-Operationen zu reduzieren
+                  Flyway MCP-Server ist nun verfügbar und stellt Entwicklungs-Tools bereit, die KI-Agenten aufrufen können, um Flyway-Befehle für zustandsbasierte und migrationsbasierte Projekte auszuführen
                 </li>
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Flyway MCP-Server ist jetzt verfügbar und stellt Entwicklungs-Tools bereit, die KI-Agenten zur Automatisierung von Datenbankaufgaben verwenden können
-                </li>
-              
-                <li class="flex items-start gap-2 text-sm text-gray-600">
-                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Check Drift und Check Changes JSON-Ausgabe enthalten jetzt IDs für jeden Unterschied, sodass Sie spezifische Objekte zur Auflösung anvisieren können
+                  Check Drift und Check Changes enthalten nun eindeutige IDs für jeden Unterschied, wodurch Drift gegen spezifische Datenbankobjekte aufgelöst werden kann
                 </li>
               
             </ul>
@@ -864,8 +824,8 @@
           <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-3">
-                <span class="text-sm font-semibold text-gray-900">v9.6.1</span>
-                <span class="text-sm text-gray-400">16. Juli 2026</span>
+                <span class="text-sm font-semibold text-gray-900">v9.6.2</span>
+                <span class="text-sm text-gray-400">21. Juli 2026</span>
               </div>
               <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
                 Vollständige Release Notes →
@@ -875,7 +835,32 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Geführte Shadow-Bereitstellung ist jetzt jederzeit für Enterprise-Kunden mit voller Unterstützung verfügbar
+                  Unterstützung für Databricks Lakebase als eigenständiger Datenbanktyp hinzugefügt, um zustandsbasierte Bereitstellung für Databricks Lakehouse-Projekte zu ermöglichen
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v13.1.0</span>
+                <span class="text-sm text-gray-400">30. Juli 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Databricks Lakebase wird nun als unterstützter PostgreSQL-Derivat-Datenbanktyp in der öffentlichen Vorschau erkannt und ermöglicht zustandsbasierte Bereitstellungen
+                </li>
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Snapshot-Historie wird nun auf Databricks unterstützt und ermöglicht Drift-Erkennung und Rollback-Funktionen
                 </li>
               
             </ul>
@@ -895,7 +880,7 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  Databricks-Unterstützung für erweiterte Funktionen ist jetzt in öffentlicher Vorschau verfügbar
+                  Databricks Advanced Capabilities-Unterstützung ist nun in der öffentlichen Vorschau verfügbar und ermöglicht zustandsbasierte Bereitstellung für Databricks-Projekte
                 </li>
               
             </ul>
@@ -915,7 +900,47 @@
               
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
-                  PostgreSQL-Projekte haben jetzt eine Filter-UI zum Ausschließen von Objekten während des Vergleichs, um Rauschen zu reduzieren und den Fokus auf das Wesentliche zu legen
+                  Filter-UI-Unterstützung für Postgres-Projekte ist nun verfügbar und ermöglicht Benutzern, spezifische Objekte aus Vergleich und Bereitstellung auszuschließen
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v12.6.0</span>
+                <span class="text-sm text-gray-400">8. Mai 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/release-notes-for-flyway-engine-179732572.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Flyway unterstützt nun den Native Connectors-Modus für den Deploy-Befehl, um die Leistung zu verbessern und die Lizenzierungskosten zu senken
+                </li>
+              
+            </ul>
+          </div>
+        
+          <div class="bg-white border border-gray-200 rounded-xl p-6 hidden release-extra">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-gray-900">v9.4.2</span>
+                <span class="text-sm text-gray-400">29. April 2026</span>
+              </div>
+              <a href="https://documentation.red-gate.com/fd/flyway-desktop-9-release-notes-329778435.html" target="_blank" class="text-xs font-medium hover:underline" style="color:#e8392d;">
+                Vollständige Release Notes →
+              </a>
+            </div>
+            <ul class="flex flex-col gap-1.5">
+              
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="mt-0.5" style="color:#e8392d;">&#10003;</span>
+                  Die Seite &#39;Automated Deployment&#39; generiert nun GitHub Actions-Workflow-Dateien und automatisiert die CI/CD-Pipeline-Einrichtung für Datenbankbereitstellungen
                 </li>
               
             </ul>
@@ -929,9 +954,9 @@
           onclick="toggleReleases()"
           class="mt-4 text-sm font-medium hover:underline bg-transparent border-0 cursor-pointer p-0"
           style="color:#e8392d;"
-          data-more-text="17 ältere Releases anzeigen ↓"
+          data-more-text="19 ältere Releases anzeigen ↓"
           data-fewer-text="Weniger Releases anzeigen ↑">
-          17 ältere Releases anzeigen ↓
+          19 ältere Releases anzeigen ↓
         </button>
         <script>
           function toggleReleases() {
@@ -946,10 +971,10 @@
 
       
         <p class="text-xs text-gray-400 mt-3">
-          Zuletzt aktualisiert am 2026-09-20
+          Zuletzt aktualisiert am 2026-09-27
           
           
-            · Zeigt Änderungen bis 26. Mai 2026
+            · Zeigt Änderungen bis 29. April 2026
           
         </p>
       
